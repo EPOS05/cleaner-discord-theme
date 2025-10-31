@@ -4,7 +4,8 @@ This theme uses css snipits from various different creators, all are credited in
 
 # Installation
 Install [Vencord](https://github.com/Vendicated/Vencord) or another discord client mod that allows you to install themes / change css.
-Paste the following URL in your QuickCSS editor:
+<br>
+Paste the following in your QuickCSS editor:
 ```
 @import url('https://raw.githubusercontent.com/EPOS05/cleaner-discord-theme/refs/heads/main/theme.css');
 ```
