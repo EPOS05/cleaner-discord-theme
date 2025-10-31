@@ -1,0 +1,589 @@
+/*
+Don't Cover Server List With Panel - By Obsidian (obsidianninja11)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952
+*/
+.visual-refresh section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: border-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+
+  /* GameActivityToggle Fix (delete if you don't use) */
+  /* .container__37e49 {
+    padding: var(--space-xxs);
+    gap: var(--space-4);
+    >.buttons__37e49 {
+      gap: 0;
+    }
+    >.avatarWrapper__37e49 {
+      min-width: 32px !important;
+      >.avatar__37e49 {
+        scale: 0.9;
+      }
+    }
+  } */
+}
+nav.guilds__5e434 {
+  margin-bottom: 0 !important;
+}
+.sidebar__5e434:after {
+  display: none;
+}
+/* BetterFolders fix (delete if you don't use) */
+/* .vc-betterFolders-sidebar~section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
+} */
+
+/*
+Compact / Hide Visual Refresh Title Bar - By Chloe (chloecinders)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1354203100872835123
+https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css
+*/
+div.page__5e434 {
+        &:not(:has(> div.chat_f75fb0)) {
+            anchor-name: --vr-header-snippet;
+        }
+
+        & > div.chat_f75fb0 {
+            anchor-name: --vr-header-snippet;
+        }
+    }
+
+    .winButtons_c38106 {
+        display: var(--vr-header-snippet-winbuttons);
+    }
+
+    div.base__5e434 {
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
+            & div.chat_f75fb0,
+            & div.subtitleContainer_f75fb0,
+            & main.container__133bf,
+            & div.chatLayerWrapper__01ae2 {
+                & section.container__9293f {
+                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
+                }
+            }
+        }
+
+        & > div.content__5e434 {
+            z-index: 0;
+        }
+
+        & > div.bar_c38106 {
+            position: absolute;
+            position-anchor: --vr-header-snippet;
+            top: var(--vr-header-snippet-top);
+            right: anchor(right);
+            width: anchor-size(width);
+            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+        }
+
+        & div.trailing_c38106 {
+            background: none;
+            border: none;
+            height: var(--custom-channel-header-height);
+        }
+    }
+
+    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
+        right: 0 !important;
+    }
+.visual-refresh {
+    --vr-header-snippet-top: 0px;
+    --vr-header-snippet-server-padding: 16px;
+    --vr-header-snippet-space: 230px;
+    --vr-header-snippet-button-padding: 0;
+    --vr-header-snippet-winbuttons: flex;
+
+    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+    main.container__133bf,
+    div.chatLayerWrapper__01ae2 {
+        & section.container__9293f {
+            padding-right: var(--vr-header-snippet-space);
+        }
+    }
+
+    div.headerBar__8a7fc.overlay__8a7fc {
+        padding-right: var(--vr-header-snippet-space);
+
+        & .tab__65d41,
+        & .searchBar__1ac1c {
+            -webkit-app-region: no-drag;
+        }
+    }
+
+    div.videoControls_bfe55a div.subtitleContainer__49508 {
+        padding-right: calc(var(--vr-header-snippet-space) - 20px);
+
+        & .toolbar__9293f {
+            -webkit-app-region: no-drag;
+        }
+    }
+
+    div.page_c48ade {
+        &:not(:has(> div.chat_f75fb0)) {
+            anchor-name: --vr-header-snippet;
+        }
+
+        & > div.chat_f75fb0 {
+            anchor-name: --vr-header-snippet;
+        }
+    }
+
+    .winButtons_c38106 {
+        display: var(--vr-header-snippet-winbuttons);
+    }
+
+    div.base_c48ade {
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
+            & div.chat_f75fb0,
+            & div.subtitleContainer_f75fb0,
+            & main.container__133bf,
+            & div.chatLayerWrapper__01ae2 {
+                & section.container__9293f {
+                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
+                }
+            }
+
+            & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+                margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
+            }
+        }
+
+        & > div.content_c48ade {
+            z-index: 0;
+        }
+
+        & > div.bar_c38106 {
+            position: absolute;
+            position-anchor: --vr-header-snippet;
+            top: var(--vr-header-snippet-top);
+            right: anchor(right);
+            width: anchor-size(width);
+            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+
+            & > .title_c38106 {
+                display: none;
+            }
+        }
+
+        &:has(> .notice__6e2b9) {
+            & > div.bar_c38106 {
+                top: anchor(top);
+            }
+        }
+
+        & div.trailing_c38106 {
+            background: none;
+            border: none;
+            height: var(--custom-channel-header-height);
+        }
+
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+            z-index: 0;
+        }
+    }
+
+    :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
+        right: 0 !important;
+    }
+
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+        margin-top: var(--vr-header-snippet-server-padding);
+    }
+
+    section.headerBar__80679,
+    section.header__0b563 div.toolbar__9293f,
+    section.header_c791b2 div.toolbar__9293f,
+    section.header_c791b2 div.children__9293f,
+    :not(.videoControls_bfe55a) div.topic__6ec1a {
+        -webkit-app-region: no-drag;
+    }
+
+    .shop__6db1d section.showToolbar__9293f {
+        padding-right: var(--vr-header-snippet-space);
+
+        .balanceWidgetMenu__80679 {
+            margin-right: 0;
+        }
+    }
+
+    .div.videoControls_bfe55a .topControls_bfe55a {
+        z-index: -1;
+    }
+
+    .profileThemedContainer__656be .topRow__34940 {
+        align-items: end;
+        padding-bottom: 0;
+
+        & .closeAction__34940 {
+            -webkit-app-region: no-drag;
+        }
+
+        & .memberNameContainer__34940 {
+            padding-bottom: 12px;
+        }
+    }
+}
+/* allows quest buttons to be clickable */
+.tabWrapper__26669 {
+  -webkit-app-region: no-drag;
+}
+
+/* search/wishlist/orbs on shop page */
+.alignedRightContent__80679 {
+  position: fixed;
+  right: 189px;
+}
+
+/* orbs balance on quests page */
+.headerBarContent__1a9ce .container__44ee9 {
+  position: fixed;
+  right: 225px;
+  -webkit-app-region: no-drag;
+}
+
+/* fix back buttons overlapping the chat title - By APO (epos05) */
+.channelIcon__9293f.iconWrapper__9293f {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+/*
+brings back the round server icons - By ukriu
+https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609
+*/
+[class^="folderPreview_"] > [class^="icon_"],
+[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
+    border-radius: 50% !important;
+}
+
+/*
+Fuck Activity Status - By LuLu (lusaffi)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196
+*/
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+} 
+
+/*
+Pin page switcher to bottom of search results - By Suffocate
+https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207
+*/
+#search-results+.container__86c0f {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+  background: var(--bg-overlay-1,var(--background-base-lowest));
+}
+
+/*
+Collapse Icon Position Fix - By Bean (sakgoyal)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612
+*/
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+
+/*
+Mention/Replying Gradient Highlight Colors - By: Burning Stone
+https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704
+https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css
+*/
+.mentioned__5126c {
+    position: relative;
+    border: none !important;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+    border-radius: 4px;
+}
+
+.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
+}
+
+.replying__5126c {
+    position: relative;
+    border: none !important;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+}
+
+.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
+}
+
+.flash__03436 {
+    background-image: transparent
+}
+
+.flash__03436[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+}
+
+.full-motion .flash__03436 {
+    transition: background-color .2s ease
+}
+
+/*
+Better Compact Command Menu - By AcheronX. (acheronx0577)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718
+https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css
+*/
+
+/* 🎨 Make category header background transparent */
+.categoryHeader_d1405b {
+    background: transparent !important;
+}
+
+/* 🎨 Transparent hover effect for category header */
+.categoryHeader_d1405b:hover {
+    background: transparent !important;
+}
+
+/* ✨ Main container sizing adjustments */
+.autocomplete__13533.outerWrapper_d1405b {
+  max-height: 310px !important;
+  width: 500px !important;
+  border-radius: 13px;
+}
+
+/* 🖱️ Scrollable area positioning */
+.scroller_affa7e.list_d1405b {
+  top: 4px;
+  right: 3px;
+}
+
+/* 🌀 Animated item wrapper with cool effects */
+.itemWrapper_d1405b {
+  position: relative;
+  border-radius: 1px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 round 10px);
+  clip-path: inset(0 round 10px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* ✨ Pseudo-element for gradient effect */
+.itemWrapper_d1405b::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: inset(0 round 1px);
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover effects for item wrapper */
+.itemWrapper_d1405b:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient effect on hover */
+.itemWrapper_d1405b:hover::before {
+  -webkit-clip-path: inset(1px round 10px);
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White text on hover */
+.itemWrapper_d1405b:hover .title__920ab,
+.itemWrapper_d1405b:hover .description__920ab,
+.itemWrapper_d1405b:hover .source__920ab {
+  color: white !important;
+}
+
+/* 🚫 Fix overflow issues */
+.autocompleteRowVertical__13533,
+.base__13533 {
+  overflow: visible !important;
+
+}
+
+/* 🌈 Dark semi-transparent background for stacked bars */
+.stackedBars__74017 {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🎨 Same background for option pills */
+.optionPillKey__1464f {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🏷️ Semi-transparent header background with compact styling */
+.contentTitle__13533 {
+    background: rgba(11, 6, 29, 0.334) !important;
+    padding: 4px 8px !important;
+    border-radius: 7px !important;
+    display: inline-block !important; /* Prevents full-width background */
+    margin-left: 8px !important; /* ↔️ Adds left spacing */
+}
+
+/* ✨ Force white text for default color classes (improves readability) */
+.defaultColor__4bd52, .defaultColor__5345c {
+    color: rgba(255, 255, 255, 0.885) !important;
+}
+
+/* 🎪 Autocomplete Container */
+.autocomplete__13533.autocomplete__6b0e0 {
+  max-height: 310px !important;
+  width: 500px !important;
+  border-radius: 13px;
+}
+
+/* 🖱️ Clickable Row (Base) */
+.clickable__13533.autocompleteRowVertical__13533 {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 7px 0 7px round 9px);
+  clip-path: inset(0 7px 0 7px round 9px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* 📦 Inner Wrapper */
+.wrapper__920ab {
+  padding: 1px 8px !important;
+}
+
+/* ✨ Gradient Overlay (Pseudo-element) */
+.clickable__13533.autocompleteRowVertical__13533::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover Effects */
+.clickable__13533.autocompleteRowVertical__13533:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient on Hover */
+.clickable__13533.autocompleteRowVertical__13533:hover::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White Text on Hover/Selection */
+.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
+  color: white !important;
+}
+
+/* 🎯 Selected State */
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+}
+
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* Bring back word count- By Obsidian (obsidianninja11)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952
+*/
+.characterCount__795fb>.hiddenVisually_b18fe2 {
+  height: auto;
+  width: auto;
+  clip: unset;
+  clip-path: unset;
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-8);
+  user-select: text;
+}
+
+.characterCount__795fb>.upsell__795fb,
+.characterCount__795fb>.flairContainer__795fb>div {
+  display: none;
+}
+
+/* hide menus next to mute and deafen buttons - By fazzi
+https://discord.com/channels/1015060230222131221/1028106818368589824/1430168175999451216
+*/
+div[class^=micButtonParent__] {
+  button[role="switch"] {
+    border-radius: var(--radius-sm) !important;
+    
+    ~ button {
+      display: none;
+    }
+  }
+}
