@@ -40,6 +40,7 @@ nav.guilds__5e434 {
 
 /*
 Compact / Hide Visual Refresh Title Bar - By Chloe (chloecinders)
+Latest fix by g0d0fninjas
 https://discord.com/channels/1015060230222131221/1028106818368589824/1354203100872835123
 https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css
 */
@@ -233,6 +234,8 @@ div.page__5e434 {
         }
     }
 }
+
+/* Quest page fix - By g0d0fninjas */
 /* allows quest buttons to be clickable */
 .tabWrapper__26669 {
   -webkit-app-region: no-drag;
@@ -252,10 +255,9 @@ div.page__5e434 {
 }
 
 /* fix back buttons overlapping the chat title - By APO (epos05) */
-.channelIcon__9293f.iconWrapper__9293f {
-  display: inline-flex;
-  align-items: center;
+.children__9293f {
   margin-left: 50px;
+  -webkit-app-region: no-drag;
 }
 
 /*
