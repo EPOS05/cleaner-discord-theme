@@ -1,58 +1,28 @@
 /*
-Don't Cover Server List With Panel - By Obsidian (obsidianninja11)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952
+Mention/Replying Gradient Highlight Colors - By Burning Stone
+https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704
+https://github.com/BurningStoneDiscord/DiscordHighlightGradient
 */
-.visual-refresh section.panels__5e434 {
-  left: calc(var(--custom-guild-list-width) + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
-  box-sizing: border-box;
+@import url("https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css");
 
-  .actionButtons_e131a9 button {
-    padding: 0;
-  }
-
-  /* GameActivityToggle Fix (delete if you don't use) */
-  /* .container__37e49 {
-    padding: var(--space-xxs);
-    gap: var(--space-4);
-    >.buttons__37e49 {
-      gap: 0;
-    }
-    >.avatarWrapper__37e49 {
-      min-width: 32px !important;
-      >.avatar__37e49 {
-        scale: 0.9;
-      }
-    }
-  } */
-}
-nav.guilds__5e434 {
-  margin-bottom: 0 !important;
-}
-.sidebar__5e434:after {
-  display: none;
-}
-/* BetterFolders fix (delete if you don't use) */
-/* .vc-betterFolders-sidebar~section.panels__5e434 {
-  left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
-} */
-
-.micButtonParent__37e49>.buttonChevron__37e49 {
-  display: none;
-}
-.micButtonParent__37e49>.micButtonWithMenu__37e49 {
-  border-radius: var(--radius-sm);
-}
+/*
+Better Compact Command Menu - By AcheronX. (acheronx0577)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718
+https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition
+*/
+@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css");
 
 /*
 Compact / Hide Visual Refresh Title Bar - By Chloe (chloecinders)
-Latest fixes - By g0d0fninjas
 https://discord.com/channels/1015060230222131221/1028106818368589824/1354203100872835123
 https://github.com/chloecinders/visual-refresh-compact-title-bar
 */
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 
+/*
+Compact / Hide Visual Refresh Title Bar fixes - By g0d0fninjas
+https://discord.com/channels/1015060230222131221/1354203100872835123/1434189813405450341
+*/
 div.page__5e434 {
   &:not(:has(> div.chat_f75fb0)) {
     anchor-name: --vr-header-snippet;
@@ -130,12 +100,62 @@ div.base__5e434 {
   right: 213px;
 }
 
-/* fix chat title not clickable and backbuttons - By APO (epos05) */
+/*
+Compact / Hide Visual Refresh Title Bar fixes - By APO (epos05) 
+Fix chat title not clickable and backbuttons
+*/
 .children__9293f {
   -webkit-app-region: no-drag;
 }
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
+}
+
+/*
+Don't Cover Server List With Panel - By Obsidian (obsidianninja11)
+https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952
+*/
+.visual-refresh section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: border-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+
+  /* GameActivityToggle Fix (delete if you don't use) */
+  /* .container__37e49 {
+    padding: var(--space-xxs);
+    gap: var(--space-4);
+    >.buttons__37e49 {
+      gap: 0;
+    }
+    >.avatarWrapper__37e49 {
+      min-width: 32px !important;
+      >.avatar__37e49 {
+        scale: 0.9;
+      }
+    }
+  } */
+}
+nav.guilds__5e434 {
+  margin-bottom: 0 !important;
+}
+.sidebar__5e434:after {
+  display: none;
+}
+/* BetterFolders fix (delete if you don't use) */
+/* .vc-betterFolders-sidebar~section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
+} */
+
+.micButtonParent__37e49>.buttonChevron__37e49 {
+  display: none;
+}
+.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+  border-radius: var(--radius-sm);
 }
 
 /*
@@ -182,20 +202,6 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/13629451759
     }
   }
 }
-
-/*
-Mention/Replying Gradient Highlight Colors - By: Burning Stone
-https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704
-https://github.com/BurningStoneDiscord/DiscordHighlightGradient
-*/
-@import url("https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css");
-
-/*
-Better Compact Command Menu - By AcheronX. (acheronx0577)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718
-https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition
-*/
-@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css");
 
 /* Bring back word count- By Obsidian (obsidianninja11)
 https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952
