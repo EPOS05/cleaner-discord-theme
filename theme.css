@@ -40,61 +40,10 @@ nav.guilds__5e434 {
 
 /*
 Compact / Hide Visual Refresh Title Bar - By Chloe (chloecinders)
-Latest fix by g0d0fninjas
+Latest fixes - By g0d0fninjas
 https://discord.com/channels/1015060230222131221/1028106818368589824/1354203100872835123
 https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css
 */
-div.page__5e434 {
-        &:not(:has(> div.chat_f75fb0)) {
-            anchor-name: --vr-header-snippet;
-        }
-
-        & > div.chat_f75fb0 {
-            anchor-name: --vr-header-snippet;
-        }
-    }
-
-    .winButtons_c38106 {
-        display: var(--vr-header-snippet-winbuttons);
-    }
-
-    div.base__5e434 {
-        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
-
-        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
-            & div.chat_f75fb0,
-            & div.subtitleContainer_f75fb0,
-            & main.container__133bf,
-            & div.chatLayerWrapper__01ae2 {
-                & section.container__9293f {
-                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
-                }
-            }
-        }
-
-        & > div.content__5e434 {
-            z-index: 0;
-        }
-
-        & > div.bar_c38106 {
-            position: absolute;
-            position-anchor: --vr-header-snippet;
-            top: var(--vr-header-snippet-top);
-            right: anchor(right);
-            width: anchor-size(width);
-            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
-        }
-
-        & div.trailing_c38106 {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
-        }
-    }
-
-    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
-        right: 0 !important;
-    }
 .visual-refresh {
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
@@ -235,7 +184,57 @@ div.page__5e434 {
     }
 }
 
-/* Quest page fix - By g0d0fninjas */
+div.page__5e434 {
+  &:not(:has(> div.chat_f75fb0)) {
+    anchor-name: --vr-header-snippet;
+  }
+
+  & > div.chat_f75fb0 {
+    anchor-name: --vr-header-snippet;
+  }
+}
+
+div.base__5e434 {
+  grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+  & > div.content__5e434 {
+    z-index: 0;
+  }
+
+  & > div.bar_c38106 {
+    position: absolute;
+    position-anchor: --vr-header-snippet;
+    top: var(--vr-header-snippet-top);
+    right: anchor(right);
+    width: anchor-size(width);
+    padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+  }
+
+  & div.trailing_c38106 {
+    background: none;
+    border: none;
+    height: var(--custom-channel-header-height);
+  }
+}
+
+:not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
+  right: 0 !important;
+}
+
+/*customise top bar*/
+:root {
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: 0px !important;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 16px !important;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 225px !important;
+    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
+    --vr-header-snippet-button-padding: 5px !important;
+    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
+    --vr-header-snippet-winbuttons: flex !important;
+}
+
 /* allows quest buttons to be clickable */
 .tabWrapper__26669 {
   -webkit-app-region: no-drag;
@@ -245,6 +244,7 @@ div.page__5e434 {
 .alignedRightContent__80679 {
   position: fixed;
   right: 189px;
+  -webkit-app-region: no-drag;
 }
 
 /* orbs balance on quests page */
@@ -254,10 +254,19 @@ div.page__5e434 {
   -webkit-app-region: no-drag;
 }
 
-/* fix back buttons overlapping the chat title - By APO (epos05) */
+/* vc open chat icon */
+.toolbar__49508 {
+  position: fixed;
+  top: 16px;
+  right: 213px;
+}
+
+/* fix chat title not clickable and backbuttons - By APO (epos05) */
 .children__9293f {
-  margin-left: 50px;
   -webkit-app-region: no-drag;
+}
+:has(.backForwardButtons__63abb) .children__9293f {
+  margin-left: 50px;
 }
 
 /*
