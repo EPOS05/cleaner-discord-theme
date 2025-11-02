@@ -97,13 +97,15 @@ div.base__5e434 {
   right: 213px;
 }
 
-/*
-Compact / Hide Visual Refresh Title Bar fixes - By APO (epos05) 
-Fix chat title not clickable and backbuttons
-*/
-.children__9293f {
+/* fix main thread button */
+.titleWrapper__9293f {
   -webkit-app-region: no-drag;
 }
+
+/*
+Compact / Hide Visual Refresh Title Bar fixes - By APO (epos05) 
+Fix chat title and backbuttons overlapping
+*/
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
 }
