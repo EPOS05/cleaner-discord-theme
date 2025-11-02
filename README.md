@@ -7,5 +7,5 @@ Install [Vencord](https://github.com/Vendicated/Vencord) or another discord clie
 <br>
 Paste the following in your QuickCSS editor:
 ```
-@import url('https://raw.githubusercontent.com/EPOS05/cleaner-discord-theme/refs/heads/main/theme.css');
+@import url("https://raw.githubusercontent.com/EPOS05/cleaner-discord-theme/refs/heads/main/theme.css");
 ```
