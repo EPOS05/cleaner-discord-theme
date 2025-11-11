@@ -17,99 +17,13 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/14041686118
 @import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css");
 
 /*
-Compact / Hide Visual Refresh Title Bar - By Chloe (chloecinders)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1354203100872835123
+Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)
+https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403
 */
-@import url("https://chloecinders.github.io/visual-refresh-compact-title-bar/desktop.css");
+@import url("https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css");
 
 /*
-Compact / Hide Visual Refresh Title Bar (Fixes) - By g0d0fninjas
-https://discord.com/channels/1015060230222131221/1354203100872835123/1434189813405450341
-*/
-div.page__5e434 {
-  &:not(:has(> div.chat_f75fb0)) {
-    anchor-name: --vr-header-snippet;
-  }
-
-  & > div.chat_f75fb0 {
-    anchor-name: --vr-header-snippet;
-  }
-}
-
-div.base__5e434 {
-  grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
-
-  & > div.content__5e434 {
-    z-index: 0;
-  }
-
-  & > div.bar_c38106 {
-    position: absolute;
-    position-anchor: --vr-header-snippet;
-    top: var(--vr-header-snippet-top);
-    right: anchor(right);
-    width: anchor-size(width);
-    padding: 0 var(--vr-header-snippet-button-padding) 0 0;
-  }
-
-  & div.trailing_c38106 {
-    background: none;
-    border: none;
-    height: var(--custom-channel-header-height);
-  }
-}
-
-:not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
-  right: 0 !important;
-}
-
-/*customise top bar*/
-:root {
-    /* controls the vertical position of the window buttons */
-    --vr-header-snippet-top: 0px !important;
-    /* controls the space above the server list */
-    --vr-header-snippet-server-padding: 16px !important;
-    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 225px !important;
-    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
-    --vr-header-snippet-button-padding: 5px !important;
-    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
-    --vr-header-snippet-winbuttons: flex !important;
-}
-
-/* allows quest buttons to be clickable */
-.tabWrapper__26669 {
-  -webkit-app-region: no-drag;
-}
-
-/* search/wishlist/orbs on shop page */
-.alignedRightContent__80679 {
-  position: fixed;
-  right: 189px;
-  -webkit-app-region: no-drag;
-}
-
-/* orbs balance on quests page */
-.headerBarContent__1a9ce .container__44ee9 {
-  position: fixed;
-  right: 225px;
-  -webkit-app-region: no-drag;
-}
-
-/* vc open chat icon */
-.toolbar__49508 {
-  position: fixed;
-  top: 16px;
-  right: 213px;
-}
-
-/* fix main thread button */
-.titleWrapper__9293f {
-  -webkit-app-region: no-drag;
-}
-
-/*
-Compact / Hide Visual Refresh Title Bar (Fixes) - By APO (epos05) 
+Compact / Hide Visual Refresh Title Bar - Fixes by APO (epos05) 
 Fix chat title and backbuttons overlapping
 */
 :has(.backForwardButtons__63abb) .children__9293f {
