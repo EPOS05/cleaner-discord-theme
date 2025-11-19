@@ -6,22 +6,26 @@ external_files = [
     {
         "url": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
         "local": "external/UserActivityRedesign.css",
-        "credits": "User & Activity Panels Redesign - By yiruzu\nhttps://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366"
+        "credits_name": "User & Activity Panels Redesign - By yiruzu",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366"
     },
     {
         "url": "https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css",
         "local": "external/MentionReplyingFancyGradient.css",
-        "credits": "Mention/Replying Gradient Highlight Colors - By Burning Stone\nhttps://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704"
+        "credits_name": "Mention/Replying Gradient Highlight Colors - By Burning Stone",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704"
     },
     {
         "url": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
         "local": "external/BetterCompactCommandMenuWithSmoothTransition.css",
-        "credits": "Better Compact Command Menu - By AcheronX. (acheronx0577)\nhttps://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718"
+        "credits_name": "Better Compact Command Menu - By AcheronX. (acheronx0577)",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718"
     },
     {
         "url": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "local": "external/VisualRefreshCompactTitleBar.css",
-        "credits": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)\nhttps://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403"
+        "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403"
     }
 ]
 
@@ -32,7 +36,10 @@ for f in external_files:
     try:
         r = requests.get(f['url'], timeout=10)
         r.raise_for_status()
-        content = f"/*\n{f['credits']}\n*/\n{r.text}"
+
+        credit_lines = f"/* {f['credits_name']} */\n/* {f['credits_source']} */"
+        content = f"{credit_lines}\n{r.text}"
+
         with open(f['local'], "w", encoding="utf-8") as out_file:
             out_file.write(content)
         print(f"Downloaded and saved: {f['local']}")

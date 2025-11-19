@@ -1,10 +1,8 @@
 /* EXTERNAL_CSS_START */
 /* External CSS is included directly (not via @import) for backup purposes. Use update.py to manually refresh or update. */
 
-/*
-User & Activity Panels Redesign - By yiruzu
-https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366
-*/
+/* User & Activity Panels Redesign - By yiruzu */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366 */
 :root {
   --bg-color: var(--background-gradient-high, var(--background-base-lowest));
 
@@ -138,10 +136,8 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/14340029981
   }
 }
 
-/*
-Mention/Replying Gradient Highlight Colors - By Burning Stone
-https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704
-*/
+/* Mention/Replying Gradient Highlight Colors - By Burning Stone */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 
 /*By: Burning Stone*/
@@ -221,10 +217,8 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/13681929015
 }
 
 
-/*
-Better Compact Command Menu - By AcheronX. (acheronx0577)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718
-*/
+/* Better Compact Command Menu - By AcheronX. (acheronx0577) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 */
 /**
 
  * @name Better Compact Command Menu With Smooth Transition
@@ -656,10 +650,8 @@ visibility: visible !important;
 
 
 
-/*
-Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)
-https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403
-*/
+/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
+/* https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
 .visual-refresh {
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
@@ -864,18 +856,14 @@ https://discord.com/channels/1015060230222131221/1354203100872835123/14374478788
 
 /* EXTERNAL_CSS_END */
 
-/*
-Compact / Hide Visual Refresh Title Bar - Fixes by APO (epos05) 
-Fix chat title and backbuttons overlapping
-*/
+/* Compact / Hide Visual Refresh Title Bar - Fixes by APO (epos05) */
+/* Fix chat title and backbuttons overlapping */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
 }
 
-/*
-Don't Cover Server List With Panel - By Obsidian (obsidianninja11)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952
-*/
+/* Don't Cover Server List With Panel - By Obsidian (obsidianninja11) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
 .visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
@@ -919,28 +907,22 @@ nav.guilds__5e434 {
   border-radius: var(--radius-sm);
 }
 
-/*
-brings back the round server icons - By ukriu
-https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609
-*/
+/* brings back the round server icons - By ukriu */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
 [class^="folderPreview_"] > [class^="icon_"],
 [data-list-item-id*="guildsnav_"] > [class^="icon_"] {
     border-radius: 50% !important;
 }
 
-/*
-Fuck Activity Status - By LuLu (lusaffi)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196
-*/
+/* Fuck Activity Status - By LuLu (lusaffi) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196 */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
 } 
 
-/*
-Pin page switcher to bottom of search results - By Suffocate
-https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207
-*/
+/* Pin page switcher to bottom of search results - By Suffocate */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207 */
 #search-results+.container__86c0f {
   position: sticky;
   bottom: 0;
@@ -948,10 +930,8 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/13348464683
   background: var(--bg-overlay-1,var(--background-base-lowest));
 }
 
-/*
-Collapse Icon Position Fix - By Bean (sakgoyal)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612
-*/
+/* Collapse Icon Position Fix - By Bean (sakgoyal) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
 .containerDefault__29444 {
   > div {
     padding-left: 0.5em;
@@ -964,10 +944,8 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/13629451759
   }
 }
 
-/*
-Bring back word count - By Obsidian (obsidianninja11)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952
-*/
+/* Bring back word count - By Obsidian (obsidianninja11) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952 */
 .characterCount__795fb>.hiddenVisually_b18fe2 {
   height: auto;
   width: auto;
@@ -985,10 +963,8 @@ https://discord.com/channels/1015060230222131221/1028106818368589824/14282625076
   display: none;
 }
 
-/*
-Move profile buttons back to the top right - By Obsidian (obsidianninja11)
-https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050
-*/
+/* Move profile buttons back to the top right - By Obsidian (obsidianninja11) */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
 .user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));

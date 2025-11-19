@@ -1,7 +1,5 @@
-/*
-Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)
-https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403
-*/
+/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
+/* https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
 .visual-refresh {
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
