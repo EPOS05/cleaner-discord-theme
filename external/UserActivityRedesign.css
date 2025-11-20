@@ -1,0 +1,134 @@
+/* User & Activity Panels Redesign - By yiruzu */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366 */
+:root {
+  --bg-color: var(--background-gradient-high, var(--background-base-lowest));
+
+  --panel-gap: 8px;
+  --panel-radius: 10px;
+  --panel-color: var(--background-gradient-highest, var(--background-base-low));
+
+  --spotify-image-blur: 4px;
+  --spotify-image-opacity: 0.45;
+  --spotify-image-hover-opacity: 0.7;
+
+  --order-quests: 0;
+  --order-listening: 1;
+  --order-stream: 2;
+  --order-spotify-player: 3;
+  --order-voice: 4;
+  --order-profile: 5;
+}
+
+.panels__5e434 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--panel-gap);
+  background: var(--bg-color);
+  border: none;
+}
+
+.mask__0d616 {
+  order: var(--order-quests);
+  margin-inline: 0;
+  padding-inline: 0;
+  border-radius: var(--panel-radius);
+}
+.wrapper__0d616,
+.wrapperVisible__0d616 {
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.container_e131a9,
+.container__37e49 {
+  background-color: var(--panel-color);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27 {
+  order: var(--order-listening);
+}
+
+.panel__5dec7 {
+  order: var(--order-stream);
+  padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
+}
+
+.wrapper_e131a9 {
+  order: var(--order-voice);
+
+  &:not(:has(.container_e131a9)) {
+    display: none;
+  }
+
+  .container_e131a9 {
+    min-height: 90px;
+  }
+}
+
+.container__37e49 {
+  order: var(--order-profile);
+  min-height: 59px;
+
+  &:has(.plated_37e49) {
+    border: none;
+  }
+}
+
+#vc-spotify-player {
+  order: var(--order-spotify-player);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent 0%, var(--panel-color) 100%) !important;
+  border: 1px solid transparent;
+  border-radius: var(--panel-radius);
+  margin: 0 -1px;
+
+  .barFill_a562c8 {
+    background-color: var(--vc-spotify-green) !important;
+  }
+
+  .vc-spotify-repeat-context,
+  .vc-spotify-repeat-track,
+  .vc-spotify-shuffle-on {
+    span {
+      color: var(--vc-spotify-green);
+    }
+    svg {
+      fill: var(--vc-spotify-green);
+    }
+  }
+
+  .vc-spotify-progress-time {
+    margin-top: 10px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+  &::before {
+    background: var(--vc-spotify-track-image) center/cover no-repeat;
+    opacity: var(--spotify-image-opacity);
+  }
+  &::after {
+    backdrop-filter: blur(var(--spotify-image-blur));
+  }
+
+  &:hover::before {
+    opacity: var(--spotify-image-hover-opacity);
+  }
+  &:hover::after {
+    backdrop-filter: blur(0);
+  }
+
+  > * {
+    filter: drop-shadow(0 0 10px var(--panel-color));
+  }
+}

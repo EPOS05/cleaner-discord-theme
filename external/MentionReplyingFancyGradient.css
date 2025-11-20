@@ -1,0 +1,41 @@
+/* Mention/Replying Gradient Highlight Colors - By Burning Stone */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
+/*FANCY MENTION/REPLY GRADIENT COLORS*/
+/*By: Burning Stone*/
+.mentioned__5126c {
+    position: relative;
+    border: none !important;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+    border-radius: 4px;
+}
+
+.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
+}
+
+.replying__5126c {
+    position: relative;
+    border: none !important;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+}
+
+.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
+}
+
+.flash__03436 {
+    background-image: transparent
+}
+
+.flash__03436[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+}
+
+.full-motion .flash__03436 {
+    transition: background-color .2s ease
+}
