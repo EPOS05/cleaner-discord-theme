@@ -4,6 +4,12 @@ import re
 
 external_files = [
     {
+        "url": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "local": "external/VisualRefreshCompactTitleBar.css",
+        "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403"
+    },
+    {
         "url": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
         "local": "external/UserActivityRedesign.css",
         "credits_name": "User & Activity Panels Redesign - By yiruzu",
@@ -22,10 +28,10 @@ external_files = [
         "credits_source": "https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718"
     },
     {
-        "url": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
-        "local": "external/VisualRefreshCompactTitleBar.css",
-        "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)",
-        "credits_source": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403"
+        "url": "https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css",
+        "local": "external/CompactButtons.css",
+        "credits_name": "More compact buttons - By krammeth",
+        "credits_source": "https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688"
     }
 ]
 

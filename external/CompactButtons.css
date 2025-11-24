@@ -1,0 +1,60 @@
+/* More compact buttons - By krammeth */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
+/**
+* @name CompactButtons
+* @version 1.0
+* @description Makes sidebar buttons more... compact (duh?)
+* @author krammeth (original by cea.api)
+* @website https://github.com/Krammeth
+*/
+
+.scroller__99e7c[data-list-id^="private-channels-uid_"] {
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
+  >.content_d125d2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    >div:not([class]):first-child,
+    >div[role="button"],
+    >.privateChannelsHeaderContainer__99e7c,
+    >.channel__972a0.dm__972a0 {
+      width: 100%;
+    }
+    >.friendsButtonContainer_e6b769,
+    >div:nth-of-type(3),
+    >.channel__972a0:not(.dm__972a0),
+    >.wrapper_ebee1d {
+      margin: 0;
+    }
+    .channel__972a0:not(.dm__972a0) {
+      margin: 0 4px;
+      >.linkButton__972a0 >.link__972a0 {
+        padding: 6px;
+        >.avatarWithText__972a0 {
+          padding: 0;
+          >.avatar__20a53 {
+            margin: 0;
+          }
+          >.content__20a53 {
+            display: none;
+          }
+        }
+        >.numberBadge__2b1f5 {
+          position: absolute;
+          left: 17.5px;
+          bottom: 0;
+          transform: scale(0.7);
+        }
+        >.newBadge__4ed1a {
+          position: absolute;
+          left: -3px;
+          bottom: 0;
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+}
