@@ -13,13 +13,13 @@ external_files = [
     {
         "url": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
         "local": "external/BetterCompactCommandMenuWithSmoothTransition.css",
-        "credits_name": "Better Compact Command Menu - By AcheronX. (acheronx0577)",
+        "credits_name": "Better Compact Command Menu - By acheronx0577",
         "credits_source": "This CSS is directly taken from https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition / https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718, Copyright (c) 2025 AcheronX., Licensed under MIT"
     },
     {
         "url": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "local": "external/VisualRefreshCompactTitleBar.css",
-        "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)",
+        "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by chloecinders",
         "credits_source": "This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0"
     },
     {

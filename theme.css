@@ -313,7 +313,7 @@
 #app-mount .root__5c9fc .closeIconWrapper__6fd0e {
 	top: 22px !important;
 }
-/* Better Compact Command Menu - By AcheronX. (acheronx0577) */
+/* Better Compact Command Menu - By acheronx0577 */
 /* This CSS is directly taken from https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition / https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718, Copyright (c) 2025 AcheronX., Licensed under MIT */
 /**
 
@@ -746,7 +746,7 @@ visibility: visible !important;
 
 
 
-/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
+/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by chloecinders */
 /* This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
 .visual-refresh {
     /* gives each variable a default */
@@ -1246,6 +1246,7 @@ visibility: visible !important;
       margin: 0 4px;
       >.linkButton__972a0 >.link__972a0 {
         padding: 6px;
+        justify-content: center;
         >.avatarWithText__972a0 {
           padding: 0;
           >.avatar__20a53 {
@@ -1263,7 +1264,6 @@ visibility: visible !important;
         }
         >.newBadge__4ed1a {
           position: absolute;
-          left: -3px;
           bottom: 0;
           transform: scale(0.7);
         }
@@ -1283,7 +1283,7 @@ visibility: visible !important;
     margin-top: 0 !important;
 }
 
-/* Don't Cover Server List With Panel - By Obsidian (obsidianninja11) */
+/* Don't Cover Server List With Panel - By obsidianninja11 */
 /* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952, Licensed under CC0 */
 .visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
@@ -1335,7 +1335,7 @@ nav.guilds__5e434 {
     border-radius: 50% !important;
 }
 
-/* Fuck Activity Status - By LuLu (lusaffi) */
+/* Fuck Activity Status - By lusaffi */
 /* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196, Licensed under CC0 */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
@@ -1351,7 +1351,7 @@ nav.guilds__5e434 {
   background: var(--bg-overlay-1,var(--background-base-lowest));
 }
 
-/* Collapse Icon Position Fix - By Bean (sakgoyal) */
+/* Collapse Icon Position Fix - By sakgoyal */
 /* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612, Licensed under CC0 */
 .containerDefault__29444 {
   > div {
@@ -1365,7 +1365,7 @@ nav.guilds__5e434 {
   }
 }
 
-/* Bring back word count - By Obsidian (obsidianninja11) */
+/* Bring back word count - By obsidianninja11 */
 /* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952, Licensed under CC0 */
 .characterCount__795fb>.hiddenVisually_b18fe2 {
   height: auto;
@@ -1384,7 +1384,7 @@ nav.guilds__5e434 {
   display: none;
 }
 
-/* Move profile buttons back to the top right - By Obsidian (obsidianninja11) */
+/* Move profile buttons back to the top right - By obsidianninja11 */
 /* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050, Licensed under CC0 */
 .user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
