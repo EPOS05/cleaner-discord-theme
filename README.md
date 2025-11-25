@@ -9,12 +9,12 @@ Paste the following in your QuickCSS editor:
 @import url("https://epos05.github.io/cleaner-discord-theme/theme.css");
 ```
 
-## Licence
+## License
 This project is licensed under GPL-2.0 because the CSS file contains portions licensed under GPL-2.0.
 Other portions of the CSS are from MIT or CC0 sources (see file comments for details).
 
 ## Credits
-### licensed under GPL-2.0
+### Licensed under GPL-2.0
 - [SettingsModal](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal) - By DevilBro, Copyright (C) 2016-2025 Mirco Wittrien
 
 ### Licensed under MIT
