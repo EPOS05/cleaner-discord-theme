@@ -14,31 +14,31 @@ external_files = [
         "url": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
         "local": "external/BetterCompactCommandMenuWithSmoothTransition.css",
         "credits_name": "Better Compact Command Menu - By AcheronX. (acheronx0577)",
-        "credits_source": "This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 / https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition, Copyright (c) 2025 AcheronX., Licensed under MIT"
+        "credits_source": "This CSS is directly taken from https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition / https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718, Copyright (c) 2025 AcheronX., Licensed under MIT"
     },
     {
         "url": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "local": "external/VisualRefreshCompactTitleBar.css",
         "credits_name": "Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders)",
-        "credits_source": "This CSS is directly taken from https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0"
+        "credits_source": "This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0"
     },
     {
         "url": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
         "local": "external/UserActivityRedesign.css",
         "credits_name": "User & Activity Panels Redesign - By yiruzu",
-        "credits_source": "This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0"
+        "credits_source": "This CSS is directly taken from https://github.com/yiruzu/vencord-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0"
     },
     {
         "url": "https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css",
         "local": "external/MentionReplyingFancyGradient.css",
         "credits_name": "Mention/Replying Gradient Highlight Colors - By Burning Stone",
-        "credits_source": "This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0"
+        "credits_source": "This CSS is directly taken from https://github.com/BurningStoneDiscord/DiscordHighlightGradient / https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0"
     },
     {
         "url": "https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css",
         "local": "external/CompactButtons.css",
         "credits_name": "More compact buttons - By krammeth",
-        "credits_source": "This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0"
+        "credits_source": "This CSS is directly taken from https://github.com/Krammeth/css-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0"
     }
 ]
 

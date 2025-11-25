@@ -314,7 +314,7 @@
 	top: 22px !important;
 }
 /* Better Compact Command Menu - By AcheronX. (acheronx0577) */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 / https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition, Copyright (c) 2025 AcheronX., Licensed under MIT */
+/* This CSS is directly taken from https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition / https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718, Copyright (c) 2025 AcheronX., Licensed under MIT */
 /**
 
  * @name Better Compact Command Menu With Smooth Transition
@@ -747,7 +747,7 @@ visibility: visible !important;
 
 
 /* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
+/* This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
 .visual-refresh {
     /* gives each variable a default */
     --vr-header-snippet-top: 0px;
@@ -996,7 +996,7 @@ visibility: visible !important;
     }
 }
 /* User & Activity Panels Redesign - By yiruzu */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0 */
+/* This CSS is directly taken from https://github.com/yiruzu/vencord-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0 */
 :root {
   --bg-color: var(--background-gradient-high, var(--background-base-lowest));
 
@@ -1131,7 +1131,7 @@ visibility: visible !important;
 }
 
 /* Mention/Replying Gradient Highlight Colors - By Burning Stone */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0 */
+/* This CSS is directly taken from https://github.com/BurningStoneDiscord/DiscordHighlightGradient / https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0 */
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 
 /*By: Burning Stone*/
@@ -1212,7 +1212,7 @@ visibility: visible !important;
 
 
 /* More compact buttons - By krammeth */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0 */
+/* This CSS is directly taken from https://github.com/Krammeth/css-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0 */
 /**
 * @name CompactButtons
 * @version 1.0

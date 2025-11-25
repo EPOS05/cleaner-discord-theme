@@ -1,5 +1,5 @@
 /* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
+/* This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
 .visual-refresh {
     /* gives each variable a default */
     --vr-header-snippet-top: 0px;
