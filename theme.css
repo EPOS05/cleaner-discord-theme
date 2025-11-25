@@ -4,7 +4,7 @@
 /* Compiled by epos05 - made possible by many developers credited inline */
 /* --------------------------------------------------------------------------- */
 
-/* Fix chat title and backbuttons overlapping (Compact Title Bar fix) - By epos05 */
+/* Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) - By epos05 */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
 }
@@ -94,25 +94,6 @@ nav.guilds__5e434 {
       flex-direction: row-reverse !important;
     }
   }
-}
-
-/* Bring back word count - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952, Licensed under CC0 */
-.characterCount__795fb>.hiddenVisually_b18fe2 {
-  height: auto;
-  width: auto;
-  clip: unset;
-  clip-path: unset;
-  background-color: var(--background-surface-highest);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: var(--space-4) var(--space-8);
-  user-select: text;
-}
-
-.characterCount__795fb>.upsell__795fb,
-.characterCount__795fb>.flairContainer__795fb>div {
-  display: none;
 }
 
 /* Move profile buttons back to the top right - By obsidianninja11 */

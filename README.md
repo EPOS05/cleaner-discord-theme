@@ -30,5 +30,4 @@ Other portions of the CSS are from MIT or CC0 sources (see file comments for det
 - [Fuck Activity Status](https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196) - By lusaffi
 - [Pin page switcher to bottom of search results](https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207) - By Suffocate
 - [Collapse Icon Position Fix](https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612) - By sakgoyal
-- [Bring back word count](https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952) - By obsidianninja11
 - [Move profile buttons back to the top right](https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050) - By obsidianninja11
