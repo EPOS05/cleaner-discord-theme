@@ -1,473 +1,8 @@
 /* EXTERNAL_CSS_START */
 /* External CSS is included directly (not via @import) for backup purposes. Use update.py to manually refresh or update. */
 
-/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
-/* https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
-.visual-refresh {
-    /* gives each variable a default */
-    --vr-header-snippet-top: 0px;
-    --vr-header-snippet-server-padding: 16px;
-    --vr-header-snippet-space: 230px;
-    --vr-header-snippet-button-padding: 0;
-    --vr-header-snippet-winbuttons: flex;
-
-    /* adds padding to all top containers */
-    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
-    main.container__133bf,
-    div.chatLayerWrapper__01ae2 {
-        & section.container__9293f {
-            padding-right: var(--vr-header-snippet-space);
-        }
-    }
-
-    /* adds padding to servers/app pages */
-    div.headerBar__8a7fc.overlay__8a7fc {
-        padding-right: var(--vr-header-snippet-space);
-
-        & .tab__65d41,
-        & .searchBar__1ac1c {
-            -webkit-app-region: no-drag;
-        }
-    }
-
-    /* no idea what this does */
-    div.videoControls_bfe55a div.subtitleContainer__49508 {
-        padding-right: calc(var(--vr-header-snippet-space) - 20px);
-
-        & .toolbar__9293f {
-            -webkit-app-region: no-drag;
-        }
-    }
-
-    div[class*='page__'] {
-        &:not(:has(> div.chat_f75fb0)) {
-            anchor-name: --vr-header-snippet;
-        }
-
-        & > div.chat_f75fb0 {
-            anchor-name: --vr-header-snippet;
-        }
-    }
-
-    /* shows or removes window buttons depending on variable */
-    .winButtons_c38106 {
-        display: var(--vr-header-snippet-winbuttons);
-    }
-
-    div[class*='base_'] {
-        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
-
-        /* check if users have update or vencord button */
-        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
-        &:has(.vc-toolbox-btn) {
-           & div.chat_f75fb0,
-           & div.subtitleContainer_f75fb0,
-           & main.container__133bf,
-           & div.chatLayerWrapper__01ae2 {
-             & section.container__9293f {
-                /* adds extra spacing to search bar on chatting pages*/
-                padding-right: calc(var(--vr-header-snippet-space) + 44px);
-             }
-           }
-
-            /* adds extra spacing to the orbs button on orbs/shop page */
-            & div.container__44ee9 {
-                padding-right: +44px;
-            }
-
-            & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
-                margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
-            }
-
-            /* adds extra padding to chat icon on vc */
-            .toolbar__49508 {
-                position: fixed;
-                top: 16px;
-                right: 3px;
-            }
-
-            /* checks if you are searching for a server/app */
-            .container_d08938,
-            .innerContainer_e1147e {
-                /* adds padding to search bar */
-                .searchBar__1ac1c {
-                    padding-right: 48px;
-                    -webkit-app-region: no-drag;
-                }
-
-                /* adds extra badding if you are looking at search results */
-                &:has(.headerBar__8a7fc.relative__8a7fc) {
-                    .searchBar__1ac1c {
-                        padding-right: calc(var(--vr-header-snippet-space) + 32px);
-                    }
-                }
-            }
-        }
-
-        /* checks if user isn't using vencord toolbox plugin */
-        &:not(:has(.vc-toolbox-btn)) {
-            /* adds padding to chat icon in vc */
-            .toolbar__49508 {
-                position: fixed;
-                top: 16px;
-                right: calc(var(--vr-header-snippet-space) - 11px);
-            }
-
-            /* checks if you are searching for a server/app */
-            .container_d08938,
-            .innerContainer_e1147e {
-                /* adds padding to search bar */
-                .searchBar__1ac1c {
-                    padding-right: 4px;
-                    -webkit-app-region: no-drag;
-                }
-
-                /* adds extra badding if you are looking at search results */
-                &:has(.headerBar__8a7fc.relative__8a7fc) {
-                    .searchBar__1ac1c {
-                        padding-right: calc(var(--vr-header-snippet-space) - 12px);
-                    }
-                }
-            }
-        }
-
-        /* moves element to "front" */
-        & > div[class*='content__'] {
-            z-index: 0;
-        }
-
-        /* top bar variables */
-        & > div.bar_c38106 {
-            position: absolute;
-            position-anchor: --vr-header-snippet;
-            top: var(--vr-header-snippet-top);
-            right: anchor(right);
-            width: anchor-size(width);
-            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
-
-            /* removes the title bar */
-            & > .title_c38106 {
-                display: none;
-            }
-        }
-
-        &:has(> .notice__6e2b9) {
-            & > div.bar_c38106 {
-                top: anchor(top);
-            }
-        }
-
-        /* inbox, help, window buttons variables */
-        & div.trailing_c38106 {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
-        }
-
-        /* checks if a thread is opened on the side of your screen */
-        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
-            z-index: 0;
-        }
-    }
-
-    /* checks if discord is on a server page */
-    :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
-        right: 0 !important;
-    }
-
-    /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
-        margin-top: var(--vr-header-snippet-server-padding);
-    }
-
-    /* allows these areas to be clickable */
-    section.header__0b563 div.toolbar__9293f,
-    section.header_c791b2 div.toolbar__9293f,
-    section.header_c791b2 div.children__9293f,
-    div.shop__6db1d div.shopHomeLink__80679,
-    :not(.videoControls_bfe55a) div.topic__6ec1a {
-        -webkit-app-region: no-drag;
-    }
-
-    /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    .shop__6db1d section.showToolbar__9293f {
-        padding-right: var(--vr-header-snippet-space);
-
-        .balanceWidgetMenu__80679 {
-            margin-right: 0;
-        }
-    }
-
-    .div.videoControls_bfe55a .topControls_bfe55a {
-        z-index: -1;
-    }
-
-    .profileThemedContainer__656be .topRow__34940 {
-        align-items: end;
-        padding-bottom: 0;
-
-        & .closeAction__34940 {
-            -webkit-app-region: no-drag;
-        }
-
-        & .memberNameContainer__34940 {
-            padding-bottom: 12px;
-        }
-    }
-
-    /* search/wishlist/orbs on shop page */
-    .alignedRightContent__80679 {
-      position: fixed;
-      right: calc(var(--vr-header-snippet-space) - 33px);
-      -webkit-app-region: no-drag;
-    }
-
-    /* orbs balance on quests page */
-    .headerBarContent__1a9ce .container__44ee9 {
-      position: fixed;
-      right: calc(var(--vr-header-snippet-space) + 3px);
-      -webkit-app-region: no-drag;
-    }
-    
-    /* allows main thread + all/claimed quest buttons to be clickable */
-    .titleWrapper__9293f {
-      -webkit-app-region: no-drag;
-    }
-
-    /* fixes extra gap of group dm button on friends page */
-    .toolbar__9293f .inviteToolbar__133bf {
-        padding-right: 0px;
-    }
-
-    /* fixes weird padding issue when searching for an app */
-    .sideFilterContainer__1eae0 {
-        position: fixed;
-        top: 57px;
-    }
-
-    /* allows back button on discover pages to be clickable */
-    & .iconButton__8a7fc {
-        -webkit-app-region: no-drag;
-    }
-}
-/* User & Activity Panels Redesign - By yiruzu */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366 */
-:root {
-  --bg-color: var(--background-gradient-high, var(--background-base-lowest));
-
-  --panel-gap: 8px;
-  --panel-radius: 10px;
-  --panel-color: var(--background-gradient-highest, var(--background-base-low));
-
-  --spotify-image-blur: 4px;
-  --spotify-image-opacity: 0.45;
-  --spotify-image-hover-opacity: 0.7;
-
-  --order-quests: 0;
-  --order-listening: 1;
-  --order-stream: 2;
-  --order-spotify-player: 3;
-  --order-voice: 4;
-  --order-profile: 5;
-}
-
-.panels__5e434 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--panel-gap);
-  background: var(--bg-color);
-  border: none;
-}
-
-.mask__0d616 {
-  order: var(--order-quests);
-  margin-inline: 0;
-  padding-inline: 0;
-  border-radius: var(--panel-radius);
-}
-.wrapper__0d616,
-.wrapperVisible__0d616 {
-  border-radius: var(--panel-radius);
-}
-
-.listeningAlong_e0cf27,
-.panel__5dec7,
-.container_e131a9,
-.container__37e49 {
-  background-color: var(--panel-color);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--panel-radius);
-}
-
-.listeningAlong_e0cf27 {
-  order: var(--order-listening);
-}
-
-.panel__5dec7 {
-  order: var(--order-stream);
-  padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
-}
-
-.wrapper_e131a9 {
-  order: var(--order-voice);
-
-  &:not(:has(.container_e131a9)) {
-    display: none;
-  }
-
-  .container_e131a9 {
-    min-height: 90px;
-  }
-}
-
-.container__37e49 {
-  order: var(--order-profile);
-  min-height: 59px;
-
-  &:has(.plated_37e49) {
-    border: none;
-  }
-}
-
-#vc-spotify-player {
-  order: var(--order-spotify-player);
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, transparent 0%, var(--panel-color) 100%) !important;
-  border: 1px solid transparent;
-  border-radius: var(--panel-radius);
-  margin: 0 -1px;
-
-  .barFill_a562c8 {
-    background-color: var(--vc-spotify-green) !important;
-  }
-
-  .vc-spotify-repeat-context,
-  .vc-spotify-repeat-track,
-  .vc-spotify-shuffle-on {
-    span {
-      color: var(--vc-spotify-green);
-    }
-    svg {
-      fill: var(--vc-spotify-green);
-    }
-  }
-
-  .vc-spotify-progress-time {
-    margin-top: 10px;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    transition: all 0.4s ease-out;
-    z-index: -1;
-  }
-  &::before {
-    background: var(--vc-spotify-track-image) center/cover no-repeat;
-    opacity: var(--spotify-image-opacity);
-  }
-  &::after {
-    backdrop-filter: blur(var(--spotify-image-blur));
-  }
-
-  &:hover::before {
-    opacity: var(--spotify-image-hover-opacity);
-  }
-  &:hover::after {
-    backdrop-filter: blur(0);
-  }
-
-  > * {
-    filter: drop-shadow(0 0 10px var(--panel-color));
-  }
-}
-
-/* Mention/Replying Gradient Highlight Colors - By Burning Stone */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
-/*FANCY MENTION/REPLY GRADIENT COLORS*/
-
-/*By: Burning Stone*/
-
-.mentioned__5126c {
-
-    position: relative;
-
-    border: none !important;
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
-
-    border-radius: 4px;
-
-}
-
-
-
-.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
-
-}
-
-
-
-.replying__5126c {
-
-    position: relative;
-
-    border: none !important;
-
-    border-radius: 4px;
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
-
-}
-
-
-
-.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
-
-}
-
-
-
-.flash__03436 {
-
-    background-image: transparent
-
-}
-
-
-
-.flash__03436[data-flash=true] {
-
-    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
-
-}
-
-
-
-.full-motion .flash__03436 {
-
-    transition: background-color .2s ease
-
-}
-
-
 /* Better Compact Command Menu - By AcheronX. (acheronx0577) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 / https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition, Copyright (c) 2025 AcheronX., Licensed under MIT */
 /**
 
  * @name Better Compact Command Menu With Smooth Transition
@@ -899,8 +434,473 @@ visibility: visible !important;
 
 
 
+/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by Chloe (chloecinders) */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
+.visual-refresh {
+    /* gives each variable a default */
+    --vr-header-snippet-top: 0px;
+    --vr-header-snippet-server-padding: 16px;
+    --vr-header-snippet-space: 230px;
+    --vr-header-snippet-button-padding: 0;
+    --vr-header-snippet-winbuttons: flex;
+
+    /* adds padding to all top containers */
+    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+    main.container__133bf,
+    div.chatLayerWrapper__01ae2 {
+        & section.container__9293f {
+            padding-right: var(--vr-header-snippet-space);
+        }
+    }
+
+    /* adds padding to servers/app pages */
+    div.headerBar__8a7fc.overlay__8a7fc {
+        padding-right: var(--vr-header-snippet-space);
+
+        & .tab__65d41,
+        & .searchBar__1ac1c {
+            -webkit-app-region: no-drag;
+        }
+    }
+
+    /* no idea what this does */
+    div.videoControls_bfe55a div.subtitleContainer__49508 {
+        padding-right: calc(var(--vr-header-snippet-space) - 20px);
+
+        & .toolbar__9293f {
+            -webkit-app-region: no-drag;
+        }
+    }
+
+    div[class*='page__'] {
+        &:not(:has(> div.chat_f75fb0)) {
+            anchor-name: --vr-header-snippet;
+        }
+
+        & > div.chat_f75fb0 {
+            anchor-name: --vr-header-snippet;
+        }
+    }
+
+    /* shows or removes window buttons depending on variable */
+    .winButtons_c38106 {
+        display: var(--vr-header-snippet-winbuttons);
+    }
+
+    div[class*='base_'] {
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+        /* check if users have update or vencord button */
+        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
+        &:has(.vc-toolbox-btn) {
+           & div.chat_f75fb0,
+           & div.subtitleContainer_f75fb0,
+           & main.container__133bf,
+           & div.chatLayerWrapper__01ae2 {
+             & section.container__9293f {
+                /* adds extra spacing to search bar on chatting pages*/
+                padding-right: calc(var(--vr-header-snippet-space) + 44px);
+             }
+           }
+
+            /* adds extra spacing to the orbs button on orbs/shop page */
+            & div.container__44ee9 {
+                padding-right: +44px;
+            }
+
+            & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+                margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
+            }
+
+            /* adds extra padding to chat icon on vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: 3px;
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 48px;
+                    -webkit-app-region: no-drag;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) + 32px);
+                    }
+                }
+            }
+        }
+
+        /* checks if user isn't using vencord toolbox plugin */
+        &:not(:has(.vc-toolbox-btn)) {
+            /* adds padding to chat icon in vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: calc(var(--vr-header-snippet-space) - 11px);
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 4px;
+                    -webkit-app-region: no-drag;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) - 12px);
+                    }
+                }
+            }
+        }
+
+        /* moves element to "front" */
+        & > div[class*='content__'] {
+            z-index: 0;
+        }
+
+        /* top bar variables */
+        & > div.bar_c38106 {
+            position: absolute;
+            position-anchor: --vr-header-snippet;
+            top: var(--vr-header-snippet-top);
+            right: anchor(right);
+            width: anchor-size(width);
+            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+
+            /* removes the title bar */
+            & > .title_c38106 {
+                display: none;
+            }
+        }
+
+        &:has(> .notice__6e2b9) {
+            & > div.bar_c38106 {
+                top: anchor(top);
+            }
+        }
+
+        /* inbox, help, window buttons variables */
+        & div.trailing_c38106 {
+            background: none;
+            border: none;
+            height: var(--custom-channel-header-height);
+        }
+
+        /* checks if a thread is opened on the side of your screen */
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+            z-index: 0;
+        }
+    }
+
+    /* checks if discord is on a server page */
+    :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
+        right: 0 !important;
+    }
+
+    /* adds padding to server list */
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+        margin-top: var(--vr-header-snippet-server-padding);
+    }
+
+    /* allows these areas to be clickable */
+    section.header__0b563 div.toolbar__9293f,
+    section.header_c791b2 div.toolbar__9293f,
+    section.header_c791b2 div.children__9293f,
+    div.shop__6db1d div.shopHomeLink__80679,
+    :not(.videoControls_bfe55a) div.topic__6ec1a {
+        -webkit-app-region: no-drag;
+    }
+
+    /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
+    .shop__6db1d section.showToolbar__9293f {
+        padding-right: var(--vr-header-snippet-space);
+
+        .balanceWidgetMenu__80679 {
+            margin-right: 0;
+        }
+    }
+
+    .div.videoControls_bfe55a .topControls_bfe55a {
+        z-index: -1;
+    }
+
+    .profileThemedContainer__656be .topRow__34940 {
+        align-items: end;
+        padding-bottom: 0;
+
+        & .closeAction__34940 {
+            -webkit-app-region: no-drag;
+        }
+
+        & .memberNameContainer__34940 {
+            padding-bottom: 12px;
+        }
+    }
+
+    /* search/wishlist/orbs on shop page */
+    .alignedRightContent__80679 {
+      position: fixed;
+      right: calc(var(--vr-header-snippet-space) - 33px);
+      -webkit-app-region: no-drag;
+    }
+
+    /* orbs balance on quests page */
+    .headerBarContent__1a9ce .container__44ee9 {
+      position: fixed;
+      right: calc(var(--vr-header-snippet-space) + 3px);
+      -webkit-app-region: no-drag;
+    }
+    
+    /* allows main thread + all/claimed quest buttons to be clickable */
+    .titleWrapper__9293f {
+      -webkit-app-region: no-drag;
+    }
+
+    /* fixes extra gap of group dm button on friends page */
+    .toolbar__9293f .inviteToolbar__133bf {
+        padding-right: 0px;
+    }
+
+    /* fixes weird padding issue when searching for an app */
+    .sideFilterContainer__1eae0 {
+        position: fixed;
+        top: 57px;
+    }
+
+    /* allows back button on discover pages to be clickable */
+    & .iconButton__8a7fc {
+        -webkit-app-region: no-drag;
+    }
+}
+/* User & Activity Panels Redesign - By yiruzu */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0 */
+:root {
+  --bg-color: var(--background-gradient-high, var(--background-base-lowest));
+
+  --panel-gap: 8px;
+  --panel-radius: 10px;
+  --panel-color: var(--background-gradient-highest, var(--background-base-low));
+
+  --spotify-image-blur: 4px;
+  --spotify-image-opacity: 0.45;
+  --spotify-image-hover-opacity: 0.7;
+
+  --order-quests: 0;
+  --order-listening: 1;
+  --order-stream: 2;
+  --order-spotify-player: 3;
+  --order-voice: 4;
+  --order-profile: 5;
+}
+
+.panels__5e434 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--panel-gap);
+  background: var(--bg-color);
+  border: none;
+}
+
+.mask__0d616 {
+  order: var(--order-quests);
+  margin-inline: 0;
+  padding-inline: 0;
+  border-radius: var(--panel-radius);
+}
+.wrapper__0d616,
+.wrapperVisible__0d616 {
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.container_e131a9,
+.container__37e49 {
+  background-color: var(--panel-color);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27 {
+  order: var(--order-listening);
+}
+
+.panel__5dec7 {
+  order: var(--order-stream);
+  padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
+}
+
+.wrapper_e131a9 {
+  order: var(--order-voice);
+
+  &:not(:has(.container_e131a9)) {
+    display: none;
+  }
+
+  .container_e131a9 {
+    min-height: 90px;
+  }
+}
+
+.container__37e49 {
+  order: var(--order-profile);
+  min-height: 59px;
+
+  &:has(.plated_37e49) {
+    border: none;
+  }
+}
+
+#vc-spotify-player {
+  order: var(--order-spotify-player);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent 0%, var(--panel-color) 100%) !important;
+  border: 1px solid transparent;
+  border-radius: var(--panel-radius);
+  margin: 0 -1px;
+
+  .barFill_a562c8 {
+    background-color: var(--vc-spotify-green) !important;
+  }
+
+  .vc-spotify-repeat-context,
+  .vc-spotify-repeat-track,
+  .vc-spotify-shuffle-on {
+    span {
+      color: var(--vc-spotify-green);
+    }
+    svg {
+      fill: var(--vc-spotify-green);
+    }
+  }
+
+  .vc-spotify-progress-time {
+    margin-top: 10px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+  &::before {
+    background: var(--vc-spotify-track-image) center/cover no-repeat;
+    opacity: var(--spotify-image-opacity);
+  }
+  &::after {
+    backdrop-filter: blur(var(--spotify-image-blur));
+  }
+
+  &:hover::before {
+    opacity: var(--spotify-image-hover-opacity);
+  }
+  &:hover::after {
+    backdrop-filter: blur(0);
+  }
+
+  > * {
+    filter: drop-shadow(0 0 10px var(--panel-color));
+  }
+}
+
+/* Mention/Replying Gradient Highlight Colors - By Burning Stone */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0 */
+/*FANCY MENTION/REPLY GRADIENT COLORS*/
+
+/*By: Burning Stone*/
+
+.mentioned__5126c {
+
+    position: relative;
+
+    border: none !important;
+
+    background-color: transparent;
+
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+
+    border-radius: 4px;
+
+}
+
+
+
+.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
+
+    background-color: transparent;
+
+    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
+
+}
+
+
+
+.replying__5126c {
+
+    position: relative;
+
+    border: none !important;
+
+    border-radius: 4px;
+
+    background-color: transparent;
+
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+
+}
+
+
+
+.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
+
+    background-color: transparent;
+
+    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
+
+}
+
+
+
+.flash__03436 {
+
+    background-image: transparent
+
+}
+
+
+
+.flash__03436[data-flash=true] {
+
+    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+
+}
+
+
+
+.full-motion .flash__03436 {
+
+    transition: background-color .2s ease
+
+}
+
+
 /* More compact buttons - By krammeth */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0 */
 /**
 * @name CompactButtons
 * @version 1.0
@@ -972,7 +972,7 @@ visibility: visible !important;
 }
 
 /* Don't Cover Server List With Panel - By Obsidian (obsidianninja11) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952, Licensed under CC0 */
 .visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
@@ -1017,21 +1017,21 @@ nav.guilds__5e434 {
 }
 
 /* brings back the round server icons - By ukriu */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609, Licensed under CC0 */
 [class^="folderPreview_"] > [class^="icon_"],
 [data-list-item-id*="guildsnav_"] > [class^="icon_"] {
     border-radius: 50% !important;
 }
 
 /* Fuck Activity Status - By LuLu (lusaffi) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196, Licensed under CC0 */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
 } 
 
 /* Pin page switcher to bottom of search results - By Suffocate */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207, Licensed under CC0 */
 #search-results+.container__86c0f {
   position: sticky;
   bottom: 0;
@@ -1040,7 +1040,7 @@ nav.guilds__5e434 {
 }
 
 /* Collapse Icon Position Fix - By Bean (sakgoyal) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612, Licensed under CC0 */
 .containerDefault__29444 {
   > div {
     padding-left: 0.5em;
@@ -1054,7 +1054,7 @@ nav.guilds__5e434 {
 }
 
 /* Bring back word count - By Obsidian (obsidianninja11) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952, Licensed under CC0 */
 .characterCount__795fb>.hiddenVisually_b18fe2 {
   height: auto;
   width: auto;
@@ -1073,7 +1073,7 @@ nav.guilds__5e434 {
 }
 
 /* Move profile buttons back to the top right - By Obsidian (obsidianninja11) */
-/* https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050, Licensed under CC0 */
 .user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
