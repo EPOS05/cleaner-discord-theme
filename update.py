@@ -31,7 +31,7 @@ external_files = [
     {
         "url": "https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css",
         "local": "external/MentionReplyingFancyGradient.css",
-        "credits_name": "Mention/Replying Gradient Highlight Colors - By Burning Stone",
+        "credits_name": "Mention/Replying Gradient Highlight Colors - By burningstone",
         "credits_source": "This CSS is directly taken from https://github.com/BurningStoneDiscord/DiscordHighlightGradient / https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0"
     },
     {

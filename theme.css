@@ -1,3 +1,190 @@
+/* --------------------------------------------------------------------------- */
+/* Cleaner Discord Theme */
+/* A Discord theme to make the desktop UI look way cleaner */
+/* Compiled by epos05 - made possible by many developers credited inline */
+/* --------------------------------------------------------------------------- */
+
+/* Fix chat title and backbuttons overlapping (Compact Title Bar fix) - By epos05 */
+:has(.backForwardButtons__63abb) .children__9293f {
+  margin-left: 50px;
+}
+
+/* remove gap on top of server list - By epos05 */
+.scroller_ef3116 {
+    margin-top: 0 !important;
+}
+
+/* Don't Cover Server List With Panel - By obsidianninja11 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952, Licensed under CC0 */
+.visual-refresh section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: border-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+
+  /* GameActivityToggle Fix (delete if you don't use) */
+  /* .container__37e49 {
+    padding: var(--space-xxs);
+    gap: var(--space-4);
+    >.buttons__37e49 {
+      gap: 0;
+    }
+    >.avatarWrapper__37e49 {
+      min-width: 32px !important;
+      >.avatar__37e49 {
+        scale: 0.9;
+      }
+    }
+  } */
+}
+nav.guilds__5e434 {
+  margin-bottom: 0 !important;
+}
+.sidebar__5e434:after {
+  display: none;
+}
+/* BetterFolders fix (delete if you don't use) */
+/* .vc-betterFolders-sidebar~section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
+} */
+
+.micButtonParent__37e49>.buttonChevron__37e49 {
+  display: none;
+}
+.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+  border-radius: var(--radius-sm);
+}
+
+/* brings back the round server icons - By ukriu */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609, Licensed under CC0 */
+[class^="folderPreview_"] > [class^="icon_"],
+[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
+    border-radius: 50% !important;
+}
+
+/* Fuck Activity Status - By lusaffi */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196, Licensed under CC0 */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+} 
+
+/* Pin page switcher to bottom of search results - By Suffocate */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207, Licensed under CC0 */
+#search-results+.container__86c0f {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+  background: var(--bg-overlay-1,var(--background-base-lowest));
+}
+
+/* Collapse Icon Position Fix - By sakgoyal */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612, Licensed under CC0 */
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+
+/* Bring back word count - By obsidianninja11 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952, Licensed under CC0 */
+.characterCount__795fb>.hiddenVisually_b18fe2 {
+  height: auto;
+  width: auto;
+  clip: unset;
+  clip-path: unset;
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-8);
+  user-select: text;
+}
+
+.characterCount__795fb>.upsell__795fb,
+.characterCount__795fb>.flairContainer__795fb>div {
+  display: none;
+}
+
+/* Move profile buttons back to the top right - By obsidianninja11 */
+/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050, Licensed under CC0 */
+.user-profile-modal-v2 .profile__9c3be {
+  anchor-name: --profile-anchor;
+  --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
+  --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
+    /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
+  --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
+  
+  .profileButtons__9c3be {
+    position: fixed;
+    top: calc(anchor(--profile-anchor start) + 12px);
+    right: calc(anchor(--profile-anchor end) + 12px);
+
+    button {
+      background: var(--redesign-button-overlay-alpha-background) !important;
+      border: 1px solid var(--opacity-white-8) !important;
+      border-radius: 50%;
+      &:hover, &:active {
+        background: var(--redesign-button-overlay-alpha-pressed-background) !important;
+      }
+    }
+    >button {
+      min-width: 32px !important;
+      color: var(--button-secondary-text) !important;
+
+      >.buttonChildrenWrapper_a22cb0 {
+        overflow: visible;
+        padding: 0 !important;
+        >.buttonChildren_a22cb0 {
+          overflow: visible;
+          justify-content: center;
+        }
+      }
+      .lineClamp1__4bd52 {
+        align-items: center;
+        position: absolute;
+        top: -52px;
+        
+        background-color: var(--tooltip-bg);
+        border-radius: var(--radius-sm);
+        box-shadow: inset 0 0 0 1px var(--tooltip-border), var(--shadow-high);
+        color: var(--text-default);
+        padding: var(--space-8) var(--space-12);
+        pointer-events: none;
+        
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+
+        will-change: opacity, transform;
+        opacity: 0;
+        transform: scale(0.95);
+        transform-origin: 50% 100%;
+        transition: opacity 0.1s ease, transform 0.1s ease;
+        &::after {
+          content: var(--arrow-svg);
+          position: absolute;
+          bottom: -13px;
+        }
+      }
+      &:hover .lineClamp1__4bd52 {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------- */
 /* EXTERNAL_CSS_START */
 /* External CSS is included directly (not via @import) for backup purposes. Use update.py to manually refresh or update. */
 
@@ -1130,7 +1317,7 @@ visibility: visible !important;
   }
 }
 
-/* Mention/Replying Gradient Highlight Colors - By Burning Stone */
+/* Mention/Replying Gradient Highlight Colors - By burningstone */
 /* This CSS is directly taken from https://github.com/BurningStoneDiscord/DiscordHighlightGradient / https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0 */
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 
@@ -1272,183 +1459,4 @@ visibility: visible !important;
   }
 }
 /* EXTERNAL_CSS_END */
-
-/* Fix chat title and backbuttons overlapping (Compact Title Bar fix) - By epos05 */
-:has(.backForwardButtons__63abb) .children__9293f {
-  margin-left: 50px;
-}
-
-/* remove gap on top of server list - By epos05 */
-.scroller_ef3116 {
-    margin-top: 0 !important;
-}
-
-/* Don't Cover Server List With Panel - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952, Licensed under CC0 */
-.visual-refresh section.panels__5e434 {
-  left: calc(var(--custom-guild-list-width) + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
-  box-sizing: border-box;
-
-  .actionButtons_e131a9 button {
-    padding: 0;
-  }
-
-  /* GameActivityToggle Fix (delete if you don't use) */
-  /* .container__37e49 {
-    padding: var(--space-xxs);
-    gap: var(--space-4);
-    >.buttons__37e49 {
-      gap: 0;
-    }
-    >.avatarWrapper__37e49 {
-      min-width: 32px !important;
-      >.avatar__37e49 {
-        scale: 0.9;
-      }
-    }
-  } */
-}
-nav.guilds__5e434 {
-  margin-bottom: 0 !important;
-}
-.sidebar__5e434:after {
-  display: none;
-}
-/* BetterFolders fix (delete if you don't use) */
-/* .vc-betterFolders-sidebar~section.panels__5e434 {
-  left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
-  width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
-} */
-
-.micButtonParent__37e49>.buttonChevron__37e49 {
-  display: none;
-}
-.micButtonParent__37e49>.micButtonWithMenu__37e49 {
-  border-radius: var(--radius-sm);
-}
-
-/* brings back the round server icons - By ukriu */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609, Licensed under CC0 */
-[class^="folderPreview_"] > [class^="icon_"],
-[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
-    border-radius: 50% !important;
-}
-
-/* Fuck Activity Status - By lusaffi */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196, Licensed under CC0 */
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
-  display: none;
-} 
-
-/* Pin page switcher to bottom of search results - By Suffocate */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1334846468334555207, Licensed under CC0 */
-#search-results+.container__86c0f {
-  position: sticky;
-  bottom: 0;
-  z-index: 999;
-  background: var(--bg-overlay-1,var(--background-base-lowest));
-}
-
-/* Collapse Icon Position Fix - By sakgoyal */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612, Licensed under CC0 */
-.containerDefault__29444 {
-  > div {
-    padding-left: 0.5em;
-
-    > div {
-      display: flex !important;
-      place-content: start !important;
-      flex-direction: row-reverse !important;
-    }
-  }
-}
-
-/* Bring back word count - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428262507688099952, Licensed under CC0 */
-.characterCount__795fb>.hiddenVisually_b18fe2 {
-  height: auto;
-  width: auto;
-  clip: unset;
-  clip-path: unset;
-  background-color: var(--background-surface-highest);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: var(--space-4) var(--space-8);
-  user-select: text;
-}
-
-.characterCount__795fb>.upsell__795fb,
-.characterCount__795fb>.flairContainer__795fb>div {
-  display: none;
-}
-
-/* Move profile buttons back to the top right - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050, Licensed under CC0 */
-.user-profile-modal-v2 .profile__9c3be {
-  anchor-name: --profile-anchor;
-  --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
-  --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
-    /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
-  --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
-  
-  .profileButtons__9c3be {
-    position: fixed;
-    top: calc(anchor(--profile-anchor start) + 12px);
-    right: calc(anchor(--profile-anchor end) + 12px);
-
-    button {
-      background: var(--redesign-button-overlay-alpha-background) !important;
-      border: 1px solid var(--opacity-white-8) !important;
-      border-radius: 50%;
-      &:hover, &:active {
-        background: var(--redesign-button-overlay-alpha-pressed-background) !important;
-      }
-    }
-    >button {
-      min-width: 32px !important;
-      color: var(--button-secondary-text) !important;
-
-      >.buttonChildrenWrapper_a22cb0 {
-        overflow: visible;
-        padding: 0 !important;
-        >.buttonChildren_a22cb0 {
-          overflow: visible;
-          justify-content: center;
-        }
-      }
-      .lineClamp1__4bd52 {
-        align-items: center;
-        position: absolute;
-        top: -52px;
-        
-        background-color: var(--tooltip-bg);
-        border-radius: var(--radius-sm);
-        box-shadow: inset 0 0 0 1px var(--tooltip-border), var(--shadow-high);
-        color: var(--text-default);
-        padding: var(--space-8) var(--space-12);
-        pointer-events: none;
-        
-        display: flex;
-        justify-content: center;
-        overflow: visible;
-
-        will-change: opacity, transform;
-        opacity: 0;
-        transform: scale(0.95);
-        transform-origin: 50% 100%;
-        transition: opacity 0.1s ease, transform 0.1s ease;
-        &::after {
-          content: var(--arrow-svg);
-          position: absolute;
-          bottom: -13px;
-        }
-      }
-      &:hover .lineClamp1__4bd52 {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-  }
-}
+/* --------------------------------------------------------------------------- */
