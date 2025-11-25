@@ -961,10 +961,14 @@ visibility: visible !important;
 }
 /* EXTERNAL_CSS_END */
 
-/* Compact / Hide Visual Refresh Title Bar - Fixes by APO (epos05) */
-/* Fix chat title and backbuttons overlapping */
+/* Fix chat title and backbuttons overlapping (Compact Title Bar fix) - By epos05 */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
+}
+
+/* remove gap on top of server list - By epos05 */
+.scroller_ef3116 {
+    margin-top: 0 !important;
 }
 
 /* Don't Cover Server List With Panel - By Obsidian (obsidianninja11) */
