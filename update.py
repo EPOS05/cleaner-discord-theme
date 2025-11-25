@@ -5,6 +5,12 @@ from urllib.parse import urljoin
 
 external_files = [
     {
+        "url": "https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css",
+        "local": "external/SettingsModal.css",
+        "credits_name": "SettingsModal - By DevilBro",
+        "credits_source": "This CSS is directly taken from https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal/, Copyright (C) 2016-2025 Mirco Wittrien, licensed under GPL-2.0"
+    },
+    {
         "url": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
         "local": "external/BetterCompactCommandMenuWithSmoothTransition.css",
         "credits_name": "Better Compact Command Menu - By AcheronX. (acheronx0577)",
