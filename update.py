@@ -45,6 +45,9 @@ external_files = [
 os.makedirs("external", exist_ok=True)
 processed_urls = set()
 
+def strip_comments(css):
+    return re.sub(r"/\*.*?\*/", "", css, flags=re.DOTALL)
+
 def fetch_css_recursive(url):
     if url in processed_urls:
         return ""
@@ -55,14 +58,17 @@ def fetch_css_recursive(url):
         r.raise_for_status()
         css = r.text
 
-        imports = re.findall(r'@import\s+(?:url\()?["\']?(.*?)["\']?\)?;', css)
+        css_no_comments = strip_comments(css)
+
+        imports = re.findall(r'@import\s+(?:url\()?["\']?(.*?)["\']?\)?;', css_no_comments)
         imported_css = ""
         for imp in imports:
             full_url = urljoin(url, imp)
             imported_css += fetch_css_recursive(full_url)
 
-        css = re.sub(r'@import\s+(?:url\()?["\']?.*?["\']?\)?;', '', css)
-        return imported_css + css
+        css_clean = re.sub(r'@import\s+(?:url\()?["\']?.*?["\']?\)?;', '', css)
+        return imported_css + css_clean
+
     except Exception as e:
         print(f"Warning: Could not download {url}: {e}")
         return None
