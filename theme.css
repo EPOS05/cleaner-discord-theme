@@ -1,21 +1,35 @@
 /* --------------------------------------------------------------------------- */
 /* Cleaner Discord Theme */
 /* A Discord theme to make the desktop UI look way cleaner */
-/* Compiled by epos05 - made possible by many developers credited inline */
+/* Compiled by EPOS05 - made possible by many developers credited inline */
 /* --------------------------------------------------------------------------- */
 
-/* Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) - By epos05 */
-:has(.backForwardButtons__63abb) .children__9293f {
-  margin-left: 50px;
-}
-
-/* remove gap on top of server list - By epos05 */
+/* --------------------------------------------------------------------------- */
+/* Snippet: Remove gap on top of server list */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 .scroller_ef3116 {
     margin-top: 0 !important;
 }
 
-/* Don't Cover Server List With Panel - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952, Licensed under CC0 */
+/* --------------------------------------------------------------------------- */
+/* Snippet: Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+:has(.backForwardButtons__63abb) .children__9293f {
+  margin-left: 50px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Snippet: Don't Cover Server List With Panel */
+/* By: obsidianninja11 */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 .visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
@@ -59,36 +73,12 @@ nav.guilds__5e434 {
   border-radius: var(--radius-sm);
 }
 
-/* brings back the round server icons - By ukriu */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609, Licensed under CC0 */
-[class^="folderPreview_"] > [class^="icon_"],
-[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
-    border-radius: 50% !important;
-}
-
-/* Fuck Activity Status - By lusaffi */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196, Licensed under CC0 */
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
-  display: none;
-}
-
-/* Collapse Icon Position Fix - By sakgoyal */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612, Licensed under CC0 */
-.containerDefault__29444 {
-  > div {
-    padding-left: 0.5em;
-
-    > div {
-      display: flex !important;
-      place-content: start !important;
-      flex-direction: row-reverse !important;
-    }
-  }
-}
-
-/* Move profile buttons back to the top right - By obsidianninja11 */
-/* This CSS is directly taken from https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050, Licensed under CC0 */
+/* --------------------------------------------------------------------------- */
+/* Snippet: Move profile buttons back to the top right */
+/* By: obsidianninja11 */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 .user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
@@ -157,444 +147,274 @@ nav.guilds__5e434 {
 }
 
 /* --------------------------------------------------------------------------- */
-/* EXTERNAL_CSS_START */
-/* External CSS is included directly (not via @import) for backup purposes. Use update.py to manually refresh or update. */
-
-/* Better Compact Command Menu - By acheronx0577 */
-/* This CSS is directly taken from https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition / https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718, Copyright (c) 2025 AcheronX., Licensed under MIT */
-/**
-
- * @name Better Compact Command Menu With Smooth Transition
-
- * @author AcheronX.
-
- * @description More Compact and clean look with smooth transition
-
- * @source https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/edit/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css
-
- * @version 0.0.1
-
- * @website https://github.com/acheronx0577
-
- */
-
-
-
-/* 🎨 Make category header background transparent */
-
-.categoryHeader_d1405b {
-
-    background: transparent !important;
-
+/* Snippet: brings back the round server icons */
+/* By: ukriu */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+[class^="folderPreview_"] > [class^="icon_"],
+[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
+    border-radius: 50% !important;
 }
 
-
-
-/* 🎨 Transparent hover effect for category header */
-
-.categoryHeader_d1405b:hover {
-
-    background: transparent !important;
-
+/* --------------------------------------------------------------------------- */
+/* Snippet: Fuck Activity Status */
+/* By: lusaffi */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
 }
 
+/* --------------------------------------------------------------------------- */
+/* Snippet: Collapse Icon Position Fix */
+/* By: sakgoyal */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
 
-
-/* ✨ Main container sizing adjustments */
-
-.autocomplete__13533.outerWrapper_d1405b {
-
-  max-height: 310px !important;
-
-  width: 500px !important;
-
-  border-radius: 13px;
-
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
 }
 
-
-
-/* 🖱️ Scrollable area positioning */
-
-.scroller_affa7e:not(.videoGrid_a21736) {
-
-top: 4px;
-
-right: 3px;
-
-display: block !important;
-
-visibility: visible !important;
-
-}
-
-
-
-/* 🌀 Animated item wrapper with cool effects */
-
-.itemWrapper_d1405b {
-
-  position: relative;
-
-  border-radius: 1px;
-
-  overflow: hidden;
-
-  -webkit-clip-path: inset(0 round 10px);
-
-  clip-path: inset(0 round 10px);
-
-  transform: translateZ(0);
-
-  transition: 
-
-    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-
-}
-
-
-
-/* ✨ Pseudo-element for gradient effect */
-
-.itemWrapper_d1405b::before {
-
-  content: '';
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  right: 0;
-
-  bottom: 0;
-
-  -webkit-clip-path: inset(0 round 1px);
-
-  clip-path: inset(0 round 1px);
-
-  transition: 
-
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-
-  z-index: -1;
-
-  background: transparent;
-
-  pointer-events: none;
-
-}
-
-
-
-/* 🌈 Hover effects for item wrapper */
-
-.itemWrapper_d1405b:hover {
-
-  border-radius: 10px;
-
-  transform: scale(0.98) translateZ(0);
-
-  box-shadow: 
-
-    inset 0 0 12px rgba(255, 255, 255, 0.25),
-
-    0 2px 6px rgba(0, 0, 0, 0.2);
-
-}
-
-
-
-/* 🌟 Gradient effect on hover */
-
-.itemWrapper_d1405b:hover::before {
-
-  -webkit-clip-path: inset(1px round 10px);
-
-  clip-path: inset(1px round 10px);
-
-  background: linear-gradient(
-
-    to right,
-
-    rgba(87, 45, 133, 0.8) 0%,
-
-    rgba(45, 52, 139, 1) 50%,
-
-    rgba(87, 45, 133, 0.8) 100%
-
-  );
-
-}
-
-
-
-/* ⚪ White text on hover */
-
-.itemWrapper_d1405b:hover .title__920ab,
-
-.itemWrapper_d1405b:hover .description__920ab,
-
-.itemWrapper_d1405b:hover .source__920ab {
-
-  color: white !important;
-
-}
-
-
-
-/* 🚫 Fix overflow issues */
-
-.autocompleteRowVertical__13533,
-
-.base__13533 {
-
-  overflow: visible !important;
-
-
-
-}
-
-
-
-/* 🌈 Dark semi-transparent background for stacked bars */
-
-.stackedBars__74017 {
-
-    background-color: rgba(9, 13, 15, 0.345) !important;
-
-}
-
-
-
-/* 🎨 Same background for option pills */
-
-.optionPillKey__1464f {
-
-    background-color: rgba(9, 13, 15, 0.345) !important;
-
-}
-
-
-
-/* 🏷️ Semi-transparent header background with compact styling */
-
-.contentTitle__13533 {
-
-    background: rgba(11, 6, 29, 0.334) !important;
-
-    padding: 4px 8px !important;
-
-    border-radius: 7px !important;
-
-    display: inline-block !important; /* Prevents full-width background */
-
-    margin-left: 8px !important; /* ↔️ Adds left spacing */
-
-}
-
-
-
-/* ✨ Force white text for default color classes (improves readability) */
-
-.defaultColor__4bd52, .defaultColor__5345c {
-
-    color: rgba(255, 255, 255, 0.885) !important;
-
-}
-
-
-
-/* 🎪 Autocomplete Container */
-
-.autocomplete__13533.autocomplete__6b0e0 {
-
-  max-height: 310px !important;
-
-  width: 500px !important;
-
-  border-radius: 13px;
-
-}
-
-
-
-/* 🖱️ Clickable Row (Base) */
-
-.clickable__13533.autocompleteRowVertical__13533 {
-
-  position: relative;
-
-  border-radius: 6px;
-
-  overflow: hidden;
-
-  -webkit-clip-path: inset(0 7px 0 7px round 9px);
-
-  clip-path: inset(0 7px 0 7px round 9px);
-
-  transform: translateZ(0);
-
-  transition: 
-
-    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-
-}
-
-
-
-/* 📦 Inner Wrapper */
-
-.wrapper__920ab {
-
-  padding: 1px 8px !important;
-
-}
-
-
-
-/* ✨ Gradient Overlay (Pseudo-element) */
-
-.clickable__13533.autocompleteRowVertical__13533::before {
-
-  content: '';
-
-  position: absolute;
-
-  inset: 0;
-
-  clip-path: inset(0 round 1px);
-
-  transition: 
-
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-
-  z-index: -1;
-
-  background: transparent;
-
-  pointer-events: none;
-
-}
-
-
-
-/* 🌈 Hover Effects */
-
-.clickable__13533.autocompleteRowVertical__13533:hover {
-
-  border-radius: 10px;
-
-  transform: scale(0.98) translateZ(0);
-
-  box-shadow: 
-
-    inset 0 0 12px rgba(255, 255, 255, 0.25),
-
-    0 2px 6px rgba(0, 0, 0, 0.2);
-
-}
-
-
-
-/* 🌟 Gradient on Hover */
-
-.clickable__13533.autocompleteRowVertical__13533:hover::before {
-
-  clip-path: inset(1px round 10px);
-
-  background: linear-gradient(
-
-    to right,
-
-    rgba(87, 45, 133, 0.8) 0%,
-
-    rgba(45, 52, 139, 1) 50%,
-
-    rgba(87, 45, 133, 0.8) 100%
-
-  );
-
-}
-
-
-
-/* ⚪ White Text on Hover/Selection */
-
-.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
-
-.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
-
-.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
-
-  color: white !important;
-
-}
-
-
-
-/* 🎯 Selected State */
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
-
-  border-radius: 10px;
-
-  transform: scale(0.98) translateZ(0);
-
-}
-
-
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
-
-  clip-path: inset(1px round 10px);
-
-  background: linear-gradient(
-
-    to right,
-
-    rgba(87, 45, 133, 0.8) 0%,
-
-    rgba(45, 52, 139, 1) 50%,
-
-    rgba(87, 45, 133, 0.8) 100%
-
-  );
-
-}
-
-
-
-
-
-
-/* Compact / Hide Visual Refresh Title Bar - Fixes by g0d0fninjas - Original by chloecinders */
-/* This CSS is directly taken from https://github.com/G0d0fninjas/visual-refresh-compact-title-bar / https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403, Licensed under CC0 */
+/* --------------------------------------------------------------------------- */
+/* Snippet: Better Compact Command Menu */
+/* By: acheronx0577 */
+/* Source: GitHub: https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 */
+/* License: MIT */
+/* --------------------------------------------------------------------------- */
+/**
+ * @name Better Compact Command Menu With Smooth Transition
+ * @author AcheronX.
+ * @description More Compact and clean look with smooth transition
+ * @source https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/edit/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css
+ * @version 0.0.1
+ * @website https://github.com/acheronx0577
+ */
+
+/* 🎨 Make category header background transparent */
+.categoryHeader_d1405b {
+    background: transparent !important;
+}
+
+/* 🎨 Transparent hover effect for category header */
+.categoryHeader_d1405b:hover {
+    background: transparent !important;
+}
+
+/* ✨ Main container sizing adjustments */
+.autocomplete__13533.outerWrapper_d1405b {
+  max-height: 310px !important;
+  width: 500px !important;
+  border-radius: 13px;
+}
+
+/* 🖱️ Scrollable area positioning */
+.scroller_affa7e:not(.videoGrid_a21736) {
+top: 4px;
+right: 3px;
+display: block !important;
+visibility: visible !important;
+}
+
+/* 🌀 Animated item wrapper with cool effects */
+.itemWrapper_d1405b {
+  position: relative;
+  border-radius: 1px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 round 10px);
+  clip-path: inset(0 round 10px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* ✨ Pseudo-element for gradient effect */
+.itemWrapper_d1405b::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: inset(0 round 1px);
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover effects for item wrapper */
+.itemWrapper_d1405b:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient effect on hover */
+.itemWrapper_d1405b:hover::before {
+  -webkit-clip-path: inset(1px round 10px);
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White text on hover */
+.itemWrapper_d1405b:hover .title__920ab,
+.itemWrapper_d1405b:hover .description__920ab,
+.itemWrapper_d1405b:hover .source__920ab {
+  color: white !important;
+}
+
+/* 🚫 Fix overflow issues */
+.autocompleteRowVertical__13533,
+.base__13533 {
+  overflow: visible !important;
+
+}
+
+/* 🌈 Dark semi-transparent background for stacked bars */
+.stackedBars__74017 {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🎨 Same background for option pills */
+.optionPillKey__1464f {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🏷️ Semi-transparent header background with compact styling */
+.contentTitle__13533 {
+    background: rgba(11, 6, 29, 0.334) !important;
+    padding: 4px 8px !important;
+    border-radius: 7px !important;
+    display: inline-block !important; /* Prevents full-width background */
+    margin-left: 8px !important; /* ↔️ Adds left spacing */
+}
+
+/* ✨ Force white text for default color classes (improves readability) */
+.defaultColor__4bd52, .defaultColor__5345c {
+    color: rgba(255, 255, 255, 0.885) !important;
+}
+
+/* 🎪 Autocomplete Container */
+.autocomplete__13533.autocomplete__6b0e0 {
+  max-height: 310px !important;
+  width: 500px !important;
+  border-radius: 13px;
+}
+
+/* 🖱️ Clickable Row (Base) */
+.clickable__13533.autocompleteRowVertical__13533 {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 7px 0 7px round 9px);
+  clip-path: inset(0 7px 0 7px round 9px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* 📦 Inner Wrapper */
+.wrapper__920ab {
+  padding: 1px 8px !important;
+}
+
+/* ✨ Gradient Overlay (Pseudo-element) */
+.clickable__13533.autocompleteRowVertical__13533::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover Effects */
+.clickable__13533.autocompleteRowVertical__13533:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient on Hover */
+.clickable__13533.autocompleteRowVertical__13533:hover::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White Text on Hover/Selection */
+.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
+  color: white !important;
+}
+
+/* 🎯 Selected State */
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+}
+
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/* Snippet: Compact - Hide Visual Refresh Title Bar */
+/* By: g0d0fninjas - Originally by chloecinders */
+/* Source: GitHub: https://github.com/G0d0fninjas/visual-refresh-compact-title-bar | Discord: https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 .visual-refresh {
     /* gives each variable a default */
     --vr-header-snippet-top: 0px;
@@ -838,8 +658,13 @@ visibility: visible !important;
         -webkit-app-region: no-drag;
     }
 }
-/* User & Activity Panels Redesign - By yiruzu */
-/* This CSS is directly taken from https://github.com/yiruzu/vencord-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366, Licensed under CC0 */
+
+/* --------------------------------------------------------------------------- */
+/* Snippet: User & Activity Panels Redesign */
+/* By: yiruzu */
+/* Source: GitHub: https://github.com/yiruzu/vencord-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 :root {
   --bg-color: var(--background-gradient-high, var(--background-base-lowest));
 
@@ -973,89 +798,60 @@ visibility: visible !important;
   }
 }
 
-/* Mention/Replying Gradient Highlight Colors - By burningstone */
-/* This CSS is directly taken from https://github.com/BurningStoneDiscord/DiscordHighlightGradient / https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704, Licensed under CC0 */
-/*FANCY MENTION/REPLY GRADIENT COLORS*/
 
-/*By: Burning Stone*/
-
-.mentioned__5126c {
-
-    position: relative;
-
-    border: none !important;
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
-
-    border-radius: 4px;
-
-}
-
-
-
-.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
-
-}
-
-
-
-.replying__5126c {
-
-    position: relative;
-
-    border: none !important;
-
-    border-radius: 4px;
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
-
-}
-
-
-
-.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
-
-    background-color: transparent;
-
-    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
-
-}
+/* --------------------------------------------------------------------------- */
+/* Snippet: Mention-Replying Gradient Highlight Colors */
+/* By: burningstone */
+/* Source: GitHub: https://github.com/BurningStoneDiscord/DiscordHighlightGradient | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+/*FANCY MENTION/REPLY GRADIENT COLORS*/
+/*By: Burning Stone*/
+.mentioned__5126c {
+    position: relative;
+    border: none !important;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+    border-radius: 4px;
+}
+
+.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
+}
+
+.replying__5126c {
+    position: relative;
+    border: none !important;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+}
+
+.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
+}
+
+.flash__03436 {
+    background-image: transparent
+}
+
+.flash__03436[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+}
+
+.full-motion .flash__03436 {
+    transition: background-color .2s ease
+}
 
 
-
-.flash__03436 {
-
-    background-image: transparent
-
-}
-
-
-
-.flash__03436[data-flash=true] {
-
-    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
-
-}
-
-
-
-.full-motion .flash__03436 {
-
-    transition: background-color .2s ease
-
-}
-
-
-/* More compact buttons - By krammeth */
-/* This CSS is directly taken from https://github.com/Krammeth/css-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0 */
+/* --------------------------------------------------------------------------- */
+/* Snippet: More compact buttons */
+/* By: krammeth */
+/* Source: GitHub: https://github.com/Krammeth/css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
 /**
 * @name CompactButtons
 * @version 1.0
@@ -1114,9 +910,14 @@ visibility: visible !important;
     }
   }
 }
-/* Page Swapper Refresh - By dav154 */
-/* This CSS is directly taken from https://github.com/davart154/Themes / https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213, Licensed under CC0 */
-/**/
+
+/* --------------------------------------------------------------------------- */
+/* Snippet: Page Swapper Refresh */
+/* By: dav154 */
+/* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+/*@import url(https://davart154.github.io/Themes/Snippets/Chat%20Bar%20Upload%20Swap/ChatSwapSource.css);*/
 
 .scroller_a9e706 {
   display: contents;
@@ -1251,5 +1052,4 @@ visibility: visible !important;
   margin-bottom: 0;
   width: unset;
 }
-/* EXTERNAL_CSS_END */
-/* --------------------------------------------------------------------------- */
+

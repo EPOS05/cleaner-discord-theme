@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Remove gap on top of server list",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
+        "name": "Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
+        "name": "Don't Cover Server List With Panel",
+        "css": "",
+        "creator": "obsidianninja11",
+        "source_github": "",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952",
+        "license": "CC0"
+    },
+    {
+        "name": "Move profile buttons back to the top right",
+        "css": "",
+        "creator": "obsidianninja11",
+        "source_github": "",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050",
+        "license": "CC0"
+    },
+    {
+        "name": "brings back the round server icons",
+        "css": "",
+        "creator": "ukriu",
+        "source_github": "",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609",
+        "license": "CC0"
+    },
+    {
+        "name": "Fuck Activity Status",
+        "css": "",
+        "creator": "lusaffi",
+        "source_github": "",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196",
+        "license": "CC0"
+    },
+    {
+        "name": "Collapse Icon Position Fix",
+        "css": "",
+        "creator": "sakgoyal",
+        "source_github": "",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612",
+        "license": "CC0"
+    },
+    {
+        "name": "Better Compact Command Menu",
+        "css": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
+        "creator": "acheronx0577",
+        "source_github": "https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718",
+        "license": "MIT"
+    },
+    {
+        "name": "Compact - Hide Visual Refresh Title Bar",
+        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "creator": "g0d0fninjas - Originally by chloecinders",
+        "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
+        "license": "CC0"
+    },
+    {
+        "name": "User & Activity Panels Redesign",
+        "css": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
+        "creator": "yiruzu",
+        "source_github": "https://github.com/yiruzu/vencord-snippets",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366",
+        "license": "CC0"
+    },
+    {
+        "name": "Mention-Replying Gradient Highlight Colors",
+        "css": "https://raw.githubusercontent.com/BurningStoneDiscord/DiscordHighlightGradient/refs/heads/main/MentionReplyingFancyGradient.css",
+        "creator": "burningstone",
+        "source_github": "https://github.com/BurningStoneDiscord/DiscordHighlightGradient",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704",
+        "license": "CC0"
+    },
+    {
+        "name": "More compact buttons",
+        "css": "https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css",
+        "creator": "krammeth",
+        "source_github": "https://github.com/Krammeth/css-snippets",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688",
+        "license": "CC0"
+    },
+    {
+        "name": "Page Swapper Refresh",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "creator": "dav154",
+        "source_github": "https://github.com/davart154/Themes",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
+        "license": "CC0"
+    }
+]
