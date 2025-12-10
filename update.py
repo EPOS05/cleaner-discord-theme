@@ -33,6 +33,12 @@ external_files = [
         "local": "external/CompactButtons.css",
         "credits_name": "More compact buttons - By krammeth",
         "credits_source": "This CSS is directly taken from https://github.com/Krammeth/css-snippets / https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688, Licensed under CC0"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "local": "external/PageSwapRefresh.css",
+        "credits_name": "Page Swapper Refresh - By dav154",
+        "credits_source": "This CSS is directly taken from https://github.com/davart154/Themes / https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213, Licensed under CC0"
     }
 ]
 

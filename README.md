@@ -27,3 +27,4 @@ This project is licensed under MIT. Portions of the CSS are either licensed unde
 - [User & Activity Panels Redesign](https://github.com/yiruzu/vencord-snippets) - By yiruzu
 - [Mention/Replying Gradient Highlight Colors](https://github.com/BurningStoneDiscord/DiscordHighlightGradient) - By burningstone
 - [More compact buttons](https://github.com/Krammeth/css-snippets) - By krammeth
+- [Page Swapper Refresh](https://github.com/davart154/Themes) - By dav154
