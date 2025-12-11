@@ -8,9 +8,13 @@
     border-radius: 4px;
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.mentioned__5126c:hover,.visual-refresh .message__5126c.mentioned__5126c.selected__5126c {
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.2), var(--background-message-hover));
+.message__5126c.mentioned__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+    background: linear-gradient(
+    to right,
+    rgba(186, 109, 36, 0.2),
+    var(--message-background-hover)
+  );
 }
 
 .replying__5126c {
@@ -21,9 +25,13 @@
     background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
 }
 
-.message__5126c.replying__5126c.selected__5126c,.mouse-mode.full-motion .message__5126c.replying__5126c:hover,.mouse-mode.full-motion.visual-refresh .message__5126c.replying__5126c:hover,.visual-refresh .message__5126c.replying__5126c.selected__5126c {
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgba(58, 72, 179, 0.3), var(--background-message-hover));
+.message__5126c.replying__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+    background: linear-gradient(
+        to right,
+        rgba(58, 72, 179, 0.3),
+        var(--message-background-hover)
+    );
 }
 
 .flash__03436 {
@@ -37,3 +45,4 @@
 .full-motion .flash__03436 {
     transition: background-color .2s ease
 }
+
