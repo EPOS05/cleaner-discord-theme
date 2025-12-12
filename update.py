@@ -54,11 +54,11 @@ def fetch_css_recursive(url):
         print(f"Warning: Could not fetch {url}: {e}")
         return None
 
-theme_header = """/* --------------------------------------------------------------------------- */
-/* Cleaner Discord Theme */
-/* A Discord theme to make the desktop UI look way cleaner */
-/* Compiled by EPOS05 - made possible by many developers credited inline */
-/* --------------------------------------------------------------------------- */
+theme_header = """/* =========================================================================== */
+/*                            Cleaner Discord Theme                            */
+/*           A Discord theme to make the desktop UI look way cleaner           */ 
+/*    Compiled by EPOS05 - Made possible by many developers credited inline    */
+/* =========================================================================== */
 """
 
 combined_css = theme_header + "\n"
