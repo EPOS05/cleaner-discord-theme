@@ -24,11 +24,12 @@ Made possible by many developers credited below:
 - [brings back the round server icons](https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609) - By ukriu
 - [Fuck Activity Status](https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196) - By lusaffi
 - [Collapse Icon Position Fix](https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612) - By sakgoyal
-- [Compact - Hide Visual Refresh Title Bar](https://github.com/G0d0fninjas/visual-refresh-compact-title-bar) - By g0d0fninjas - Originally by chloecinders
+- [Compact - Hide Visual Refresh Title Bar](https://github.com/G0d0fninjas/visual-refresh-compact-title-bar) - By G0d0fninjas - Originally by chloecinders
 - [User & Activity Panels Redesign](https://github.com/yiruzu/vencord-snippets) - By yiruzu
-- [Mention-Replying Gradient Highlight Colors](https://github.com/BurningStoneDiscord/DiscordHighlightGradient) - By burningstone
-- [More compact buttons](https://github.com/Krammeth/css-snippets) - By krammeth
-- [Page Swapper Refresh](https://github.com/davart154/Themes) - By dav154
+- [Mention-Replying Gradient Highlight Colors](https://github.com/BurningStoneDiscord/DiscordHighlightGradient) - By BurningStone
+- [More compact buttons](https://github.com/Krammeth/css-snippets) - By Krammeth
+- [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
+- [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
 
 ### Licensed under MIT
 - [Better Compact Command Menu](https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition) - By acheronx0577

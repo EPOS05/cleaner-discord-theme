@@ -411,7 +411,7 @@ visibility: visible !important;
 
 /* --------------------------------------------------------------------------- */
 /* Snippet: Compact - Hide Visual Refresh Title Bar */
-/* By: g0d0fninjas - Originally by chloecinders */
+/* By: G0d0fninjas - Originally by chloecinders */
 /* Source: GitHub: https://github.com/G0d0fninjas/visual-refresh-compact-title-bar | Discord: https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
 /* License: CC0 */
 /* --------------------------------------------------------------------------- */
@@ -801,7 +801,7 @@ visibility: visible !important;
 
 /* --------------------------------------------------------------------------- */
 /* Snippet: Mention-Replying Gradient Highlight Colors */
-/* By: burningstone */
+/* By: BurningStone */
 /* Source: GitHub: https://github.com/BurningStoneDiscord/DiscordHighlightGradient | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
 /* License: CC0 */
 /* --------------------------------------------------------------------------- */
@@ -857,7 +857,7 @@ visibility: visible !important;
 
 /* --------------------------------------------------------------------------- */
 /* Snippet: More compact buttons */
-/* By: krammeth */
+/* By: Krammeth */
 /* Source: GitHub: https://github.com/Krammeth/css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
 /* License: CC0 */
 /* --------------------------------------------------------------------------- */
@@ -922,7 +922,7 @@ visibility: visible !important;
 
 /* --------------------------------------------------------------------------- */
 /* Snippet: Page Swapper Refresh */
-/* By: dav154 */
+/* By: davart154 */
 /* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
 /* License: CC0 */
 /* --------------------------------------------------------------------------- */
@@ -938,7 +938,7 @@ visibility: visible !important;
     width: 8px;
   }
   &::-webkit-scrollbar-track {
-    margin-bottom: 16px;
+    margin-bottom: 4px;
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
@@ -948,13 +948,19 @@ visibility: visible !important;
     min-height: 40px;
   }
 }
+.searchResultGroup_c68065:last-child {
+  margin-bottom: 0;
+}
 
 .container__86c0f {
   background: var(--background-gradient-highest,var(--background-base-low));
-  border: 1px solid var(--border-faint);
+  border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
   margin-inline: var(--space-xs);
   margin-bottom: var(--space-xs);
+  &:empty {
+    display: none;
+  }
 }
 .pageControlContainer_c15210 {
   display: contents;
@@ -1079,7 +1085,7 @@ visibility: visible !important;
 
 .container__3379f {
   background: var(--background-gradient-highest,var(--background-base-low));
-  border: 1px solid var(--border-faint);
+  border: 1px solid var(--border-muted);
   border-top: 0;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   box-sizing: border-box;
@@ -1091,10 +1097,44 @@ visibility: visible !important;
   padding-inline: var(--space-md);
 }
 
-.paginationLimitHeader_a9e706 {
+.paginationLimitHeader_a9e706, .helpMessageContainer_a9e706 {
   margin-inline: var(--space-xs);
   margin-top: var(--space-xs);
   margin-bottom: 0;
   width: unset;
 }
+
+/* --------------------------------------------------------------------------- */
+/* Snippet: Compact search field */
+/* By: Wroclaw */
+/* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
+/* License: CC0 */
+/* --------------------------------------------------------------------------- */
+.search__97492 > .searchBar__97492 {
+    width: 32px !important;
+    background: none;
+    border-color: transparent;
+    transition: background .25s ease,
+        width .25s ease,
+        border-color .25s ease;
+}
+
+.search__97492 > .searchBar__97492 .DraftEditor-root {
+    padding-right: 3px !important;
+}
+
+.search__97492.open__97492 > .searchBar__97492 {
+    width: 244px !important;
+    background: var(--background-gradient-low, var(--input-background-default));
+    border-color: var(--input-border-default);
+}
+
+.search__97492 > .searchBar__97492 .icon__97492 {
+    margin-right: 7px;
+}
+
+.search__49676 {
+    margin: 0 !important;
+}
+
 
