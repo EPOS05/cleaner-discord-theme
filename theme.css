@@ -1,35 +1,38 @@
-/* =========================================================================== */
-/*                            Cleaner Discord Theme                            */
-/*           A Discord theme to make the desktop UI look way cleaner           */ 
-/*    Compiled by EPOS05 - Made possible by many developers credited inline    */
-/* =========================================================================== */
+/**
+ * @name Cleaner Discord Theme
+ * @author EPOS05
+ * @version 1.0
+ * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
+ * @source https://github.com/EPOS05/cleaner-discord-theme
+ * @website https://github.com/EPOS05/cleaner-discord-theme
+ */
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Remove gap on top of server list */
 /* By: EPOS05 */
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .scroller_ef3116 {
     margin-top: 0 !important;
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) */
 /* By: EPOS05 */
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Don't Cover Server List With Panel */
 /* By: obsidianninja11 */
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
@@ -73,12 +76,12 @@ nav.guilds__5e434 {
   border-radius: var(--radius-sm);
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Move profile buttons back to the top right */
 /* By: obsidianninja11 */
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
@@ -101,7 +104,6 @@ nav.guilds__5e434 {
     }
     >button {
       min-width: 32px !important;
-      color: var(--button-secondary-text) !important;
 
       >.buttonChildrenWrapper_a22cb0 {
         overflow: visible;
@@ -146,34 +148,34 @@ nav.guilds__5e434 {
   }
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: brings back the round server icons */
 /* By: ukriu */
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 [class^="folderPreview_"] > [class^="icon_"],
 [data-list-item-id*="guildsnav_"] > [class^="icon_"] {
     border-radius: 50% !important;
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Fuck Activity Status */
 /* By: lusaffi */
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354411094764163196 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Collapse Icon Position Fix */
 /* By: sakgoyal */
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .containerDefault__29444 {
   > div {
     padding-left: 0.5em;
@@ -186,12 +188,12 @@ nav.guilds__5e434 {
   }
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Better Compact Command Menu */
 /* By: acheronx0577 */
 /* Source: GitHub: https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 */
 /* License: MIT */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /**
  * @name Better Compact Command Menu With Smooth Transition
  * @author AcheronX.
@@ -409,12 +411,12 @@ visibility: visible !important;
 
 
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Compact - Hide Visual Refresh Title Bar */
 /* By: G0d0fninjas - Originally by chloecinders */
 /* Source: GitHub: https://github.com/G0d0fninjas/visual-refresh-compact-title-bar | Discord: https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .visual-refresh {
     /* gives each variable a default */
     --vr-header-snippet-top: 0px;
@@ -659,12 +661,12 @@ visibility: visible !important;
     }
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */
 /* By: yiruzu */
 /* Source: GitHub: https://github.com/yiruzu/vencord-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 :root {
   --bg-color: var(--background-gradient-high, var(--background-base-lowest));
 
@@ -799,12 +801,12 @@ visibility: visible !important;
 }
 
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Mention-Replying Gradient Highlight Colors */
 /* By: BurningStone */
 /* Source: GitHub: https://github.com/BurningStoneDiscord/DiscordHighlightGradient | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1368192901535895704 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
 .mentioned__5126c {
@@ -855,12 +857,12 @@ visibility: visible !important;
 
 
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: More compact buttons */
 /* By: Krammeth */
 /* Source: GitHub: https://github.com/Krammeth/css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /**
 * @name CompactButtons
 * @version 1.0
@@ -920,12 +922,12 @@ visibility: visible !important;
   }
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Page Swapper Refresh */
 /* By: davart154 */
 /* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .scroller_a9e706 {
   display: contents;
 }
@@ -1104,12 +1106,12 @@ visibility: visible !important;
   width: unset;
 }
 
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 /* Snippet: Compact search field */
 /* By: Wroclaw */
 /* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
 /* License: CC0 */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 .search__97492 > .searchBar__97492 {
     width: 32px !important;
     background: none;
@@ -1135,6 +1137,17 @@ visibility: visible !important;
 
 .search__49676 {
     margin: 0 !important;
+}
+
+
+/* =========================================================================== */
+/* Snippet: Chat input remove gifting */
+/* By: Wroclaw */
+/* Source: GitHub: https://github.com/amozeo/discord-css-snippets */
+/* License: CC0 */
+/* =========================================================================== */
+.channelBottomBarArea_f75fb0 .buttons__74017 > .container_c0c49a {
+    display: none;
 }
 
 

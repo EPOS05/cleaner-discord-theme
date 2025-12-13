@@ -20,7 +20,6 @@
     }
     >button {
       min-width: 32px !important;
-      color: var(--button-secondary-text) !important;
 
       >.buttonChildrenWrapper_a22cb0 {
         overflow: visible;

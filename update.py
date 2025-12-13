@@ -54,11 +54,14 @@ def fetch_css_recursive(url):
         print(f"Warning: Could not fetch {url}: {e}")
         return None
 
-theme_header = """/* =========================================================================== */
-/*                            Cleaner Discord Theme                            */
-/*           A Discord theme to make the desktop UI look way cleaner           */ 
-/*    Compiled by EPOS05 - Made possible by many developers credited inline    */
-/* =========================================================================== */
+theme_header = """/**
+ * @name Cleaner Discord Theme
+ * @author EPOS05
+ * @version 1.0
+ * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
+ * @source https://github.com/EPOS05/cleaner-discord-theme
+ * @website https://github.com/EPOS05/cleaner-discord-theme
+ */
 """
 
 combined_css = theme_header + "\n"
@@ -99,12 +102,12 @@ for snippet in snippets:
         sources.append(f"Discord: {source_discord}")
     sources_str = " | ".join(sources) if sources else "No source available"
 
-    combined_css += f"""/* --------------------------------------------------------------------------- */
+    combined_css += f"""/* =========================================================================== */
 /* Snippet: {name} */
 /* By: {creator or 'Unknown'} */
 /* Source: {sources_str} */
 /* License: {license_type} */
-/* --------------------------------------------------------------------------- */
+/* =========================================================================== */
 {css_content}
 
 """

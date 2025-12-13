@@ -30,6 +30,7 @@ Made possible by many developers credited below:
 - [More compact buttons](https://github.com/Krammeth/css-snippets) - By Krammeth
 - [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
 - [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
+- [Chat input remove gifting](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
 
 ### Licensed under MIT
 - [Better Compact Command Menu](https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition) - By acheronx0577
