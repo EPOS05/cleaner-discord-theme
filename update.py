@@ -3,6 +3,7 @@ import json
 import requests
 import re
 from urllib.parse import urljoin
+from datetime import datetime
 
 SNIPPET_FOLDER = "snippets"
 THEME_CSS_FILE = "theme.css"
@@ -53,11 +54,13 @@ def fetch_css_recursive(url):
     except Exception as e:
         print(f"Warning: Could not fetch {url}: {e}")
         return None
+    
+version = datetime.now().strftime("%y.%m.%d+%H%M")
 
-theme_header = """/**
+theme_header = f"""/**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 1.0
+ * @version {version}
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
