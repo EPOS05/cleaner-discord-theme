@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.13+2308
+ * @version 25.12.16+1651
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -429,9 +429,11 @@ visibility: visible !important;
     --vencord-padding: 0px;
     --checkpoint-padding: 0px;
 
-    /* adds padding to all top containers */
+    /* adds padding to chat pages */
     div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+    /* adds padding to friend list page */
     main.container__133bf,
+    /* adds padding to thread sidebar */
     div.chatLayerWrapper__01ae2 {
         & section.container__9293f {
             padding-right: var(--vr-header-snippet-space);
@@ -448,7 +450,7 @@ visibility: visible !important;
         }
     }
 
-    /* no idea what this does */
+    /* livestream video controls */
     div.videoControls_bfe55a div.subtitleContainer__49508 {
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
 
@@ -457,7 +459,7 @@ visibility: visible !important;
         }
     }
 
-    div[class*='page__'] {
+    div.page__5e434 {
         &:not(:has(> div.chat_f75fb0)) {
             anchor-name: --vr-header-snippet;
         }
@@ -472,11 +474,18 @@ visibility: visible !important;
         display: var(--vr-header-snippet-winbuttons);
     }
 
-    div[class*='base_'] {
+    /* inbox, help, window buttons variables */
+    & div.trailing_c38106 {
+        background: none;
+        border: none;
+        height: var(--custom-channel-header-height);
+    }
+
+    div.base__5e434 {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
-        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
+        &:has(div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
             --update-padding: 44px;
         }
         &:has(div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
@@ -484,6 +493,11 @@ visibility: visible !important;
         }
         &:has(div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             --checkpoint-padding: 44px;
+        }
+
+        /* adds padding to app detail page */
+        div.detailHeaderButtonsContainer_e1147e {
+          padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding) - 12px);
         }
 
         & div.subtitleContainer_f75fb0,
@@ -523,8 +537,8 @@ visibility: visible !important;
         }
 
         /* checks if you are searching for a server/app */
-        .container_d08938,
-        .innerContainer_e1147e {
+        div.container_d08938,
+        div.innerContainer_e1147e {
             /* adds padding to search bar */
             div.search__1ac1c {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
@@ -534,7 +548,7 @@ visibility: visible !important;
             
 
             /* adds extra badding if you are looking at search results */
-            &:has(.headerBar__8a7fc.relative__8a7fc) {
+            &:has(div.headerBar__8a7fc.relative__8a7fc) {
                 .search__1ac1c {
                     padding-right: calc(var(--vr-header-snippet-space) - 60px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
                 }
@@ -542,7 +556,7 @@ visibility: visible !important;
         }
 
         /* moves element to "front" */
-        & > div[class*='content__'] {
+        & > div.content__5e434 {
             z-index: 0;
         }
 
@@ -561,17 +575,10 @@ visibility: visible !important;
             }
         }
 
-        &:has(> .notice__6e2b9) {
+        &:has(> div.notice__6e2b9) {
             & > div.bar_c38106 {
                 top: anchor(top);
             }
-        }
-
-        /* inbox, help, window buttons variables */
-        & div.trailing_c38106 {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
         }
 
         /* checks if a thread is opened on the side of your screen */
@@ -581,7 +588,7 @@ visibility: visible !important;
     }
 
     /* checks if discord is on a server page */
-    :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
+    :not(:has(divpage__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
         right: 0 !important;
     }
 
@@ -660,6 +667,7 @@ visibility: visible !important;
         -webkit-app-region: no-drag;
     }
 }
+
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */

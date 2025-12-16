@@ -97,7 +97,8 @@
     },
     {
         "name": "Page Swapper Refresh",
-        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/939dde3301a23d6b61dd6267ea8c3838b71990bb/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "---new_classes_css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
         "creator": "davart154",
         "source_github": "https://github.com/davart154/Themes",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
@@ -105,7 +106,8 @@
     },
     {
         "name": "Compact search field",
-        "css": "temp_disabled_because_new_classes_https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
+        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/old-classnames-2025-12-11/snippets/compact-search-button.css",
+        "---new_classes_css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
         "creator": "Wroclaw",
         "source_github": "https://github.com/amozeo/discord-css-snippets",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831",
@@ -113,7 +115,8 @@
     },
     {
         "name": "Chat input remove gifting",
-        "css": "temp_disabled_because_new_classes_https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/chat-input-remove-gifting.css",
+        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/old-classnames-2025-12-11/snippets/chat-input-remove-gifting.css",
+        "---new_classes_css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/chat-input-remove-gifting.css",
         "creator": "Wroclaw",
         "source_github": "https://github.com/amozeo/discord-css-snippets",
         "source_discord": "",
