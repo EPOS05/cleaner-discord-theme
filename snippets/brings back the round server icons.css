@@ -1,4 +1,4 @@
-[class^="folderPreview_"] > [class^="icon_"],
-[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
+[class^="folderPreview_"] > [class*="folderPreviewGuildIcon"],
+[class*="folderPreviewGuildIcon"] {
     border-radius: 50% !important;
 }

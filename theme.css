@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.16+1651
+ * @version 25.12.17+1836
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -13,7 +13,7 @@
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
 /* =========================================================================== */
-.scroller_ef3116 {
+.ef3116c2da186559-scroller {
     margin-top: 0 !important;
 }
 
@@ -23,7 +23,7 @@
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
 /* =========================================================================== */
-:has(.backForwardButtons__63abb) .children__9293f {
+:has(._63abbca6d53b6035-backForwardButtons) ._9293f6b2fc12398a-children {
   margin-left: 50px;
 }
 
@@ -33,46 +33,46 @@
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
 /* License: CC0 */
 /* =========================================================================== */
-.visual-refresh section.panels__5e434 {
+.visual-refresh section._5e434347c823b592-panels {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: border-box;
 
-  .actionButtons_e131a9 button {
+  .e131a99484292a19-actionButtons button {
     padding: 0;
   }
 
   /* GameActivityToggle Fix (delete if you don't use) */
-  /* .container__37e49 {
+  /* ._37e49614b9f110a9-container {
     padding: var(--space-xxs);
     gap: var(--space-4);
-    >.buttons__37e49 {
+    >._37e49614b9f110a9-buttons {
       gap: 0;
     }
-    >.avatarWrapper__37e49 {
+    >._37e49614b9f110a9-avatarWrapper {
       min-width: 32px !important;
-      >.avatar__37e49 {
+      >._37e49614b9f110a9-avatar {
         scale: 0.9;
       }
     }
   } */
 }
-nav.guilds__5e434 {
+nav._5e434347c823b592-guilds {
   margin-bottom: 0 !important;
 }
-.sidebar__5e434:after {
+._5e434347c823b592-sidebar:after {
   display: none;
 }
 /* BetterFolders fix (delete if you don't use) */
-/* .vc-betterFolders-sidebar~section.panels__5e434 {
+/* .vc-betterFolders-sidebar~section._5e434347c823b592-panels {
   left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
 } */
 
-.micButtonParent__37e49>.buttonChevron__37e49 {
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-buttonChevron {
   display: none;
 }
-.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-micButtonWithMenu {
   border-radius: var(--radius-sm);
 }
 
@@ -82,14 +82,14 @@ nav.guilds__5e434 {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
 /* License: CC0 */
 /* =========================================================================== */
-.user-profile-modal-v2 .profile__9c3be {
+.user-profile-modal-v2 ._9c3bea41fd465666-profile {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
   --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
     /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
   --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
   
-  .profileButtons__9c3be {
+  ._9c3bea41fd465666-profileButtons {
     position: fixed;
     top: calc(anchor(--profile-anchor start) + 12px);
     right: calc(anchor(--profile-anchor end) + 12px);
@@ -105,15 +105,15 @@ nav.guilds__5e434 {
     >button {
       min-width: 32px !important;
 
-      >.buttonChildrenWrapper_a22cb0 {
+      >.a22cb0c66246f5d3-buttonChildrenWrapper {
         overflow: visible;
         padding: 0 !important;
-        >.buttonChildren_a22cb0 {
+        >.a22cb0c66246f5d3-buttonChildren {
           overflow: visible;
           justify-content: center;
         }
       }
-      .lineClamp1__4bd52 {
+      ._4bd5201c86a2042b-lineClamp1 {
         align-items: center;
         position: absolute;
         top: -52px;
@@ -140,7 +140,7 @@ nav.guilds__5e434 {
           bottom: -13px;
         }
       }
-      &:hover .lineClamp1__4bd52 {
+      &:hover ._4bd5201c86a2042b-lineClamp1 {
         opacity: 1;
         transform: scale(1);
       }
@@ -154,8 +154,8 @@ nav.guilds__5e434 {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
 /* License: CC0 */
 /* =========================================================================== */
-[class^="folderPreview_"] > [class^="icon_"],
-[data-list-item-id*="guildsnav_"] > [class^="icon_"] {
+[class^="folderPreview_"] > [class*="folderPreviewGuildIcon"],
+[class*="folderPreviewGuildIcon"] {
     border-radius: 50% !important;
 }
 
@@ -176,7 +176,7 @@ nav.guilds__5e434 {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
 /* License: CC0 */
 /* =========================================================================== */
-.containerDefault__29444 {
+._29444ba32c7fbeab-containerDefault {
   > div {
     padding-left: 0.5em;
 
@@ -194,221 +194,436 @@ nav.guilds__5e434 {
 /* Source: GitHub: https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718 */
 /* License: MIT */
 /* =========================================================================== */
-/**
- * @name Better Compact Command Menu With Smooth Transition
- * @author AcheronX.
- * @description More Compact and clean look with smooth transition
- * @source https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/edit/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css
- * @version 0.0.1
- * @website https://github.com/acheronx0577
- */
-
-/* 🎨 Make category header background transparent */
-.categoryHeader_d1405b {
-    background: transparent !important;
-}
-
-/* 🎨 Transparent hover effect for category header */
-.categoryHeader_d1405b:hover {
-    background: transparent !important;
-}
-
-/* ✨ Main container sizing adjustments */
-.autocomplete__13533.outerWrapper_d1405b {
-  max-height: 310px !important;
-  width: 500px !important;
-  border-radius: 13px;
-}
-
-/* 🖱️ Scrollable area positioning */
-.scroller_affa7e:not(.videoGrid_a21736) {
-top: 4px;
-right: 3px;
-display: block !important;
-visibility: visible !important;
-}
-
-/* 🌀 Animated item wrapper with cool effects */
-.itemWrapper_d1405b {
-  position: relative;
-  border-radius: 1px;
-  overflow: hidden;
-  -webkit-clip-path: inset(0 round 10px);
-  clip-path: inset(0 round 10px);
-  transform: translateZ(0);
-  transition: 
-    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-/* ✨ Pseudo-element for gradient effect */
-.itemWrapper_d1405b::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-clip-path: inset(0 round 1px);
-  clip-path: inset(0 round 1px);
-  transition: 
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-  z-index: -1;
-  background: transparent;
-  pointer-events: none;
-}
-
-/* 🌈 Hover effects for item wrapper */
-.itemWrapper_d1405b:hover {
-  border-radius: 10px;
-  transform: scale(0.98) translateZ(0);
-  box-shadow: 
-    inset 0 0 12px rgba(255, 255, 255, 0.25),
-    0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* 🌟 Gradient effect on hover */
-.itemWrapper_d1405b:hover::before {
-  -webkit-clip-path: inset(1px round 10px);
-  clip-path: inset(1px round 10px);
-  background: linear-gradient(
-    to right,
-    rgba(87, 45, 133, 0.8) 0%,
-    rgba(45, 52, 139, 1) 50%,
-    rgba(87, 45, 133, 0.8) 100%
-  );
-}
-
-/* ⚪ White text on hover */
-.itemWrapper_d1405b:hover .title__920ab,
-.itemWrapper_d1405b:hover .description__920ab,
-.itemWrapper_d1405b:hover .source__920ab {
-  color: white !important;
-}
-
-/* 🚫 Fix overflow issues */
-.autocompleteRowVertical__13533,
-.base__13533 {
-  overflow: visible !important;
-
-}
-
-/* 🌈 Dark semi-transparent background for stacked bars */
-.stackedBars__74017 {
-    background-color: rgba(9, 13, 15, 0.345) !important;
-}
-
-/* 🎨 Same background for option pills */
-.optionPillKey__1464f {
-    background-color: rgba(9, 13, 15, 0.345) !important;
-}
-
-/* 🏷️ Semi-transparent header background with compact styling */
-.contentTitle__13533 {
-    background: rgba(11, 6, 29, 0.334) !important;
-    padding: 4px 8px !important;
-    border-radius: 7px !important;
-    display: inline-block !important; /* Prevents full-width background */
-    margin-left: 8px !important; /* ↔️ Adds left spacing */
-}
-
-/* ✨ Force white text for default color classes (improves readability) */
-.defaultColor__4bd52, .defaultColor__5345c {
-    color: rgba(255, 255, 255, 0.885) !important;
-}
-
-/* 🎪 Autocomplete Container */
-.autocomplete__13533.autocomplete__6b0e0 {
-  max-height: 310px !important;
-  width: 500px !important;
-  border-radius: 13px;
-}
-
-/* 🖱️ Clickable Row (Base) */
-.clickable__13533.autocompleteRowVertical__13533 {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-  -webkit-clip-path: inset(0 7px 0 7px round 9px);
-  clip-path: inset(0 7px 0 7px round 9px);
-  transform: translateZ(0);
-  transition: 
-    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-/* 📦 Inner Wrapper */
-.wrapper__920ab {
-  padding: 1px 8px !important;
-}
-
-/* ✨ Gradient Overlay (Pseudo-element) */
-.clickable__13533.autocompleteRowVertical__13533::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  clip-path: inset(0 round 1px);
-  transition: 
-    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
-    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-  z-index: -1;
-  background: transparent;
-  pointer-events: none;
-}
-
-/* 🌈 Hover Effects */
-.clickable__13533.autocompleteRowVertical__13533:hover {
-  border-radius: 10px;
-  transform: scale(0.98) translateZ(0);
-  box-shadow: 
-    inset 0 0 12px rgba(255, 255, 255, 0.25),
-    0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* 🌟 Gradient on Hover */
-.clickable__13533.autocompleteRowVertical__13533:hover::before {
-  clip-path: inset(1px round 10px);
-  background: linear-gradient(
-    to right,
-    rgba(87, 45, 133, 0.8) 0%,
-    rgba(45, 52, 139, 1) 50%,
-    rgba(87, 45, 133, 0.8) 100%
-  );
-}
-
-/* ⚪ White Text on Hover/Selection */
-.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
-.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
-.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
-  color: white !important;
-}
-
-/* 🎯 Selected State */
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
-  border-radius: 10px;
-  transform: scale(0.98) translateZ(0);
-}
-
-.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
-  clip-path: inset(1px round 10px);
-  background: linear-gradient(
-    to right,
-    rgba(87, 45, 133, 0.8) 0%,
-    rgba(45, 52, 139, 1) 50%,
-    rgba(87, 45, 133, 0.8) 100%
-  );
-}
-
-
+/**
+
+ * @name Better Compact Command Menu With Smooth Transition
+
+ * @author AcheronX.
+
+ * @description More Compact and clean look with smooth transition
+
+ * @source https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/edit/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css
+
+ * @version 0.0.1
+
+ * @website https://github.com/acheronx0577
+
+ */
+
+
+
+/* 🎨 Make category header background transparent */
+
+.d1405bf11dcfb07a-categoryHeader {
+
+    background: transparent !important;
+
+}
+
+
+
+/* 🎨 Transparent hover effect for category header */
+
+.d1405bf11dcfb07a-categoryHeader:hover {
+
+    background: transparent !important;
+
+}
+
+
+
+/* ✨ Main container sizing adjustments */
+
+._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
+
+  max-height: 310px !important;
+
+  width: 500px !important;
+
+  border-radius: 13px;
+
+}
+
+
+
+/* 🖱️ Scrollable area positioning */
+
+.affa7e120767dd82-scroller:not(.a21736575ea33af0-videoGrid) {
+
+top: 4px;
+
+right: 3px;
+
+display: block !important;
+
+visibility: visible !important;
+
+}
+
+
+
+/* 🌀 Animated item wrapper with cool effects */
+
+.d1405bf11dcfb07a-itemWrapper {
+
+  position: relative;
+
+  border-radius: 1px;
+
+  overflow: hidden;
+
+  -webkit-clip-path: inset(0 round 10px);
+
+  clip-path: inset(0 round 10px);
+
+  transform: translateZ(0);
+
+  transition: 
+
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+
+}
+
+
+
+/* ✨ Pseudo-element for gradient effect */
+
+.d1405bf11dcfb07a-itemWrapper::before {
+
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  -webkit-clip-path: inset(0 round 1px);
+
+  clip-path: inset(0 round 1px);
+
+  transition: 
+
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+
+  z-index: -1;
+
+  background: transparent;
+
+  pointer-events: none;
+
+}
+
+
+
+/* 🌈 Hover effects for item wrapper */
+
+.d1405bf11dcfb07a-itemWrapper:hover {
+
+  border-radius: 10px;
+
+  transform: scale(0.98) translateZ(0);
+
+  box-shadow: 
+
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+
+    0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* 🌟 Gradient effect on hover */
+
+.d1405bf11dcfb07a-itemWrapper:hover::before {
+
+  -webkit-clip-path: inset(1px round 10px);
+
+  clip-path: inset(1px round 10px);
+
+  background: linear-gradient(
+
+    to right,
+
+    rgba(87, 45, 133, 0.8) 0%,
+
+    rgba(45, 52, 139, 1) 50%,
+
+    rgba(87, 45, 133, 0.8) 100%
+
+  );
+
+}
+
+
+
+/* ⚪ White text on hover */
+
+.d1405bf11dcfb07a-itemWrapper:hover ._920abe02ba8772be-title,
+
+.d1405bf11dcfb07a-itemWrapper:hover ._920abe02ba8772be-description,
+
+.d1405bf11dcfb07a-itemWrapper:hover ._920abe02ba8772be-source {
+
+  color: white !important;
+
+}
+
+
+
+/* 🚫 Fix overflow issues */
+
+._13533e3c5791980f-autocompleteRowVertical,
+
+._13533e3c5791980f-base {
+
+  overflow: visible !important;
+
+
+
+}
+
+
+
+/* 🌈 Dark semi-transparent background for stacked bars */
+
+._740174f3d6a2c8fe-stackedBars {
+
+    background-color: rgba(9, 13, 15, 0.345) !important;
+
+}
+
+
+
+/* 🎨 Same background for option pills */
+
+._1464f16f3e3c14a9-optionPillKey {
+
+    background-color: rgba(9, 13, 15, 0.345) !important;
+
+}
+
+
+
+/* 🏷️ Semi-transparent header background with compact styling */
+
+._13533e3c5791980f-contentTitle {
+
+    background: rgba(11, 6, 29, 0.334) !important;
+
+    padding: 4px 8px !important;
+
+    border-radius: 7px !important;
+
+    display: inline-block !important; /* Prevents full-width background */
+
+    margin-left: 8px !important; /* ↔️ Adds left spacing */
+
+}
+
+
+
+/* ✨ Force white text for default color classes (improves readability) */
+
+._4bd5201c86a2042b-defaultColor, ._5345c24c6249bc5b-defaultColor {
+
+    color: rgba(255, 255, 255, 0.885) !important;
+
+}
+
+
+
+/* 🎪 Autocomplete Container */
+
+._13533e3c5791980f-autocomplete._6b0e07cbaf13ec4e-autocomplete {
+
+  max-height: 310px !important;
+
+  width: 500px !important;
+
+  border-radius: 13px;
+
+}
+
+
+
+/* 🖱️ Clickable Row (Base) */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical {
+
+  position: relative;
+
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  -webkit-clip-path: inset(0 7px 0 7px round 9px);
+
+  clip-path: inset(0 7px 0 7px round 9px);
+
+  transform: translateZ(0);
+
+  transition: 
+
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+
+}
+
+
+
+/* 📦 Inner Wrapper */
+
+._920abe02ba8772be-wrapper {
+
+  padding: 1px 8px !important;
+
+}
+
+
+
+/* ✨ Gradient Overlay (Pseudo-element) */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical::before {
+
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  clip-path: inset(0 round 1px);
+
+  transition: 
+
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+
+  z-index: -1;
+
+  background: transparent;
+
+  pointer-events: none;
+
+}
+
+
+
+/* 🌈 Hover Effects */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical:hover {
+
+  border-radius: 10px;
+
+  transform: scale(0.98) translateZ(0);
+
+  box-shadow: 
+
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+
+    0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* 🌟 Gradient on Hover */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical:hover::before {
+
+  clip-path: inset(1px round 10px);
+
+  background: linear-gradient(
+
+    to right,
+
+    rgba(87, 45, 133, 0.8) 0%,
+
+    rgba(45, 52, 139, 1) 50%,
+
+    rgba(87, 45, 133, 0.8) 100%
+
+  );
+
+}
+
+
+
+/* ⚪ White Text on Hover/Selection */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical:hover ._920abe02ba8772be-title,
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical:hover ._920abe02ba8772be-description,
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical:hover ._920abe02ba8772be-source,
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical[aria-selected="true"] ._920abe02ba8772be-title,
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical[aria-selected="true"] ._920abe02ba8772be-description,
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical[aria-selected="true"] ._920abe02ba8772be-source {
+
+  color: white !important;
+
+}
+
+
+
+/* 🎯 Selected State */
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical[aria-selected="true"] {
+
+  border-radius: 10px;
+
+  transform: scale(0.98) translateZ(0);
+
+}
+
+
+
+._13533e3c5791980f-clickable._13533e3c5791980f-autocompleteRowVertical[aria-selected="true"]::before {
+
+  clip-path: inset(1px round 10px);
+
+  background: linear-gradient(
+
+    to right,
+
+    rgba(87, 45, 133, 0.8) 0%,
+
+    rgba(45, 52, 139, 1) 50%,
+
+    rgba(87, 45, 133, 0.8) 100%
+
+  );
+
+}
+
+
+
+
+
 
 
 /* =========================================================================== */
@@ -430,117 +645,117 @@ visibility: visible !important;
     --checkpoint-padding: 0px;
 
     /* adds padding to chat pages */
-    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+    div.f75fb00fb7356cbe-chat:not(.f75fb00fb7356cbe-threadSidebarOpen),
     /* adds padding to friend list page */
-    main.container__133bf,
+    main._133bf5eea8e33a34-container,
     /* adds padding to thread sidebar */
-    div.chatLayerWrapper__01ae2 {
-        & section.container__9293f {
+    div._01ae244280823725-chatLayerWrapper {
+        & section._9293f6b2fc12398a-container {
             padding-right: var(--vr-header-snippet-space);
         }
     }
 
     /* adds padding to servers/app pages */
-    div.headerBar__8a7fc.overlay__8a7fc {
+    div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-overlay {
         padding-right: var(--vr-header-snippet-space);
 
-        & .tab__65d41,
-        & .searchBar__1ac1c {
+        & ._65d410cfafd026bc-tab,
+        & ._1ac1c54c56e5807c-searchBar {
             -webkit-app-region: no-drag;
         }
     }
 
     /* livestream video controls */
-    div.videoControls_bfe55a div.subtitleContainer__49508 {
+    div.bfe55a0aaaf62375-videoControls div._495084e7a0006942-subtitleContainer {
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
 
-        & .toolbar__9293f {
+        & ._9293f6b2fc12398a-toolbar {
             -webkit-app-region: no-drag;
         }
     }
 
-    div.page__5e434 {
-        &:not(:has(> div.chat_f75fb0)) {
+    div._5e434347c823b592-page {
+        &:not(:has(> div.f75fb00fb7356cbe-chat)) {
             anchor-name: --vr-header-snippet;
         }
 
-        & > div.chat_f75fb0 {
+        & > div.f75fb00fb7356cbe-chat {
             anchor-name: --vr-header-snippet;
         }
     }
 
     /* shows or removes window buttons depending on variable */
-    .winButtons_c38106 {
+    .c38106a3f0c3ca76-winButtons {
         display: var(--vr-header-snippet-winbuttons);
     }
 
     /* inbox, help, window buttons variables */
-    & div.trailing_c38106 {
+    & div.c38106a3f0c3ca76-trailing {
         background: none;
         border: none;
         height: var(--custom-channel-header-height);
     }
 
-    div.base__5e434 {
+    div._5e434347c823b592-base {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
-        &:has(div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
+        &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path._496769951eb140fe-updateIconForeground) {
             --update-padding: 44px;
         }
-        &:has(div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
+        &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing .vc-toolbox-btn) {
             --vencord-padding: 44px;
         }
-        &:has(div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
+        &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path.f1f2b13d058fc458-iconForeground) {
             --checkpoint-padding: 44px;
         }
 
         /* adds padding to app detail page */
-        div.detailHeaderButtonsContainer_e1147e {
+        div.e1147ecfa724a72a-detailHeaderButtonsContainer {
           padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding) - 12px);
         }
 
-        & div.subtitleContainer_f75fb0,
-        & main.container__133bf {
+        & div.f75fb00fb7356cbe-subtitleContainer,
+        & main._133bf5eea8e33a34-container {
             /* adds padding to entire top container */
-            & section.container__9293f {
+            & section._9293f6b2fc12398a-container {
                 padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
             }
         }
 
         /* checks if thread sidebar is open */
-        &:has(div > div.chatLayerWrapper__01ae2) {
+        &:has(div > div._01ae244280823725-chatLayerWrapper) {
             /* removes extra padding given to search bar */
-            & div.subtitleContainer_f75fb0 > section.container__9293f {
+            & div.f75fb00fb7356cbe-subtitleContainer > section._9293f6b2fc12398a-container {
                 padding-right: 8px;
             }
 
             /* adds padding to the thread buttons */
-            & div.container__01ae2 > section.container__9293f {
+            & div._01ae244280823725-container > section._9293f6b2fc12398a-container {
                 padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
             }
         }
 
         /* adds extra spacing to the orbs button on orbs/shop page */
-        & div.container__44ee9 {
+        & div._44ee9ab6d1ca72b4-container {
             padding-right: calc(var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
         }
 
         /* livestream header on vc */
-        & div.callContainer_cb9592.fullScreen_cb9592 div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+        & div.cb9592ad77576717-callContainer.cb9592ad77576717-fullScreen div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls div._9293f6b2fc12398a-toolbar {
             margin-right: -214px !important;
         }
 
         /* removes extra padding to chat icon on vc */
-        div.subtitleContainer__49508:has(button.button__201d5[aria-label='Show Chat']) {
+        div._495084e7a0006942-subtitleContainer:has(button._201d5e8a3c09670a-button[aria-label='Show Chat']) {
             margin-right: calc(-200px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
-        div.container_d08938,
-        div.innerContainer_e1147e {
+        div.d08938d21d4682b7-container,
+        div.e1147ecfa724a72a-innerContainer {
             /* adds padding to search bar */
-            div.search__1ac1c {
+            div._1ac1c54c56e5807c-search {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
                 margin-right: calc(4px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
                 -webkit-app-region: no-drag;
@@ -548,20 +763,20 @@ visibility: visible !important;
             
 
             /* adds extra badding if you are looking at search results */
-            &:has(div.headerBar__8a7fc.relative__8a7fc) {
-                .search__1ac1c {
+            &:has(div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-relative) {
+                ._1ac1c54c56e5807c-search {
                     padding-right: calc(var(--vr-header-snippet-space) - 60px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
                 }
             }
         }
 
         /* moves element to "front" */
-        & > div.content__5e434 {
+        & > div._5e434347c823b592-content {
             z-index: 0;
         }
 
         /* top bar variables */
-        & > div.bar_c38106 {
+        & > div.c38106a3f0c3ca76-bar {
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
@@ -570,100 +785,100 @@ visibility: visible !important;
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
             /* removes the title bar */
-            & > .title_c38106 {
+            & > .c38106a3f0c3ca76-title {
                 display: none;
             }
         }
 
-        &:has(> div.notice__6e2b9) {
-            & > div.bar_c38106 {
+        &:has(> div._6e2b9359c6f84cfd-notice) {
+            & > div.c38106a3f0c3ca76-bar {
                 top: anchor(top);
             }
         }
 
         /* checks if a thread is opened on the side of your screen */
-        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+        &:has(.f75fb00fb7356cbe-threadSidebarOpen.f75fb00fb7356cbe-threadSidebarFloating) > .c38106a3f0c3ca76-bar {
             z-index: 0;
         }
     }
 
     /* checks if discord is on a server page */
-    :not(:has(divpage__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
+    :not(:has(div_5e434347c823b592-page > div.f75fb00fb7356cbe-chat)) div._5e434347c823b592-base > div.c38106a3f0c3ca76-bar {
         right: 0 !important;
     }
 
     /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+    ul[data-list-id="guildsnav"] > div.ef3116c2da186559-itemsContainer > div.dbd2630aec71879b-stack {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
     /* allows these areas to be clickable */
-    section.header__0b563 div.toolbar__9293f,
-    section.header_c791b2 div.toolbar__9293f,
-    section.header_c791b2 div.children__9293f,
-    div.shop__6db1d div.shopHomeLink__80679,
-    :not(.videoControls_bfe55a) div.topic__6ec1a {
+    section._0b56311ebc6682e2-header div._9293f6b2fc12398a-toolbar,
+    section.c791b281f2fedc32-header div._9293f6b2fc12398a-toolbar,
+    section.c791b281f2fedc32-header div._9293f6b2fc12398a-children,
+    div._6db1d32c47b6ad72-shop div._8067953d83f4b8a8-shopHomeLink,
+    :not(.bfe55a0aaaf62375-videoControls) div._6ec1a06139ec3b27-topic {
         -webkit-app-region: no-drag;
     }
 
     /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    .shop__6db1d section.showToolbar__9293f {
+    ._6db1d32c47b6ad72-shop section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
-        .balanceWidgetMenu__80679 {
+        ._8067953d83f4b8a8-balanceWidgetMenu {
             margin-right: 0;
         }
     }
 
-    .div.videoControls_bfe55a .topControls_bfe55a {
+    .div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls {
         z-index: -1;
     }
 
-    .profileThemedContainer__656be .topRow__34940 {
+    ._656be05658eed04d-profileThemedContainer ._34940b51cd19b69f-topRow {
         align-items: end;
         padding-bottom: 0;
 
-        & .closeAction__34940 {
+        & ._34940b51cd19b69f-closeAction {
             -webkit-app-region: no-drag;
         }
 
-        & .memberNameContainer__34940 {
+        & ._34940b51cd19b69f-memberNameContainer {
             padding-bottom: 12px;
         }
     }
 
     /* search/wishlist/orbs on shop page */
-    .alignedRightContent__80679 {
+    ._8067953d83f4b8a8-alignedRightContent {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) - 33px);
       -webkit-app-region: no-drag;
     }
 
     /* orbs balance on quests page */
-    .headerBarContent__1a9ce .container__44ee9 {
+    ._1a9cebfbd0c9d0f6-headerBarContent ._44ee9ab6d1ca72b4-container {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
     
     /* allows main thread + all/claimed quest buttons to be clickable */
-    .titleWrapper__9293f {
+    ._9293f6b2fc12398a-titleWrapper {
       -webkit-app-region: no-drag;
     }
 
     /* fixes extra gap of group dm button on friends page */
-    .toolbar__9293f .inviteToolbar__133bf {
+    ._9293f6b2fc12398a-toolbar ._133bf5eea8e33a34-inviteToolbar {
         padding-right: 0px;
     }
 
     /* fixes weird padding issue when searching for an app */
-    .sideFilterContainer__1eae0 {
+    ._1eae08c1b97e0c51-sideFilterContainer {
         position: fixed;
         top: 57px;
     }
 
     /* allows back button on discover pages to be clickable */
-    & .iconButton__8a7fc {
+    & ._8a7fc664acf53af6-iconButton {
         -webkit-app-region: no-drag;
     }
 }
@@ -694,7 +909,7 @@ visibility: visible !important;
   --order-profile: 5;
 }
 
-.panels__5e434 {
+._5e434347c823b592-panels {
   display: flex;
   flex-direction: column;
   gap: var(--panel-gap);
@@ -702,48 +917,48 @@ visibility: visible !important;
   border: none;
 }
 
-.mask__0d616 {
+._0d6162a4e6a4b802-mask {
   order: var(--order-quests);
   margin-inline: 0;
   padding-inline: 0;
   border-radius: var(--panel-radius);
 }
-.wrapper__0d616,
-.wrapperVisible__0d616 {
+._0d6162a4e6a4b802-wrapper,
+._0d6162a4e6a4b802-wrapperVisible {
   border-radius: var(--panel-radius);
 }
 
-.listeningAlong_e0cf27,
-.panel__5dec7,
-.container_e131a9,
-.container__37e49 {
+.e0cf275d59896c00-listeningAlong,
+._5dec784a68542d60-panel,
+.e131a99484292a19-container,
+._37e49614b9f110a9-container {
   background-color: var(--panel-color);
   border: 1px solid var(--border-subtle);
   border-radius: var(--panel-radius);
 }
 
-.listeningAlong_e0cf27 {
+.e0cf275d59896c00-listeningAlong {
   order: var(--order-listening);
 }
 
-.panel__5dec7 {
+._5dec784a68542d60-panel {
   order: var(--order-stream);
   padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
 }
 
-.wrapper_e131a9 {
+.e131a99484292a19-wrapper {
   order: var(--order-voice);
 
-  &:not(:has(.container_e131a9)) {
+  &:not(:has(.e131a99484292a19-container)) {
     display: none;
   }
 
-  .container_e131a9 {
+  .e131a99484292a19-container {
     min-height: 90px;
   }
 }
 
-.container__37e49 {
+._37e49614b9f110a9-container {
   order: var(--order-profile);
   min-height: 59px;
 
@@ -761,7 +976,7 @@ visibility: visible !important;
   border-radius: var(--panel-radius);
   margin: 0 -1px;
 
-  .barFill_a562c8 {
+  .a562c840daab72a7-barFill {
     background-color: var(--vc-spotify-green) !important;
   }
 
@@ -817,16 +1032,17 @@ visibility: visible !important;
 /* =========================================================================== */
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
-.mentioned__5126c {
+
+._5126c0cd07f243a0-mentioned {
     position: relative;
     border: none !important;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), var(--background-base-lower));
     border-radius: 4px;
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
     background: linear-gradient(
     to right,
     rgba(186, 109, 36, 0.2),
@@ -834,16 +1050,16 @@ visibility: visible !important;
   );
 }
 
-.replying__5126c {
+._5126c0cd07f243a0-replying {
     position: relative;
     border: none !important;
     border-radius: 4px;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.message__5126c.replying__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
     background: linear-gradient(
         to right,
         rgba(58, 72, 179, 0.3),
@@ -851,18 +1067,17 @@ visibility: visible !important;
     );
 }
 
-.flash__03436 {
+._034365f2217df5de-flash {
     background-image: transparent
 }
 
-.flash__03436[data-flash=true] {
-    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+._034365f2217df5de-flash[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower))
 }
 
-.full-motion .flash__03436 {
-    transition: background-color .2s ease
+.full-motion ._034365f2217df5de-flash {
+    transition: rgba(0,0,0,0) .2s ease
 }
-
 
 
 /* =========================================================================== */
@@ -879,10 +1094,10 @@ visibility: visible !important;
 * @website https://github.com/Krammeth
 */
 
-.scroller__99e7c[data-list-id^="private-channels-uid_"] {
+._99e7cad8d4c55236-scroller[data-list-id^="private-channels-uid_"] {
   scrollbar-width: 0;
   scrollbar-color: transparent;
-  >.content_d125d2 {
+  >.d125d22cdfd32cfe-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -890,37 +1105,37 @@ visibility: visible !important;
     justify-content: space-evenly;
     >div:not([class]):first-child,
     >div[role="button"],
-    >.privateChannelsHeaderContainer__99e7c,
-    >.channel__972a0.dm__972a0 {
+    >._99e7cad8d4c55236-privateChannelsHeaderContainer,
+    >._972a0d22c8afa7f0-channel._972a0d22c8afa7f0-dm {
       width: 100%;
     }
-    >.friendsButtonContainer_e6b769,
+    >.e6b7699ce8339e1c-friendsButtonContainer,
     >div:nth-of-type(3),
-    >.channel__972a0:not(.dm__972a0),
-    >.wrapper_ebee1d {
+    >._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm),
+    >._553bf02027ac2419-wrapper {
       margin: 0;
     }
-    .channel__972a0:not(.dm__972a0) {
-      margin: 0 4px;
-      >.linkButton__972a0 >.link__972a0 {
+    ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+      margin: 0 4px !important;
+      >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
         padding: 6px;
         justify-content: center;
-        >.avatarWithText__972a0 {
+        >._972a0d22c8afa7f0-avatarWithText {
           padding: 0;
-          >.avatar__20a53 {
+          >._20a53846fe2e8513-avatar {
             margin: 0;
           }
-          >.content__20a53 {
+          >._20a53846fe2e8513-content {
             display: none;
           }
         }
-        >.numberBadge__2b1f5 {
+        >._2b1f52e43a8f1c02-numberBadge {
           position: absolute;
           left: 17.5px;
           bottom: 0;
           transform: scale(0.7);
         }
-        >.newBadge__4ed1a {
+        >._4ed1af9a212b8f4f-newBadge {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
@@ -936,7 +1151,7 @@ visibility: visible !important;
 /* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
 /* License: CC0 */
 /* =========================================================================== */
-.scroller_a9e706 {
+.a9e7064fdee8e9b0-scroller {
   display: contents;
 }
 #search-results {
@@ -958,11 +1173,11 @@ visibility: visible !important;
     min-height: 40px;
   }
 }
-.searchResultGroup_c68065:last-child {
+.c68065c20f8328a7-searchResultGroup:last-child {
   margin-bottom: 0;
 }
 
-.container__86c0f {
+._86c0fae6715927dc-container {
   background: var(--background-gradient-highest,var(--background-base-low));
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
@@ -972,10 +1187,10 @@ visibility: visible !important;
     display: none;
   }
 }
-.pageControlContainer_c15210 {
+.c1521037ef09de7e-pageControlContainer {
   display: contents;
 }
-.pageControl_c15210 {
+.c1521037ef09de7e-pageControl {
   box-sizing: border-box;
   gap: var(--space-8);
   height: 56px;
@@ -984,7 +1199,7 @@ visibility: visible !important;
   margin: 0;
   width: 100%;
 }
-.pageButton_c15210 {
+.c1521037ef09de7e-pageButton {
   font-weight: 500;
   height: 32px;
   min-height: 32px;
@@ -1007,17 +1222,17 @@ visibility: visible !important;
     border-color: var(--control-secondary-border-active);
     color: var(--control-secondary-text-active);
   }
-  &.activeButton_c15210 {
+  &.c1521037ef09de7e-activeButton {
     background-color: var(--control-primary-background-default);
     border-color: var(--control-primary-border-default);
     color: var(--control-primary-text-default);
   }
-  &.activeButton_c15210:hover {
+  &.c1521037ef09de7e-activeButton:hover {
     background-color: var(--control-primary-background-hover);
     border-color: var(--control-primary-border-hover);
     color: var(--control-primary-text-hover);
   }
-  &.activeButton_c15210:active {
+  &.c1521037ef09de7e-activeButton:active {
     background-color: var(--control-primary-background-active);
     border-color: var(--control-primary-border-active);
     color: var(--control-primary-text-active);
@@ -1039,7 +1254,7 @@ visibility: visible !important;
     color: var(--custom-input-text-color);
   }
 }
-.endButton_c15210 {
+.c1521037ef09de7e-endButton {
   padding: 0 !important;
   &:first-child {
     margin-right: auto !important;
@@ -1051,13 +1266,13 @@ visibility: visible !important;
     display: none;
   }
 }
-.iconCaret_c15210 {
+.c1521037ef09de7e-iconCaret {
   margin: 0 !important;
 }
-.jumpToPageInlineInput_c15210 {
+.c1521037ef09de7e-jumpToPageInlineInput {
   width: 64px;
   margin: 0 !important;
-  .wrapper__72c38 {
+  ._72c3859781ebce8f-wrapper {
     min-height: 32px;
   }
   input {
@@ -1065,11 +1280,11 @@ visibility: visible !important;
     text-align: center;
   }
 }
-.container__72c38 input::-webkit-inner-spin-button {
+._72c3859781ebce8f-container input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.resultsBlocked_c68065 {
+.c68065c20f8328a7-resultsBlocked {
   background: var(--background-feedback-warning);
   border: 1px solid var(--icon-feedback-warning);
   border-radius: var(--radius-sm);
@@ -1084,7 +1299,7 @@ visibility: visible !important;
     color: var(--text-default);
   }
 }
-.resultsBlockedImage_c68065.resultsBlockedImage_c68065 {
+.c68065c20f8328a7-resultsBlockedImage.c68065c20f8328a7-resultsBlockedImage {
   margin-inline-end: 8px;
   background-color: currentColor;
   background-image: unset;
@@ -1093,21 +1308,19 @@ visibility: visible !important;
   width: 20px;
 }
 
-.container__3379f {
-  background: var(--background-gradient-highest,var(--background-base-low));
-  border: 1px solid var(--border-muted);
-  border-top: 0;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+._3379fb83a901b3f2-container {
+  background: var(--background-feedback-info);
+  border: 1px solid var(--icon-feedback-info);
+  border-radius: var(--radius-sm);
+  color: var(--text-feedback-info);
   box-sizing: border-box;
   min-height: 56px;
-  margin-bottom: var(--space-xs);
-  margin-inline: var(--space-xs);
-  margin-top: calc(var(--space-md) * -1);
+  margin: var(--space-xs);
   padding-block: unset;
   padding-inline: var(--space-md);
 }
 
-.paginationLimitHeader_a9e706, .helpMessageContainer_a9e706 {
+.a9e7064fdee8e9b0-paginationLimitHeader, .a9e7064fdee8e9b0-helpMessageContainer {
   margin-inline: var(--space-xs);
   margin-top: var(--space-xs);
   margin-bottom: 0;
@@ -1120,7 +1333,7 @@ visibility: visible !important;
 /* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
 /* License: CC0 */
 /* =========================================================================== */
-.search__97492 > .searchBar__97492 {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -1129,23 +1342,24 @@ visibility: visible !important;
         border-color .25s ease;
 }
 
-.search__97492 > .searchBar__97492 .DraftEditor-root {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-.search__97492.open__97492 > .searchBar__97492 {
+._974928fe84ca9647-search._974928fe84ca9647-open > ._974928fe84ca9647-searchBar {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-.search__97492 > .searchBar__97492 .icon__97492 {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar ._974928fe84ca9647-icon {
     margin-right: 7px;
 }
 
-.search__49676 {
+._496769951eb140fe-search {
     margin: 0 !important;
 }
+
 
 
 /* =========================================================================== */
@@ -1154,7 +1368,7 @@ visibility: visible !important;
 /* Source: GitHub: https://github.com/amozeo/discord-css-snippets */
 /* License: CC0 */
 /* =========================================================================== */
-.channelBottomBarArea_f75fb0 .buttons__74017 > .container_c0c49a {
+.f75fb00fb7356cbe-channelBottomBarArea ._740174f3d6a2c8fe-buttons > .c0c49a3e5c8626ac-container {
     display: none;
 }
 

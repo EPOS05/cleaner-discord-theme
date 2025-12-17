@@ -1,4 +1,4 @@
-.search__97492 > .searchBar__97492 {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -7,20 +7,21 @@
         border-color .25s ease;
 }
 
-.search__97492 > .searchBar__97492 .DraftEditor-root {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-.search__97492.open__97492 > .searchBar__97492 {
+._974928fe84ca9647-search._974928fe84ca9647-open > ._974928fe84ca9647-searchBar {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-.search__97492 > .searchBar__97492 .icon__97492 {
+._974928fe84ca9647-search > ._974928fe84ca9647-searchBar ._974928fe84ca9647-icon {
     margin-right: 7px;
 }
 
-.search__49676 {
+._496769951eb140fe-search {
     margin: 0 !important;
 }
+

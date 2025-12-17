@@ -57,7 +57,7 @@
     },
     {
         "name": "Better Compact Command Menu",
-        "css": "https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
+        "css": "---https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
         "creator": "acheronx0577",
         "source_github": "https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718",
@@ -65,7 +65,7 @@
     },
     {
         "name": "Compact - Hide Visual Refresh Title Bar",
-        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "css": "---https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "creator": "G0d0fninjas - Originally by chloecinders",
         "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
         "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
@@ -73,7 +73,7 @@
     },
     {
         "name": "User & Activity Panels Redesign",
-        "css": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
+        "css": "---https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
         "creator": "yiruzu",
         "source_github": "https://github.com/yiruzu/vencord-snippets",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366",
@@ -97,8 +97,7 @@
     },
     {
         "name": "Page Swapper Refresh",
-        "css": "https://raw.githubusercontent.com/davart154/Themes/939dde3301a23d6b61dd6267ea8c3838b71990bb/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
-        "---new_classes_css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
         "creator": "davart154",
         "source_github": "https://github.com/davart154/Themes",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
@@ -106,8 +105,7 @@
     },
     {
         "name": "Compact search field",
-        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/old-classnames-2025-12-11/snippets/compact-search-button.css",
-        "---new_classes_css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
+        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
         "creator": "Wroclaw",
         "source_github": "https://github.com/amozeo/discord-css-snippets",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831",
@@ -115,8 +113,7 @@
     },
     {
         "name": "Chat input remove gifting",
-        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/old-classnames-2025-12-11/snippets/chat-input-remove-gifting.css",
-        "---new_classes_css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/chat-input-remove-gifting.css",
+        "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/chat-input-remove-gifting.css",
         "creator": "Wroclaw",
         "source_github": "https://github.com/amozeo/discord-css-snippets",
         "source_discord": "",

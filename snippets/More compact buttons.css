@@ -6,10 +6,10 @@
 * @website https://github.com/Krammeth
 */
 
-.scroller__99e7c[data-list-id^="private-channels-uid_"] {
+._99e7cad8d4c55236-scroller[data-list-id^="private-channels-uid_"] {
   scrollbar-width: 0;
   scrollbar-color: transparent;
-  >.content_d125d2 {
+  >.d125d22cdfd32cfe-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,37 +17,37 @@
     justify-content: space-evenly;
     >div:not([class]):first-child,
     >div[role="button"],
-    >.privateChannelsHeaderContainer__99e7c,
-    >.channel__972a0.dm__972a0 {
+    >._99e7cad8d4c55236-privateChannelsHeaderContainer,
+    >._972a0d22c8afa7f0-channel._972a0d22c8afa7f0-dm {
       width: 100%;
     }
-    >.friendsButtonContainer_e6b769,
+    >.e6b7699ce8339e1c-friendsButtonContainer,
     >div:nth-of-type(3),
-    >.channel__972a0:not(.dm__972a0),
-    >.wrapper_ebee1d {
+    >._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm),
+    >._553bf02027ac2419-wrapper {
       margin: 0;
     }
-    .channel__972a0:not(.dm__972a0) {
-      margin: 0 4px;
-      >.linkButton__972a0 >.link__972a0 {
+    ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+      margin: 0 4px !important;
+      >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
         padding: 6px;
         justify-content: center;
-        >.avatarWithText__972a0 {
+        >._972a0d22c8afa7f0-avatarWithText {
           padding: 0;
-          >.avatar__20a53 {
+          >._20a53846fe2e8513-avatar {
             margin: 0;
           }
-          >.content__20a53 {
+          >._20a53846fe2e8513-content {
             display: none;
           }
         }
-        >.numberBadge__2b1f5 {
+        >._2b1f52e43a8f1c02-numberBadge {
           position: absolute;
           left: 17.5px;
           bottom: 0;
           transform: scale(0.7);
         }
-        >.newBadge__4ed1a {
+        >._4ed1af9a212b8f4f-newBadge {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);

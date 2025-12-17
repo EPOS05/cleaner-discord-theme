@@ -1,15 +1,16 @@
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
-.mentioned__5126c {
+
+._5126c0cd07f243a0-mentioned {
     position: relative;
     border: none !important;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), var(--background-base-lower));
     border-radius: 4px;
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
     background: linear-gradient(
     to right,
     rgba(186, 109, 36, 0.2),
@@ -17,16 +18,16 @@
   );
 }
 
-.replying__5126c {
+._5126c0cd07f243a0-replying {
     position: relative;
     border: none !important;
     border-radius: 4px;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.message__5126c.replying__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
+.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
     background: linear-gradient(
         to right,
         rgba(58, 72, 179, 0.3),
@@ -34,15 +35,14 @@
     );
 }
 
-.flash__03436 {
+._034365f2217df5de-flash {
     background-image: transparent
 }
 
-.flash__03436[data-flash=true] {
-    background-image: linear-gradient(to right, rgba(79, 91, 172, 0.3), rgba(0, 0, 0, 0));
+._034365f2217df5de-flash[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower))
 }
 
-.full-motion .flash__03436 {
-    transition: background-color .2s ease
+.full-motion ._034365f2217df5de-flash {
+    transition: rgba(0,0,0,0) .2s ease
 }
-

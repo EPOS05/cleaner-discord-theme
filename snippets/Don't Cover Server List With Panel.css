@@ -1,42 +1,42 @@
-.visual-refresh section.panels__5e434 {
+.visual-refresh section._5e434347c823b592-panels {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: border-box;
 
-  .actionButtons_e131a9 button {
+  .e131a99484292a19-actionButtons button {
     padding: 0;
   }
 
   /* GameActivityToggle Fix (delete if you don't use) */
-  /* .container__37e49 {
+  /* ._37e49614b9f110a9-container {
     padding: var(--space-xxs);
     gap: var(--space-4);
-    >.buttons__37e49 {
+    >._37e49614b9f110a9-buttons {
       gap: 0;
     }
-    >.avatarWrapper__37e49 {
+    >._37e49614b9f110a9-avatarWrapper {
       min-width: 32px !important;
-      >.avatar__37e49 {
+      >._37e49614b9f110a9-avatar {
         scale: 0.9;
       }
     }
   } */
 }
-nav.guilds__5e434 {
+nav._5e434347c823b592-guilds {
   margin-bottom: 0 !important;
 }
-.sidebar__5e434:after {
+._5e434347c823b592-sidebar:after {
   display: none;
 }
 /* BetterFolders fix (delete if you don't use) */
-/* .vc-betterFolders-sidebar~section.panels__5e434 {
+/* .vc-betterFolders-sidebar~section._5e434347c823b592-panels {
   left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
 } */
 
-.micButtonParent__37e49>.buttonChevron__37e49 {
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-buttonChevron {
   display: none;
 }
-.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-micButtonWithMenu {
   border-radius: var(--radius-sm);
 }
