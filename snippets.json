@@ -73,7 +73,7 @@
     },
     {
         "name": "User & Activity Panels Redesign",
-        "css": "---https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
+        "css": "https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/UserActivityRedesign/import.css",
         "creator": "yiruzu",
         "source_github": "https://github.com/yiruzu/vencord-snippets",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1434002998111113366",

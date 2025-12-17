@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.17+1836
+ * @version 25.12.17+1923
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -154,9 +154,9 @@ nav._5e434347c823b592-guilds {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
 /* License: CC0 */
 /* =========================================================================== */
-[class^="folderPreview_"] > [class*="folderPreviewGuildIcon"],
-[class*="folderPreviewGuildIcon"] {
-    border-radius: 50% !important;
+[class$="-folderPreview"] > [class*="-folderPreviewGuildIcon"],
+[data-list-item-id^="guildsnav___"] > [class$="-icon"] {
+  border-radius: 50% !important;
 }
 
 /* =========================================================================== */
