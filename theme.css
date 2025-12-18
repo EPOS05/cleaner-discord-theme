@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.17+1923
+ * @version 25.12.18+1749
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -79,7 +79,7 @@ nav._5e434347c823b592-guilds {
 /* =========================================================================== */
 /* Snippet: Move profile buttons back to the top right */
 /* By: obsidianninja11 */
-/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050 */
+/* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885 */
 /* License: CC0 */
 /* =========================================================================== */
 .user-profile-modal-v2 ._9c3bea41fd465666-profile {
@@ -700,6 +700,7 @@ visibility: visible !important;
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
+        /* TODO: find the actual class name */
         &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path._496769951eb140fe-updateIconForeground) {
             --update-padding: 44px;
         }
@@ -780,7 +781,7 @@ visibility: visible !important;
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
-            right: anchor(right);
+            left: anchor(left);
             width: anchor-size(width);
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
@@ -822,7 +823,7 @@ visibility: visible !important;
     }
 
     /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    ._6db1d32c47b6ad72-shop section.showToolbar__9293f {
+    ._6db1d32c47b6ad72-shop section._9293f6b2fc12398a-showToolbar {
         padding-right: var(--vr-header-snippet-space);
 
         ._8067953d83f4b8a8-balanceWidgetMenu {
@@ -882,7 +883,6 @@ visibility: visible !important;
         -webkit-app-region: no-drag;
     }
 }
-
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */

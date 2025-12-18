@@ -28,7 +28,7 @@
         "css": "",
         "creator": "obsidianninja11",
         "source_github": "",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1428265209193042050",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885",
         "license": "CC0"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
         "name": "Compact - Hide Visual Refresh Title Bar",
-        "css": "---https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "creator": "G0d0fninjas - Originally by chloecinders",
         "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
         "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
