@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.18+1749
+ * @version 25.12.20+1454
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -781,7 +781,7 @@ visibility: visible !important;
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
-            left: anchor(left);
+            right: anchor(right);
             width: anchor-size(width);
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
@@ -882,7 +882,13 @@ visibility: visible !important;
     & ._8a7fc664acf53af6-iconButton {
         -webkit-app-region: no-drag;
     }
+
+    /* allows "follow" button for announcements to be clickable */
+    div.f75fb00fb7356cbe-followButton > button{
+        -webkit-app-region: no-drag;
+    }
 }
+
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */

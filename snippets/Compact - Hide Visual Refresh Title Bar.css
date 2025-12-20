@@ -147,7 +147,7 @@
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
-            left: anchor(left);
+            right: anchor(right);
             width: anchor-size(width);
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
@@ -246,6 +246,11 @@
 
     /* allows back button on discover pages to be clickable */
     & ._8a7fc664acf53af6-iconButton {
+        -webkit-app-region: no-drag;
+    }
+
+    /* allows "follow" button for announcements to be clickable */
+    div.f75fb00fb7356cbe-followButton > button{
         -webkit-app-region: no-drag;
     }
 }
