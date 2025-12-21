@@ -132,7 +132,7 @@ Paste the following in your QuickCSS editor:
 ## License
 This project is licensed under MIT.
 <br>
-Snippets of the CSS are either licensed under MIT or CC0 (see credits / file comments for details).
+Most CSS snippets are licensed under CC0, though some may be covered by a different license; see the credits or inline comments for details.
 
 ## Credits
 Made possible by many developers credited below:

@@ -12,13 +12,14 @@ Paste the following in your QuickCSS editor:
 ## License
 This project is licensed under MIT.
 <br>
-Snippets of the CSS are either licensed under MIT or CC0 (see credits / file comments for details).
+Most CSS snippets are licensed under CC0, though some may be covered by a different license; see the credits or inline comments for details.
 
 ## Credits
 Made possible by many developers credited below:
 ### Licensed under CC0
 - [Remove gap on top of server list](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
+- [Compact Command Picker](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Don't Cover Server List With Panel](https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952) - By obsidianninja11
 - [Move profile buttons back to the top right](https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885) - By obsidianninja11
 - [brings back the round server icons](https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609) - By ukriu
@@ -31,7 +32,4 @@ Made possible by many developers credited below:
 - [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
 - [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
 - [Chat input remove gifting](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
-
-### Licensed under MIT
-- [Better Compact Command Menu](https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition) - By acheronx0577
 

@@ -16,6 +16,14 @@
         "license": "CC0"
     },
     {
+        "name": "Compact Command Picker",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
         "name": "Don't Cover Server List With Panel",
         "css": "",
         "creator": "obsidianninja11",
@@ -54,14 +62,6 @@
         "source_github": "",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612",
         "license": "CC0"
-    },
-    {
-        "name": "Better Compact Command Menu",
-        "css": "-oldclasses-https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css",
-        "creator": "acheronx0577",
-        "source_github": "https://github.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1404168611873947718",
-        "license": "MIT"
     },
     {
         "name": "Compact - Hide Visual Refresh Title Bar",
