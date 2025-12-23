@@ -1,5 +1,13 @@
 [
     {
+        "name": "Compact Command Picker",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
         "name": "Remove gap on top of server list",
         "css": "",
         "creator": "EPOS05",
@@ -9,14 +17,6 @@
     },
     {
         "name": "Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)",
-        "css": "",
-        "creator": "EPOS05",
-        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
-        "source_discord": "",
-        "license": "CC0"
-    },
-    {
-        "name": "Compact Command Picker",
         "css": "",
         "creator": "EPOS05",
         "source_github": "https://github.com/EPOS05/cleaner-discord-theme",

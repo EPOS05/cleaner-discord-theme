@@ -1,11 +1,28 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 25.12.21+1509
+ * @version 25.12.23+2204
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
  */
+
+/* =========================================================================== */
+/* Snippet: Compact Command Picker */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* =========================================================================== */
+/* Main Menu */
+._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
+    max-width: 500px;
+}
+
+/* Autocomplete Menu */
+._13533e3c5791980f-autocomplete._6b0e07cbaf13ec4e-autocomplete {
+    max-height: 300px;
+    width: 500px;
+}
 
 /* =========================================================================== */
 /* Snippet: Remove gap on top of server list */
@@ -25,17 +42,6 @@
 /* =========================================================================== */
 :has(._63abbca6d53b6035-backForwardButtons) ._9293f6b2fc12398a-children {
   margin-left: 50px;
-}
-
-/* =========================================================================== */
-/* Snippet: Compact Command Picker */
-/* By: EPOS05 */
-/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
-/* License: CC0 */
-/* =========================================================================== */
-._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
-    max-height: 420px;
-    max-width: 500px;
 }
 
 /* =========================================================================== */

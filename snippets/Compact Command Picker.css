@@ -1,4 +1,10 @@
+/* Main Menu */
 ._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
-    max-height: 420px;
     max-width: 500px;
+}
+
+/* Autocomplete Menu */
+._13533e3c5791980f-autocomplete._6b0e07cbaf13ec4e-autocomplete {
+    max-height: 300px;
+    width: 500px;
 }

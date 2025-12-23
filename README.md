@@ -17,9 +17,9 @@ Most CSS snippets are licensed under CC0, though some may be covered by a differ
 ## Credits
 Made possible by many developers credited below:
 ### Licensed under CC0
+- [Compact Command Picker](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Remove gap on top of server list](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
-- [Compact Command Picker](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Don't Cover Server List With Panel](https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952) - By obsidianninja11
 - [Move profile buttons back to the top right](https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885) - By obsidianninja11
 - [brings back the round server icons](https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609) - By ukriu
