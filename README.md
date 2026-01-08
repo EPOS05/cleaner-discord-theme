@@ -18,6 +18,7 @@ Most CSS snippets are licensed under CC0, though some may be covered by a differ
 Made possible by many developers credited below:
 ### Licensed under CC0
 - [Compact Command Picker](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
+- [Remove nitro gift button](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Remove gap on top of server list](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Don't Cover Server List With Panel](https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952) - By obsidianninja11
@@ -31,5 +32,4 @@ Made possible by many developers credited below:
 - [More compact buttons](https://github.com/Krammeth/css-snippets) - By Krammeth
 - [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
 - [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
-- [Chat input remove gifting](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
 

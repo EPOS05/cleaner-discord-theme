@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.01.03+0145
+ * @version 26.01.08+2252
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -22,6 +22,16 @@
 ._13533e3c5791980f-autocomplete._6b0e07cbaf13ec4e-autocomplete {
     max-height: 300px;
     width: 500px;
+}
+
+/* =========================================================================== */
+/* Snippet: Remove nitro gift button */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* =========================================================================== */
+[aria-label="Send a gift"] {
+    display: none !important;
 }
 
 /* =========================================================================== */
@@ -751,7 +761,7 @@ nav._5e434347c823b592-guilds {
 /* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
 /* License: CC0 */
 /* =========================================================================== */
-.a9e7064fdee8e9b0-scroller {
+.a98f3b020416ad54-scroller {
   display: contents;
 }
 #search-results {
@@ -773,11 +783,11 @@ nav._5e434347c823b592-guilds {
     min-height: 40px;
   }
 }
-.c68065c20f8328a7-searchResultGroup:last-child {
+.a7e67f4ddd7c6bb2-searchResultGroup:last-child {
   margin-bottom: 0;
 }
 
-._86c0fae6715927dc-container {
+._3f123bbf537a483c-container {
   background: var(--background-gradient-highest,var(--background-base-low));
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
@@ -884,7 +894,7 @@ nav._5e434347c823b592-guilds {
   -webkit-appearance: none;
 }
 
-.c68065c20f8328a7-resultsBlocked {
+.a7e67f4ddd7c6bb2-resultsBlocked {
   background: var(--background-feedback-warning);
   border: 1px solid var(--icon-feedback-warning);
   border-radius: var(--radius-sm);
@@ -899,7 +909,7 @@ nav._5e434347c823b592-guilds {
     color: var(--text-default);
   }
 }
-.c68065c20f8328a7-resultsBlockedImage.c68065c20f8328a7-resultsBlockedImage {
+.a7e67f4ddd7c6bb2-resultsBlockedImage.a7e67f4ddd7c6bb2-resultsBlockedImage {
   margin-inline-end: 8px;
   background-color: currentColor;
   background-image: unset;
@@ -908,7 +918,7 @@ nav._5e434347c823b592-guilds {
   width: 20px;
 }
 
-._3379fb83a901b3f2-container {
+.bd5bb495e817bddc-container {
   background: var(--background-feedback-info);
   border: 1px solid var(--icon-feedback-info);
   border-radius: var(--radius-sm);
@@ -920,7 +930,7 @@ nav._5e434347c823b592-guilds {
   padding-inline: var(--space-md);
 }
 
-.a9e7064fdee8e9b0-paginationLimitHeader, .a9e7064fdee8e9b0-helpMessageContainer {
+.a98f3b020416ad54-paginationLimitHeader, .a98f3b020416ad54-helpMessageContainer {
   margin-inline: var(--space-xs);
   margin-top: var(--space-xs);
   margin-bottom: 0;
@@ -933,7 +943,7 @@ nav._5e434347c823b592-guilds {
 /* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
 /* License: CC0 */
 /* =========================================================================== */
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -942,34 +952,22 @@ nav._5e434347c823b592-guilds {
         border-color .25s ease;
 }
 
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar .DraftEditor-root {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-._974928fe84ca9647-search._974928fe84ca9647-open > ._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-search.c322aadb96ff59c9-open > .c322aadb96ff59c9-searchBar {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar ._974928fe84ca9647-icon {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .c322aadb96ff59c9-icon {
     margin-right: 7px;
 }
 
 ._496769951eb140fe-search {
     margin: 0 !important;
-}
-
-
-
-/* =========================================================================== */
-/* Snippet: Chat input remove gifting */
-/* By: Wroclaw */
-/* Source: GitHub: https://github.com/amozeo/discord-css-snippets */
-/* License: CC0 */
-/* =========================================================================== */
-.f75fb00fb7356cbe-channelBottomBarArea ._740174f3d6a2c8fe-buttons > .c0c49a3e5c8626ac-container {
-    display: none;
 }
 
 

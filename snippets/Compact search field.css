@@ -1,4 +1,4 @@
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -7,21 +7,20 @@
         border-color .25s ease;
 }
 
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar .DraftEditor-root {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-._974928fe84ca9647-search._974928fe84ca9647-open > ._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-search.c322aadb96ff59c9-open > .c322aadb96ff59c9-searchBar {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-._974928fe84ca9647-search > ._974928fe84ca9647-searchBar ._974928fe84ca9647-icon {
+.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .c322aadb96ff59c9-icon {
     margin-right: 7px;
 }
 
 ._496769951eb140fe-search {
     margin: 0 !important;
 }
-
