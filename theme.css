@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.01.08+2252
+ * @version 26.01.08+2259
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -787,7 +787,7 @@ nav._5e434347c823b592-guilds {
   margin-bottom: 0;
 }
 
-._3f123bbf537a483c-container {
+.b82a71028a53dcf8-container {
   background: var(--background-gradient-highest,var(--background-base-low));
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
@@ -918,7 +918,7 @@ nav._5e434347c823b592-guilds {
   width: 20px;
 }
 
-.bd5bb495e817bddc-container {
+._3379fb83a901b3f2-container {
   background: var(--background-feedback-info);
   border: 1px solid var(--icon-feedback-info);
   border-radius: var(--radius-sm);

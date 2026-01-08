@@ -105,7 +105,7 @@
     },
     {
         "name": "Page Swapper Refresh",
-        "css": "---https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
         "creator": "davart154",
         "source_github": "https://github.com/davart154/Themes",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
