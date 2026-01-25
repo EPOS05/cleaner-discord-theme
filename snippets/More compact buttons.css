@@ -6,10 +6,10 @@
 * @website https://github.com/Krammeth
 */
 
-._99e7cad8d4c55236-scroller[data-list-id^="private-channels-uid_"] {
+.scroller__99e7c[data-list-id^="private-channels-uid_"] {
   scrollbar-width: 0;
   scrollbar-color: transparent;
-  >.d125d22cdfd32cfe-content {
+  >.content_d125d2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,40 +17,59 @@
     justify-content: space-evenly;
     >div:not([class]):first-child,
     >div[role="button"],
-    >._99e7cad8d4c55236-privateChannelsHeaderContainer,
-    >._972a0d22c8afa7f0-channel._972a0d22c8afa7f0-dm {
+    >.privateChannelsHeaderContainer__99e7c,
+    >.channel__972a0.dm__972a0 {
       width: 100%;
     }
-    >.e6b7699ce8339e1c-friendsButtonContainer,
+    >.friendsButtonContainer_e6b769,
     >div:nth-of-type(3),
-    >._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm),
-    >._553bf02027ac2419-wrapper {
+    >.channel__972a0:not(.dm__972a0),
+    >.wrapper__553bf {
       margin: 0;
     }
-    ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+    .channel__972a0:not(.dm__972a0) {
       margin: 0 4px !important;
-      >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
+      >.linkButton__972a0 >.link__972a0 {
         padding: 6px;
         justify-content: center;
-        >._972a0d22c8afa7f0-avatarWithText {
+        >.avatarWithText__972a0 {
           padding: 0;
-          >._20a53846fe2e8513-avatar {
+          >.avatar__20a53 {
             margin: 0;
           }
-          >._20a53846fe2e8513-content {
+          >.content__20a53 {
             display: none;
           }
         }
-        >._2b1f52e43a8f1c02-numberBadge {
+        >.numberBadge__2b1f5 {
           position: absolute;
           left: 17.5px;
           bottom: 0;
           transform: scale(0.7);
         }
-        >._4ed1af9a212b8f4f-newBadge {
+        >.premiumBadge__6d7da {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
+          background-color: var(--badge-notification-background);
+
+          >.BadgeClockIcon__6d7da {
+            display: none;
+          }
+
+          >.eyebrow_cf4812 {
+            color: var(--white) !important;
+          }
+        }
+        >.newBadge__4ed1a {
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.7);
+          
+          >.eyebrow_cf4812 {
+            background-color: var(--badge-notification-background);
+            color: var(--white);
+          }
         }
       }
     }

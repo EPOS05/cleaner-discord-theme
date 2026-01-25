@@ -1,7 +1,7 @@
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
 
-._5126c0cd07f243a0-mentioned {
+.mentioned__5126c {
     position: relative;
     border: none !important;
     background-color: transparent;
@@ -9,16 +9,16 @@
     border-radius: 4px;
 }
 
-._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
+.message__5126c.mentioned__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
     background: linear-gradient(
-    to right,
-    rgba(186, 109, 36, 0.2),
-    var(--message-background-hover)
-  );
+        to right,
+        rgba(186, 109, 36, 0.2),
+        var(--message-background-hover)
+    );
 }
 
-._5126c0cd07f243a0-replying {
+.replying__5126c {
     position: relative;
     border: none !important;
     border-radius: 4px;
@@ -26,8 +26,8 @@
     background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
+.message__5126c.replying__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
     background: linear-gradient(
         to right,
         rgba(58, 72, 179, 0.3),
@@ -35,14 +35,14 @@
     );
 }
 
-._034365f2217df5de-flash {
-    background-image: transparent
+.flash__034365 {
+    background-image: transparent;
 }
 
-._034365f2217df5de-flash[data-flash=true] {
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower))
+.flash__034365[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.full-motion ._034365f2217df5de-flash {
-    transition: rgba(0,0,0,0) .2s ease
+.full-motion .flash__034365 {
+    transition: rgba(0,0,0,0) .2s ease;
 }

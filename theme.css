@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.01.08+2259
+ * @version 26.01.25+1917
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -14,12 +14,12 @@
 /* License: CC0 */
 /* =========================================================================== */
 /* Main Menu */
-._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
+.autocomplete__13533.outerWrapper_d1405b {
     max-width: 500px;
 }
 
 /* Autocomplete Menu */
-._13533e3c5791980f-autocomplete._6b0e07cbaf13ec4e-autocomplete {
+.autocomplete__13533.autocomplete__6b0e0 {
     max-height: 300px;
     width: 500px;
 }
@@ -40,9 +40,11 @@
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
 /* =========================================================================== */
-.ef3116c2da186559-scroller {
+.scroller_ef3116 {
     margin-top: 0 !important;
 }
+
+
 
 /* =========================================================================== */
 /* Snippet: Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) */
@@ -50,7 +52,7 @@
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
 /* =========================================================================== */
-:has(._63abbca6d53b6035-backForwardButtons) ._9293f6b2fc12398a-children {
+:has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
 }
 
@@ -60,46 +62,47 @@
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952 */
 /* License: CC0 */
 /* =========================================================================== */
-.visual-refresh section._5e434347c823b592-panels {
+.visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: border-box;
 
-  .e131a99484292a19-actionButtons button {
+  .actionButtons_e131a9 button {
     padding: 0;
   }
 
   /* GameActivityToggle Fix (delete if you don't use) */
-  /* ._37e49614b9f110a9-container {
+  /* .container__37e49 {
     padding: var(--space-xxs);
     gap: var(--space-4);
-    >._37e49614b9f110a9-buttons {
-      gap: 0;
+    >.buttons__37e49 {
+      gap: 0 !important;
     }
-    >._37e49614b9f110a9-avatarWrapper {
+    >.avatarWrapper__37e49 {
       min-width: 32px !important;
-      >._37e49614b9f110a9-avatar {
+      >.avatar__37e49 {
         scale: 0.9;
       }
     }
   } */
 }
-nav._5e434347c823b592-guilds {
+nav.guilds__5e434 {
   margin-bottom: 0 !important;
 }
-._5e434347c823b592-sidebar:after {
+.sidebar__5e434:after {
   display: none;
 }
 /* BetterFolders fix (delete if you don't use) */
-/* .vc-betterFolders-sidebar~section._5e434347c823b592-panels {
+/* .vc-betterFolders-sidebar~section.panels__5e434 {
   left: calc(var(--custom-guild-list-width)*2  + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width)*2 - var(--space-xs)*2 ) !important;
 } */
 
-._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-buttonChevron {
+/* Hide the arrows (creates extra room) */
+.micButtonParent__37e49>.buttonChevron__37e49 {
   display: none;
 }
-._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-micButtonWithMenu {
+.micButtonParent__37e49>.micButtonWithMenu__37e49 {
   border-radius: var(--radius-sm);
 }
 
@@ -109,14 +112,14 @@ nav._5e434347c823b592-guilds {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885 */
 /* License: CC0 */
 /* =========================================================================== */
-.user-profile-modal-v2 ._9c3bea41fd465666-profile {
+.user-profile-modal-v2 .profile__9c3be {
   anchor-name: --profile-anchor;
   --tooltip-bg: color-mix(in oklab, var(--neutral-79) 100%, var(--custom-theme-base-color, #000) var(--custom-theme-base-color-amount, 0%));
   --tooltip-border: color-mix(in oklab,hsl(var(--opacity-12-hsl)/0.12156862745098039) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.12156862745098039) var(--custom-theme-border-color-amount,var(--custom-theme-base-color-amount,0%)));
     /* Edit fill (for bg) and color (for border) to be the same as above. %23 is # */
   --arrow-svg: url("data:image/svg+xml,%3Csvg fill='%23242429' color='%23323237' width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'%3E%3C/path%3E%3Cpath stroke='currentColor' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z'%3E%3C/path%3E%3C/svg%3E");
   
-  ._9c3bea41fd465666-profileButtons {
+  .profileButtons__9c3be {
     position: fixed;
     top: calc(anchor(--profile-anchor start) + 12px);
     right: calc(anchor(--profile-anchor end) + 12px);
@@ -132,15 +135,15 @@ nav._5e434347c823b592-guilds {
     >button {
       min-width: 32px !important;
 
-      >.a22cb0c66246f5d3-buttonChildrenWrapper {
+      >.buttonChildrenWrapper_a22cb0 {
         overflow: visible;
         padding: 0 !important;
-        >.a22cb0c66246f5d3-buttonChildren {
+        >.buttonChildren_a22cb0 {
           overflow: visible;
           justify-content: center;
         }
       }
-      ._4bd5201c86a2042b-lineClamp1 {
+      .lineClamp1__4bd52 {
         align-items: center;
         position: absolute;
         top: -52px;
@@ -167,7 +170,7 @@ nav._5e434347c823b592-guilds {
           bottom: -13px;
         }
       }
-      &:hover ._4bd5201c86a2042b-lineClamp1 {
+      &:hover .lineClamp1__4bd52 {
         opacity: 1;
         transform: scale(1);
       }
@@ -181,8 +184,8 @@ nav._5e434347c823b592-guilds {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1354441271090876609 */
 /* License: CC0 */
 /* =========================================================================== */
-[class$="-folderPreview"] > [class*="-folderPreviewGuildIcon"],
-[data-list-item-id^="guildsnav___"] > [class$="-icon"] {
+[class$="folderPreview__48112"] > [class*="folderPreviewGuildIcon__48112"],
+[data-list-item-id^="guildsnav___"] > [class$="icon__6e9f8"] {
   border-radius: 50% !important;
 }
 
@@ -203,7 +206,7 @@ nav._5e434347c823b592-guilds {
 /* Source: Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612 */
 /* License: CC0 */
 /* =========================================================================== */
-._29444ba32c7fbeab-containerDefault {
+.containerDefault__29444 {
   > div {
     padding-left: 0.5em;
 
@@ -234,65 +237,65 @@ nav._5e434347c823b592-guilds {
     --checkpoint-padding: 0px;
 
     /* adds padding to chat pages */
-    div.f75fb00fb7356cbe-chat:not(.f75fb00fb7356cbe-threadSidebarOpen),
+    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     /* adds padding to friend list page */
-    main._133bf5eea8e33a34-container,
+    main.container__133bf,
     /* adds padding to thread sidebar */
-    div._01ae244280823725-chatLayerWrapper {
-        & section._9293f6b2fc12398a-container {
+    div.chatLayerWrapper__01ae2 {
+        & section.container__9293f {
             padding-right: var(--vr-header-snippet-space);
         }
     }
 
     /* adds padding to servers/app pages */
-    div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-overlay {
+    div.headerBar__8a7fc.overlay__8a7fc {
         padding-right: var(--vr-header-snippet-space);
 
-        ._65d410cfafd026bc-tab,
-        ._1ac1c54c56e5807c-searchBar {
+        .tab__65d41,
+        .searchBar__1ac1c {
             -webkit-app-region: no-drag;
         }
     }
 
-    div._5e434347c823b592-page {
-        &:not(:has(> div.f75fb00fb7356cbe-chat)) {
+    div.page__5e434 {
+        &:not(:has(> div.chat_f75fb0)) {
             anchor-name: --vr-header-snippet;
         }
 
-        & > div.f75fb00fb7356cbe-chat {
+        & > div.chat_f75fb0 {
             anchor-name: --vr-header-snippet;
         }
     }
 
     /* shows or removes window buttons depending on variable */
-    div.c38106a3f0c3ca76-winButtons {
+    div.winButtons_c38106 {
         display: var(--vr-header-snippet-winbuttons);
     }
 
     /* inbox, help, window buttons variables */
-    div.c38106a3f0c3ca76-trailing {
+    div.trailing_c38106 {
         background: none;
         border: none;
         height: var(--custom-channel-header-height);
 
         /* adds padding to window buttons on settings/picture pages */
-        & > div.c38106a3f0c3ca76-winButtons:not(.c38106a3f0c3ca76-winButtonsWithDivider) {
+        & > div.winButtons_c38106:not(.winButtonsWithDivider_c38106) {
             padding-right: var(--vr-header-snippet-button-padding);
         }
     }
 
-    div._5e434347c823b592-base {
+    div.base__5e434 {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
         /* TODO: find the actual class name */
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path._496769951eb140fe-updateIconForeground) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
             --update-padding: 44px;
         }
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing .vc-toolbox-btn) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
             --vencord-padding: 44px;
         }
-        &:has(> div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing path.f1f2b13d058fc458-iconForeground) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             --checkpoint-padding: 44px;
         }
 
@@ -301,63 +304,63 @@ nav._5e434347c823b592-guilds {
         --vr-header-snippet-total-padding: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding));
 
         /* adds padding to app detail page */
-        div.e1147ecfa724a72a-detailHeaderButtonsContainer {
+        div.detailHeaderContainer_e1147e {
           padding-right: calc(var(--vr-header-snippet-total-padding) - 12px);
         }
 
-        div.f75fb00fb7356cbe-subtitleContainer,
-        main._133bf5eea8e33a34-container {
+        div.subtitleContainer_f75fb0,
+        main.container__133bf {
             /* adds padding to entire top container */
-            & section._9293f6b2fc12398a-container {
+            & section.container__9293f {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
         }
 
         /* checks if thread sidebar is open */
-        &:has(div > div._01ae244280823725-chatLayerWrapper) {
+        &:has(div > div.chatLayerWrapper__01ae2) {
             /* removes extra padding given to search bar */
-            div.f75fb00fb7356cbe-subtitleContainer > section._9293f6b2fc12398a-container {
+            div.subtitleContainer_f75fb0 > section.container__9293f {
                 padding-right: 8px;
             }
 
             /* adds padding to the thread buttons */
-            div._01ae244280823725-container > section._9293f6b2fc12398a-container {
+            div.container__01ae2 > section.container__9293f {
                 padding-right: var(--vr-header-snippet-total-padding);
             }
 
             /* adds padding to the vc chat page in fullscreen */
-            &:has(> div._5e434347c823b592-content > div._5e434347c823b592-hidden) div._01ae244280823725-container > section._9293f6b2fc12398a-container {
+            &:has(> div.content__5e434 > div.hidden__5e434) div.container__01ae2 > section.container__9293f {
                 padding-right: var(--vr-header-snippet-button-padding);
             }
         }
 
         /* adds extra spacing to the orbs button on orbs/shop page */
-        div._44ee9ab6d1ca72b4-container {
+        div.container__44ee9 {
             padding-right: var(--vr-header-snippet-extra-padding);
         }
 
         /* livestream header on vc */
-        div._9293f6b2fc12398a-upperContainer {
-            div._495084e7a0006942-toolbar {
+        div.upperContainer__9293f {
+            div.toolbar__49508 {
                 margin-right: -214px !important;
                 -webkit-app-region: no-drag;
             }
-            div._495084e7a0006942-title,
-            div._495084e7a0006942-container {
+            div.title__49508,
+            div.container__49508 {
                 -webkit-app-region: no-drag;
             }
         }
 
         /* adds extra padding to chat icon on vc */
-        div.cb9592ad77576717-video:not(:has(.cb9592ad77576717-fullScreen)) div._495084e7a0006942-subtitleContainer:has(button._201d5e8a3c09670a-button[aria-label^='Show Chat']) {
+        div.video_cb9592:not(:has(.fullScreen_cb9592)) div.subtitleContainer__49508:has(button.button__201d5[aria-label^='Show Chat']) {
             margin-right: calc(var(--vr-header-snippet-total-padding) - var(--vr-header-snippet-button-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
-        div.d08938d21d4682b7-container,
-        div.e1147ecfa724a72a-innerContainer {
+        div.container_d08938,
+        div.innerContainer_e1147e {
             /* adds padding to search bar */
-            div._1ac1c54c56e5807c-search {
+            div.search__1ac1c {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
                 margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding));
                 -webkit-app-region: no-drag;
@@ -365,20 +368,20 @@ nav._5e434347c823b592-guilds {
             
 
             /* adds extra padding if you are looking at search results */
-            &:has(> div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-relative) {
-                ._1ac1c54c56e5807c-search {
+            &:has(> div.headerBar__8a7fc.relative__8a7fc) {
+                .search__1ac1c {
                     padding-right: calc(var(--vr-header-snippet-space) + var(--vr-header-snippet-extra-padding) - 60px);
                 }
             }
         }
 
         /* moves element to "front" */
-        & > div._5e434347c823b592-content {
+        & > div.content__5e434 {
             z-index: 0;
         }
 
         /* top bar variables */
-        & > div.c38106a3f0c3ca76-bar {
+        & > div.bar_c38106 {
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
@@ -387,108 +390,120 @@ nav._5e434347c823b592-guilds {
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
             /* removes the title bar */
-            & > .c38106a3f0c3ca76-title {
+            & > .title_c38106 {
                 display: none;
             }
         }
 
-        &:has(> div._6e2b9359c6f84cfd-notice) {
-            & > div.c38106a3f0c3ca76-bar {
+        &:has(> div.notice__6e2b9) {
+            & > div.bar_c38106 {
                 top: anchor(top);
             }
         }
 
         /* checks if a thread is opened on the side of your screen */
-        &:has(.f75fb00fb7356cbe-threadSidebarOpen.f75fb00fb7356cbe-threadSidebarFloating) > .c38106a3f0c3ca76-bar {
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
             z-index: 0;
         }
     }
 
+    /* removes the extra padding given to the popout menu on vcs */
+    div.popout__0bd4a {
+        div.bar_c38106 {
+            /* changing this value does nothing, but removes the extra padding so oh well */
+            height: 0px
+        }
+        /* fixes padding issue with the close chat button on popout page */
+        section.container__9293f > div.upperContainer__9293f:has([aria-label="Close"]) {
+            margin-right: -220px;
+        }
+    }
+
     /* checks if discord is on a server page */
-    :not(:has(div_5e434347c823b592-page > div.f75fb00fb7356cbe-chat)) div._5e434347c823b592-base > div.c38106a3f0c3ca76-bar {
+    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
         right: 0 !important;
     }
 
     /* adds padding to server list */
-    ul[data-list-id="guildsnav"] > div.ef3116c2da186559-itemsContainer > div.dbd2630aec71879b-stack {
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
     
-    section._0b56311ebc6682e2-header div._9293f6b2fc12398a-toolbar,
-    section.c791b281f2fedc32-header div._9293f6b2fc12398a-toolbar,
-    section.c791b281f2fedc32-header div._9293f6b2fc12398a-children,
-    div._6db1d32c47b6ad72-shop div._8067953d83f4b8a8-shopHomeLink,
+    section.header__0b563 div.toolbar__9293f,
+    section.header_c791b2 div.toolbar__9293f,
+    section.header_c791b2 div.children__9293f,
+    div.shop__6db1d div.shopHomeLink__80679,
     /* main thread + all/claimed quest buttons */
-    div._9293f6b2fc12398a-titleWrapper,
+    div.titleWrapper__9293f,
     /* back button on discover pages */
-    div._8a7fc664acf53af6-iconButton,
+    div.iconButton__8a7fc,
     /* "follow" button for announcements */
-    div.f75fb00fb7356cbe-followButton > button,
-    :not(.bfe55a0aaaf62375-videoControls) div._6ec1a06139ec3b27-topic {
+    div.followButton_f75fb0 > button,
+    :not(.videoControls_bfe55a) div.topic__6ec1a {
         /* allows these areas to be clickable */
         -webkit-app-region: no-drag;
     }
 
     /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
-    ._6db1d32c47b6ad72-shop section._9293f6b2fc12398a-showToolbar {
+    .shop__6db1d section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
-        ._8067953d83f4b8a8-balanceWidgetMenu {
+        .balanceWidgetMenu__80679 {
             margin-right: 0;
         }
     }
 
-    .div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls {
+    .div.videoControls_bfe55a .topControls_bfe55a {
         z-index: -1;
     }
 
     /* mod view padding */
-    ._656be05658eed04d-profileThemedContainer ._34940b51cd19b69f-topRow {
+    .profileThemedContainer__656be .topRow__34940 {
         align-items: end;
         padding-bottom: 0;
 
-        ._34940b51cd19b69f-closeAction {
+        .closeAction__34940 {
             -webkit-app-region: no-drag;
         }
 
-        ._34940b51cd19b69f-memberNameContainer {
+        .memberNameContainer__34940 {
             padding-bottom: 12px;
         }
     }
 
     /* search/wishlist/orbs on shop page */
-    ._8067953d83f4b8a8-alignedRightContent {
+    .alignedRightContent__80679 {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) - 33px);
       -webkit-app-region: no-drag;
     }
 
     /* orbs balance on quests page */
-    ._1a9cebfbd0c9d0f6-headerBarContent ._44ee9ab6d1ca72b4-container {
+    .headerBarContent__1a9ce .container__44ee9 {
       position: fixed;
       right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
 
     /* fixes extra gap of group dm button on friends page */
-    ._9293f6b2fc12398a-toolbar ._133bf5eea8e33a34-inviteToolbar {
+    .toolbar__9293f .inviteToolbar__133bf {
         padding-right: 0px;
     }
 
     /* fixes weird padding issue when searching for an app */
-    ._1eae08c1b97e0c51-sideFilterContainer {
+    .sideFilterContainer__1eae0 {
         position: fixed;
         top: 57px;
     }
 
     /* allows back button on discover pages to be clickable */
-    & ._8a7fc664acf53af6-iconButton {
+    & .iconButton__8a7fc {
         -webkit-app-region: no-drag;
     }
 
     /* allows "follow" button for announcements to be clickable */
-    div.f75fb00fb7356cbe-followButton > button{
+    div.followButton_f75fb0 > button{
         -webkit-app-region: no-drag;
     }
 }
@@ -519,7 +534,7 @@ nav._5e434347c823b592-guilds {
   --order-profile: 5;
 }
 
-._5e434347c823b592-panels {
+.panels__5e434 {
   display: flex;
   flex-direction: column;
   gap: var(--panel-gap);
@@ -527,48 +542,48 @@ nav._5e434347c823b592-guilds {
   border: none;
 }
 
-._0d6162a4e6a4b802-mask {
+.mask__0d616 {
   order: var(--order-quests);
   margin-inline: 0;
   padding-inline: 0;
   border-radius: var(--panel-radius);
 }
-._0d6162a4e6a4b802-wrapper,
-._0d6162a4e6a4b802-wrapperVisible {
+.wrapper__0d616,
+.wrapperVisible__0d616 {
   border-radius: var(--panel-radius);
 }
 
-.e0cf275d59896c00-listeningAlong,
-._5dec784a68542d60-panel,
-.e131a99484292a19-container,
-._37e49614b9f110a9-container {
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.container_e131a9,
+.container__37e49 {
   background-color: var(--panel-color);
   border: 1px solid var(--border-subtle);
   border-radius: var(--panel-radius);
 }
 
-.e0cf275d59896c00-listeningAlong {
+.listeningAlong_e0cf27 {
   order: var(--order-listening);
 }
 
-._5dec784a68542d60-panel {
+.panel__5dec7 {
   order: var(--order-stream);
   padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
 }
 
-.e131a99484292a19-wrapper {
+.wrapper_e131a9 {
   order: var(--order-voice);
 
-  &:not(:has(.e131a99484292a19-container)) {
+  &:not(:has(.container_e131a9)) {
     display: none;
   }
 
-  .e131a99484292a19-container {
+  .container_e131a9 {
     min-height: 90px;
   }
 }
 
-._37e49614b9f110a9-container {
+.container__37e49 {
   order: var(--order-profile);
   min-height: 59px;
 
@@ -586,7 +601,7 @@ nav._5e434347c823b592-guilds {
   border-radius: var(--panel-radius);
   margin: 0 -1px;
 
-  .a562c840daab72a7-barFill {
+  .barFill_a562c8 {
     background-color: var(--vc-spotify-green) !important;
   }
 
@@ -643,7 +658,7 @@ nav._5e434347c823b592-guilds {
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
 
-._5126c0cd07f243a0-mentioned {
+.mentioned__5126c {
     position: relative;
     border: none !important;
     background-color: transparent;
@@ -651,16 +666,16 @@ nav._5e434347c823b592-guilds {
     border-radius: 4px;
 }
 
-._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:hover {
+.message__5126c.mentioned__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
     background: linear-gradient(
-    to right,
-    rgba(186, 109, 36, 0.2),
-    var(--message-background-hover)
-  );
+        to right,
+        rgba(186, 109, 36, 0.2),
+        var(--message-background-hover)
+    );
 }
 
-._5126c0cd07f243a0-replying {
+.replying__5126c {
     position: relative;
     border: none !important;
     border-radius: 4px;
@@ -668,8 +683,8 @@ nav._5e434347c823b592-guilds {
     background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-._5126c0cd07f243a0-message._5126c0cd07f243a0-replying._5126c0cd07f243a0-selected,
-.mouse-mode.full-motion ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:hover {
+.message__5126c.replying__5126c.selected__5126c,
+.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
     background: linear-gradient(
         to right,
         rgba(58, 72, 179, 0.3),
@@ -677,16 +692,16 @@ nav._5e434347c823b592-guilds {
     );
 }
 
-._034365f2217df5de-flash {
-    background-image: transparent
+.flash__034365 {
+    background-image: transparent;
 }
 
-._034365f2217df5de-flash[data-flash=true] {
-    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower))
+.flash__034365[data-flash=true] {
+    background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.full-motion ._034365f2217df5de-flash {
-    transition: rgba(0,0,0,0) .2s ease
+.full-motion .flash__034365 {
+    transition: rgba(0,0,0,0) .2s ease;
 }
 
 
@@ -704,10 +719,10 @@ nav._5e434347c823b592-guilds {
 * @website https://github.com/Krammeth
 */
 
-._99e7cad8d4c55236-scroller[data-list-id^="private-channels-uid_"] {
+.scroller__99e7c[data-list-id^="private-channels-uid_"] {
   scrollbar-width: 0;
   scrollbar-color: transparent;
-  >.d125d22cdfd32cfe-content {
+  >.content_d125d2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -715,40 +730,59 @@ nav._5e434347c823b592-guilds {
     justify-content: space-evenly;
     >div:not([class]):first-child,
     >div[role="button"],
-    >._99e7cad8d4c55236-privateChannelsHeaderContainer,
-    >._972a0d22c8afa7f0-channel._972a0d22c8afa7f0-dm {
+    >.privateChannelsHeaderContainer__99e7c,
+    >.channel__972a0.dm__972a0 {
       width: 100%;
     }
-    >.e6b7699ce8339e1c-friendsButtonContainer,
+    >.friendsButtonContainer_e6b769,
     >div:nth-of-type(3),
-    >._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm),
-    >._553bf02027ac2419-wrapper {
+    >.channel__972a0:not(.dm__972a0),
+    >.wrapper__553bf {
       margin: 0;
     }
-    ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
+    .channel__972a0:not(.dm__972a0) {
       margin: 0 4px !important;
-      >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
+      >.linkButton__972a0 >.link__972a0 {
         padding: 6px;
         justify-content: center;
-        >._972a0d22c8afa7f0-avatarWithText {
+        >.avatarWithText__972a0 {
           padding: 0;
-          >._20a53846fe2e8513-avatar {
+          >.avatar__20a53 {
             margin: 0;
           }
-          >._20a53846fe2e8513-content {
+          >.content__20a53 {
             display: none;
           }
         }
-        >._2b1f52e43a8f1c02-numberBadge {
+        >.numberBadge__2b1f5 {
           position: absolute;
           left: 17.5px;
           bottom: 0;
           transform: scale(0.7);
         }
-        >._4ed1af9a212b8f4f-newBadge {
+        >.premiumBadge__6d7da {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
+          background-color: var(--badge-notification-background);
+
+          >.BadgeClockIcon__6d7da {
+            display: none;
+          }
+
+          >.eyebrow_cf4812 {
+            color: var(--white) !important;
+          }
+        }
+        >.newBadge__4ed1a {
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.7);
+          
+          >.eyebrow_cf4812 {
+            background-color: var(--badge-notification-background);
+            color: var(--white);
+          }
         }
       }
     }
@@ -761,7 +795,7 @@ nav._5e434347c823b592-guilds {
 /* Source: GitHub: https://github.com/davart154/Themes | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
 /* License: CC0 */
 /* =========================================================================== */
-.a98f3b020416ad54-scroller {
+.scroller_a98f3b {
   display: contents;
 }
 #search-results {
@@ -783,11 +817,11 @@ nav._5e434347c823b592-guilds {
     min-height: 40px;
   }
 }
-.a7e67f4ddd7c6bb2-searchResultGroup:last-child {
+.searchResultGroup_a7e67f:last-child {
   margin-bottom: 0;
 }
 
-.b82a71028a53dcf8-container {
+.container_b82a71 {
   background: var(--background-gradient-highest,var(--background-base-low));
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
@@ -797,10 +831,10 @@ nav._5e434347c823b592-guilds {
     display: none;
   }
 }
-.c1521037ef09de7e-pageControlContainer {
+.pageControlContainer_c15210 {
   display: contents;
 }
-.c1521037ef09de7e-pageControl {
+.pageControl_c15210 {
   box-sizing: border-box;
   gap: var(--space-8);
   height: 56px;
@@ -809,7 +843,7 @@ nav._5e434347c823b592-guilds {
   margin: 0;
   width: 100%;
 }
-.c1521037ef09de7e-pageButton {
+.pageButton_c15210 {
   font-weight: 500;
   height: 32px;
   min-height: 32px;
@@ -832,17 +866,17 @@ nav._5e434347c823b592-guilds {
     border-color: var(--control-secondary-border-active);
     color: var(--control-secondary-text-active);
   }
-  &.c1521037ef09de7e-activeButton {
+  &.activeButton_c15210 {
     background-color: var(--control-primary-background-default);
     border-color: var(--control-primary-border-default);
     color: var(--control-primary-text-default);
   }
-  &.c1521037ef09de7e-activeButton:hover {
+  &.activeButton_c15210:hover {
     background-color: var(--control-primary-background-hover);
     border-color: var(--control-primary-border-hover);
     color: var(--control-primary-text-hover);
   }
-  &.c1521037ef09de7e-activeButton:active {
+  &.activeButton_c15210:active {
     background-color: var(--control-primary-background-active);
     border-color: var(--control-primary-border-active);
     color: var(--control-primary-text-active);
@@ -864,7 +898,7 @@ nav._5e434347c823b592-guilds {
     color: var(--custom-input-text-color);
   }
 }
-.c1521037ef09de7e-endButton {
+.endButton_c15210 {
   padding: 0 !important;
   &:first-child {
     margin-right: auto !important;
@@ -876,13 +910,13 @@ nav._5e434347c823b592-guilds {
     display: none;
   }
 }
-.c1521037ef09de7e-iconCaret {
+.iconCaret_c15210 {
   margin: 0 !important;
 }
-.c1521037ef09de7e-jumpToPageInlineInput {
+.jumpToPageInlineInput_c15210 {
   width: 64px;
   margin: 0 !important;
-  ._72c3859781ebce8f-wrapper {
+  .wrapper__72c38 {
     min-height: 32px;
   }
   input {
@@ -890,11 +924,11 @@ nav._5e434347c823b592-guilds {
     text-align: center;
   }
 }
-._72c3859781ebce8f-container input::-webkit-inner-spin-button {
+.container__72c38 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.a7e67f4ddd7c6bb2-resultsBlocked {
+.resultsBlocked_a7e67f {
   background: var(--background-feedback-warning);
   border: 1px solid var(--icon-feedback-warning);
   border-radius: var(--radius-sm);
@@ -909,7 +943,7 @@ nav._5e434347c823b592-guilds {
     color: var(--text-default);
   }
 }
-.a7e67f4ddd7c6bb2-resultsBlockedImage.a7e67f4ddd7c6bb2-resultsBlockedImage {
+.resultsBlockedImage_a7e67f.resultsBlockedImage_a7e67f {
   margin-inline-end: 8px;
   background-color: currentColor;
   background-image: unset;
@@ -918,7 +952,7 @@ nav._5e434347c823b592-guilds {
   width: 20px;
 }
 
-._3379fb83a901b3f2-container {
+.container__3379f {
   background: var(--background-feedback-info);
   border: 1px solid var(--icon-feedback-info);
   border-radius: var(--radius-sm);
@@ -930,7 +964,7 @@ nav._5e434347c823b592-guilds {
   padding-inline: var(--space-md);
 }
 
-.a98f3b020416ad54-paginationLimitHeader, .a98f3b020416ad54-helpMessageContainer {
+.paginationLimitHeader_a98f3b, .helpMessageContainer_a98f3b {
   margin-inline: var(--space-xs);
   margin-top: var(--space-xs);
   margin-bottom: 0;
@@ -943,7 +977,7 @@ nav._5e434347c823b592-guilds {
 /* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
 /* License: CC0 */
 /* =========================================================================== */
-.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar {
+.search_c322aa > .searchBar_c322aa {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -952,21 +986,21 @@ nav._5e434347c823b592-guilds {
         border-color .25s ease;
 }
 
-.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .DraftEditor-root {
+.search_c322aa > .searchBar_c322aa .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-.c322aadb96ff59c9-search.c322aadb96ff59c9-open > .c322aadb96ff59c9-searchBar {
+.search_c322aa.open_c322aa > .searchBar_c322aa {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-.c322aadb96ff59c9-search > .c322aadb96ff59c9-searchBar .c322aadb96ff59c9-icon {
+.search_c322aa > .searchBar_c322aa .icon_c322aa {
     margin-right: 7px;
 }
 
-._496769951eb140fe-search {
+.search__49676 {
     margin: 0 !important;
 }
 
