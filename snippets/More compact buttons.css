@@ -20,6 +20,7 @@
     >.privateChannelsHeaderContainer__99e7c,
     >.channel__972a0.dm__972a0 {
       width: 100%;
+      min-width: 0;
     }
     >.friendsButtonContainer_e6b769,
     >div:nth-of-type(3),
