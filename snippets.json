@@ -16,6 +16,14 @@
         "license": "CC0"
     },
     {
+        "name": "Remove Help button if DevTools button exists",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
         "name": "Remove gap on top of server list",
         "css": "",
         "creator": "EPOS05",
@@ -25,14 +33,6 @@
     },
     {
         "name": "Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)",
-        "css": "",
-        "creator": "EPOS05",
-        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
-        "source_discord": "",
-        "license": "CC0"
-    },
-    {
-        "name": "Remove DevTools Button",
         "css": "",
         "creator": "EPOS05",
         "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
