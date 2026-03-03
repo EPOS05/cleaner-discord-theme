@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.02.09+0026
+ * @version 26.03.03+0138
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -54,6 +54,16 @@
 /* =========================================================================== */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
+}
+
+/* =========================================================================== */
+/* Snippet: Remove DevTools Button */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* =========================================================================== */
+[aria-label="DevTools"] {
+    display: none !important;
 }
 
 /* =========================================================================== */

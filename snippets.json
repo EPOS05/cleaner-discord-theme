@@ -32,6 +32,14 @@
         "license": "CC0"
     },
     {
+        "name": "Remove DevTools Button",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
         "name": "Don't Cover Server List With Panel",
         "css": "",
         "creator": "obsidianninja11",
