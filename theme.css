@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.03.17+1657
+ * @version 26.03.28+0445
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -290,7 +290,7 @@ nav.guilds__5e434 {
 
         /* check if users have the update, vencord, "checkpoint (discord recap), or experiments button */
         /* TODO: find the actual class name */
-        &:has(> div.bar_c38106 > div.trailing_c38106 path.updateIconForeground__49676) {
+        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='Update Ready!']) {
             --update-padding: 44px;
         }
         &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
@@ -517,6 +517,7 @@ nav.guilds__5e434 {
         }
     }
 }
+
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */
