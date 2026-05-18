@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.03.28+0445
+ * @version 26.05.18+0222
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -437,7 +437,8 @@ nav.guilds__5e434 {
     section.header__0b563 div.toolbar__9293f,
     section.header_c791b2 div.toolbar__9293f,
     section.header_c791b2 div.children__9293f,
-    div.shop__6db1d div.shopHomeLink__80679,
+    /* shop categories */
+    div.shop__6db1d div.tabs__354ec,
     /* main thread + all/claimed quest buttons */
     div.titleWrapper__9293f,
     /* back button on discover pages */
@@ -516,8 +517,13 @@ nav.guilds__5e434 {
             margin-right: calc(var(--vr-header-snippet-space) - 10px);
         }
     }
-}
 
+    /* nitro home page */
+    div.applicationStore_f07d62 div.toolbar__9293f {
+        margin-right: var(--vr-header-snippet-space);
+        -webkit-app-region: no-drag;
+    }
+}
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */
