@@ -130,9 +130,9 @@ Paste the following in your QuickCSS editor:
 ```
 
 ## License
-This project is licensed under MIT.
-<br>
-Most CSS snippets are licensed under CC0, though some may be covered by a different license; see the credits or inline comments for details.
+This project is licensed under GPL-2.0. While most CSS snippets included are released under CC0 and may be used freely on their own, certain portions of the CSS file are covered by GPL-2.0, which requires the project as a whole to adopt that license.
+<br><br>
+The GPL-2.0-licensed CSS code is included verbatim, without any modifications. As required by the GPL-2.0, the full license text is available in the LICENSE file, and the original copyright notices have been retained. For details on individual snippet licenses, refer to the credits section or the inline comments within the code.
 
 ## Credits
 Made possible by many developers credited below:

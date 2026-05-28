@@ -82,7 +82,7 @@
     {
         "name": "Compact - Hide Visual Refresh Title Bar",
         "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
-        "creator": "G0d0fninjas - Originally by chloecinders",
+        "creator": "chloecinders - Fixed by G0d0fninjas",
         "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
         "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
         "license": "CC0"
@@ -122,9 +122,17 @@
     {
         "name": "Compact search field",
         "css": "---https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
-        "creator": "Wroclaw",
+        "creator": "Wroclaw - Fixed by ymica.ose",
         "source_github": "https://github.com/amozeo/discord-css-snippets",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831",
         "license": "CC0"
+    },
+    {
+        "name": "SettingsModal",
+        "css": "https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css",
+        "creator": "DevilBro",
+        "source_github": "https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal",
+        "source_discord": "",
+        "license": "GPL-2.0"
     }
 ]
