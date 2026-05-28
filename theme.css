@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.05.28+0655
+ * @version 26.05.28+2030
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -45,6 +45,16 @@
 }
 
 
+
+/* =========================================================================== */
+/* Snippet: Fix voice call menu buttons overlapping (Compact Title Bar fix) */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* =========================================================================== */
+.wrapper_cb9592:not(.sidebarOpen_cb9592) .toolbar__9293f {
+    padding-right: 230px;
+}
 
 /* =========================================================================== */
 /* Snippet: Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix) */
