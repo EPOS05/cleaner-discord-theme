@@ -23,8 +23,5 @@
 
 .search__49676 {
     margin: 0 !important;
-}
-
-[class^="search"] {
-    min-width: 32px !important;
+    width: auto !important;
 }

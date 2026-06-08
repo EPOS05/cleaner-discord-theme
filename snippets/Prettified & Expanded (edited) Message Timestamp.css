@@ -1,0 +1,38 @@
+/**
+ * @name Coloured Icons
+ * @author Some dude idk
+ * @version 1.0.0
+ * @description Fixed & (edited) by Moga
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Prettier & Expanded (edited) Timestamp */
+/* ______________________________________ */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1505719920284008468 */
+/* https://discord.com/channels/1173279886065029291/1505754267506577462 */
+
+.messageContent_c19a55 >.timestamp_c19a55 {
+  /* :not(>.message-translate-indicator) */
+  >span >time >.edited_c19a55 {font-size: 0;}
+  >.hiddenVisually_b18fe2 {
+    clip: unset;
+    clip-path: unset;
+    width: max-content;
+    height: unset;
+    margin-top: 1px;
+    position: unset;
+
+    /* btw u can add a :hover after .msgContent_ or .timestamp_ which is cool, but if it causes */
+    /* a linewrap then itll spaz out a bit, and idk why & am too stupid to fix, so lmk if u can ig */
+
+    /* &::before {content: '✎ edited on (';} */
+    /* &::after {content: ')';} */
+    &::before {content: '✎ ';}
+  }
+}
+
+/* ============================================================================================================================================================ */

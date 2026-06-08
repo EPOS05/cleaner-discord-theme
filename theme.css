@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.05.28+2049
+ * @version 26.06.08+0211
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -1033,11 +1033,55 @@ nav.guilds__5e434 {
 
 .search__49676 {
     margin: 0 !important;
+    width: auto !important;
 }
 
-[class^="search"] {
-    min-width: 32px !important;
+
+/* =========================================================================== */
+/* Snippet: Prettified & Expanded (edited) Message Timestamp */
+/* By: fckyough */
+/* Source: GitHub: https://github.com/fckyough/css1 | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836 */
+/* License: CC0 */
+/* =========================================================================== */
+/**
+ * @name Coloured Icons
+ * @author Some dude idk
+ * @version 1.0.0
+ * @description Fixed & (edited) by Moga
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Prettier & Expanded (edited) Timestamp */
+/* ______________________________________ */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1505719920284008468 */
+/* https://discord.com/channels/1173279886065029291/1505754267506577462 */
+
+.messageContent_c19a55 >.timestamp_c19a55 {
+  /* :not(>.message-translate-indicator) */
+  >span >time >.edited_c19a55 {font-size: 0;}
+  >.hiddenVisually_b18fe2 {
+    clip: unset;
+    clip-path: unset;
+    width: max-content;
+    height: unset;
+    margin-top: 1px;
+    position: unset;
+
+    /* btw u can add a :hover after .msgContent_ or .timestamp_ which is cool, but if it causes */
+    /* a linewrap then itll spaz out a bit, and idk why & am too stupid to fix, so lmk if u can ig */
+
+    /* &::before {content: '✎ edited on (';} */
+    /* &::after {content: ')';} */
+    &::before {content: '✎ ';}
+  }
 }
+
+/* ============================================================================================================================================================ */
+
 
 /* =========================================================================== */
 /* Snippet: SettingsModal */
