@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.06.08+0213
+ * @version 26.06.14+1943
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -848,30 +848,28 @@ nav.guilds__5e434 {
   margin-bottom: 0;
 }
 
-.container_b82a71 {
+.paginationDock_a98f3b {
   background: var(--background-gradient-highest,var(--background-base-low));
   border: 1px solid var(--border-muted);
   border-radius: var(--radius-sm);
+  box-shadow: unset;
   margin-inline: var(--space-xs);
   margin-bottom: var(--space-xs);
-  &:empty {
-    display: none;
+  > div {
+    display: flex;
   }
 }
-.custom-theme-background .container_b82a71 {
+.custom-theme-background .paginationDock_a98f3b {
   border-color: var(--app-frame-border);
-}
-.pageControlContainer_c15210 {
-  display: contents;
 }
 .pageControl_c15210 {
   box-sizing: border-box;
+  flex: 1;
   gap: var(--space-8);
   height: 56px;
   justify-content: center;
-  padding: 0 var(--space-sm);
+  padding: 0;
   margin: 0;
-  width: 100%;
 }
 .pageButton_c15210 {
   font-weight: 500;
@@ -1058,6 +1056,7 @@ nav.guilds__5e434 {
 /* Prettier & Expanded (edited) Timestamp */
 /* ______________________________________ */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1505719920284008468 */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836 */
 /* https://discord.com/channels/1173279886065029291/1505754267506577462 */
 
 .messageContent_c19a55 >.timestamp_c19a55 {

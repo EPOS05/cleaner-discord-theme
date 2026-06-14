@@ -81,7 +81,7 @@
     },
     {
         "name": "Compact - Hide Visual Refresh Title Bar",
-        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "css": "---https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "creator": "chloecinders - Fixed by G0d0fninjas",
         "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
         "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
