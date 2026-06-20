@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.06.14+1943
+ * @version 26.06.20+2259
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -62,8 +62,14 @@
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
 /* License: CC0 */
 /* =========================================================================== */
+/* Controls the title bar chat title in the top left */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
+}
+
+/* Controls the title bar buttons in the top right */
+:root {
+    --vr-header-snippet-space: 195px !important;
 }
 
 /* =========================================================================== */
@@ -301,16 +307,16 @@ nav.guilds__5e434 {
         /* check if users have the update, vencord, "checkpoint (discord recap), or experiments button */
         /* TODO: find the actual class name */
         &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='Update Ready!']) {
-            --update-padding: 44px;
+            --update-padding: 36px;
         }
-        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
-            --vencord-padding: 44px;
+        &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-icon) {
+            --vencord-padding: 36px;
         }
         &:has(> div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
-            --checkpoint-padding: 44px;
+            --checkpoint-padding: 36px;
         }
-        &:has(> div.bar_c38106 > div.trailing_c38106 div.button__85643[aria-label='DevTools']) {
-            --experiments-padding: 44px;
+        &:has(> div.bar_c38106 > div.trailing_c38106 div.clickable__81391[aria-label='DevTools']) {
+            --experiments-padding: 36px;
         }
 
         /* pre-calculates the total padding needed when including the extra buttons */
@@ -534,6 +540,7 @@ nav.guilds__5e434 {
         -webkit-app-region: no-drag;
     }
 }
+
 
 /* =========================================================================== */
 /* Snippet: User & Activity Panels Redesign */
@@ -1059,11 +1066,10 @@ nav.guilds__5e434 {
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836 */
 /* https://discord.com/channels/1173279886065029291/1505754267506577462 */
 
-.messageContent_c19a55 >.timestamp_c19a55 {
+.messageContent_c19a55>.timestamp_c19a55 {
   /* :not(>.message-translate-indicator) */
-  >span >time >.edited_c19a55 {font-size: 0;}
+  >span>time>.edited_c19a55 {width: 26ch; opacity: 0; position: absolute; align-self: center;}
   >.hiddenVisually_b18fe2 {
-    clip: unset;
     clip-path: unset;
     width: max-content;
     height: unset;

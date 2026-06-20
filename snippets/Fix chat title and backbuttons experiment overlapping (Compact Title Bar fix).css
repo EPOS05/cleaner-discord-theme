@@ -1,3 +1,9 @@
+/* Controls the title bar chat title in the top left */
 :has(.backForwardButtons__63abb) .children__9293f {
   margin-left: 50px;
+}
+
+/* Controls the title bar buttons in the top right */
+:root {
+    --vr-header-snippet-space: 195px !important;
 }
