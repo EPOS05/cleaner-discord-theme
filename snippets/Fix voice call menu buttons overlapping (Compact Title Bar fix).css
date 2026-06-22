@@ -1,3 +1,12 @@
 .wrapper_cb9592:not(.sidebarOpen_cb9592) .toolbar__9293f {
     padding-right: 230px;
 }
+
+/* if the user has vencord toolbox \/ */
+div.base__5e434 {
+    &:has(> div.bar_c38106 > div.trailing_c38106 .vc-toolbox-icon) {
+        .toolbar__9293f {
+            padding-right: 295px;
+        }
+    }
+}
