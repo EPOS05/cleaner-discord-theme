@@ -1,23 +1,27 @@
-.wrapper_cb9592:not(.sidebarOpen_cb9592) .toolbar__9293f {
-    padding-right: var(--toolbar-padding);
-}
-
-/* default */
 :root {
-    --toolbar-padding: 260px;
+    --toolbar-base: 225px;
+    --toolbox-offset: 0px;
+    --update-offset: 0px;
+    --devtools-offset: 0px;
 }
 
-/* Vencord toolbox */
 body:has(.vc-toolbox-icon) {
-    --toolbar-padding: 295px;
+    --toolbox-offset: 35px;
 }
 
-/* Update button */
 body:has([aria-label="Update Ready!"]) {
-    --toolbar-padding: 295px;
+    --update-offset: 35px;
 }
 
-/* Vencord toolbox + Update button */
-body:has(.vc-toolbox-icon):has([aria-label="Update Ready!"]) {
-    --toolbar-padding: 330px;
+body:has([aria-label="DevTools"]) {
+    --devtools-offset: 35px;
+}
+
+.wrapper_cb9592:not(.sidebarOpen_cb9592) .toolbar__9293f {
+    padding-right: calc(
+        var(--toolbar-base)
+        + var(--toolbox-offset)
+        + var(--update-offset)
+        + var(--devtools-offset)
+    );
 }
