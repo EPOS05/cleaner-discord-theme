@@ -56,6 +56,22 @@
         "license": "CC0"
     },
     {
+        "name": "Page Swapper Refresh",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
+        "creator": "davart154",
+        "source_github": "https://github.com/davart154/Themes",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
+        "license": "CC0"
+    },
+    {
+        "name": "Icon Consistency",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css",
+        "creator": "davart154",
+        "source_github": "https://github.com/davart154/Themes",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1521283481680875603",
+        "license": "CC0"
+    },
+    {
         "name": "brings back the round server icons",
         "css": "",
         "creator": "ukriu",
@@ -104,14 +120,6 @@
         "license": "CC0"
     },
     {
-        "name": "Page Swapper Refresh",
-        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css",
-        "creator": "davart154",
-        "source_github": "https://github.com/davart154/Themes",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213",
-        "license": "CC0"
-    },
-    {
         "name": "Compact search field",
         "css": "https://raw.githubusercontent.com/amozeo/discord-css-snippets/refs/heads/main/snippets/compact-search-button.css",
         "creator": "Wroclaw",
@@ -125,14 +133,6 @@
         "creator": "fckyough",
         "source_github": "https://github.com/fckyough/css1",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836",
-        "license": "CC0"
-    },
-    {
-        "name": "Icon Consistency",
-        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css",
-        "creator": "fckyough",
-        "source_github": "https://github.com/davart154/Themes",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1521283481680875603",
         "license": "CC0"
     },
     {
