@@ -24,15 +24,15 @@
         "license": "CC0"
     },
     {
-        "name": "Fix voice call menu buttons overlapping (Compact Title Bar fix)",
-        "css": "",
-        "creator": "EPOS05",
-        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
-        "source_discord": "",
+        "name": "Compact Title Bar",
+        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
+        "creator": "chloecinders - Fixed by G0d0fninjas",
+        "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
         "license": "CC0"
     },
     {
-        "name": "Fix chat title and backbuttons experiment overlapping (Compact Title Bar fix)",
+        "name": "Compact Title Bar - overlap fixes (also removes help)",
         "css": "",
         "creator": "EPOS05",
         "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
@@ -77,14 +77,6 @@
         "creator": "sakgoyal",
         "source_github": "",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612",
-        "license": "CC0"
-    },
-    {
-        "name": "Compact - Hide Visual Refresh Title Bar",
-        "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
-        "creator": "chloecinders - Fixed by G0d0fninjas",
-        "source_github": "https://github.com/G0d0fninjas/visual-refresh-compact-title-bar",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1354203100872835123/1437447878829412403",
         "license": "CC0"
     },
     {
