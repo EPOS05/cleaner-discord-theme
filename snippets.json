@@ -136,6 +136,14 @@
         "license": "CC0"
     },
     {
+        "name": "Icon Consistency",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Plugin%20Icon%20Consistency/IconConsistencySource.css",
+        "creator": "fckyough",
+        "source_github": "https://github.com/davart154/Themes",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1521283481680875603",
+        "license": "CC0"
+    },
+    {
         "name": "SettingsModal",
         "css": "https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css",
         "creator": "DevilBro",
