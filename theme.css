@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.07.01+0010
+ * @version 26.07.01+1859
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -44,8 +44,6 @@ div:has(> [aria-label="Send a gift"]) {
     margin-top: 0 !important;
 }
 
-
-
 /* =========================================================================== */
 /* Snippet: Compact Title Bar */
 /* By: G0d0fninjas */
@@ -65,8 +63,6 @@ div:has(> [aria-label="Send a gift"]) {
     --checkpoint-padding: 0px;
     --experiments-padding: 0px;
 
-    /* adds padding to chat pages */
-    div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     /* adds padding to friend list page */
     main.container__133bf,
     /* adds padding to thread sidebar */
@@ -174,18 +170,13 @@ div:has(> [aria-label="Send a gift"]) {
         /* livestream header on vc */
         div.upperContainer__9293f {
             div.toolbar__49508 {
-                margin-right: -214px !important;
+                margin-right: calc(var(--vr-header-snippet-space) - 11px);
                 -webkit-app-region: no-drag;
             }
             div.title__49508,
             div.container__49508 {
                 -webkit-app-region: no-drag;
             }
-        }
-
-        /* adds extra padding to chat icon on vc */
-        div.video_cb9592:not(:has(.fullScreen_cb9592)) div.subtitleContainer__49508:has(button.button__201d5[aria-label^='Show Chat']) {
-            margin-right: calc(var(--vr-header-snippet-total-padding) - var(--vr-header-snippet-button-padding)) !important;
         }
 
         /* checks if you are searching for a server/app */
@@ -347,8 +338,8 @@ div:has(> [aria-label="Send a gift"]) {
     }
 
     /* nitro home page */
-    div.applicationStore_f07d62 div.toolbar__9293f {
-        margin-right: var(--vr-header-snippet-space);
+    div.applicationStore_f07d62 div.navBarActions__131a1 {
+        margin-right: calc(var(--vr-header-snippet-space) - 31px);
         -webkit-app-region: no-drag;
     }
 }
@@ -397,7 +388,7 @@ a:has([aria-label="Help"]) {
    =========================================================================== */
 
 :root {
-    --toolbar-base: 225px;
+    --toolbar-base: 10px;
     --toolbox-offset: 0px;
     --update-offset: 0px;
     --devtools-offset: 0px;

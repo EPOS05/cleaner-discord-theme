@@ -36,7 +36,7 @@ a:has([aria-label="Help"]) {
    =========================================================================== */
 
 :root {
-    --toolbar-base: 225px;
+    --toolbar-base: 10px;
     --toolbox-offset: 0px;
     --update-offset: 0px;
     --devtools-offset: 0px;
