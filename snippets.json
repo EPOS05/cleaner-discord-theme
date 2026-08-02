@@ -24,6 +24,14 @@
         "license": "CC0"
     },
     {
+        "name": "Move profile buttons back to the top right",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
+        "license": "CC0"
+    },
+    {
         "name": "Compact Title Bar",
         "css": "https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css",
         "creator": "G0d0fninjas",
@@ -45,14 +53,6 @@
         "creator": "obsidianninja11",
         "source_github": "",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952",
-        "license": "CC0"
-    },
-    {
-        "name": "Move profile buttons back to the top right",
-        "css": "",
-        "creator": "obsidianninja11",
-        "source_github": "",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1449340673357643885",
         "license": "CC0"
     },
     {
