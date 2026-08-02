@@ -10,7 +10,7 @@ a:has([aria-label="Help"]) {
 
 
 /* ===========================================================================
-   TOP-RIGHT SPACING - TEXT CHANNELS
+   Top-right spacing fix
    =========================================================================== */
 
 :root {
@@ -32,31 +32,17 @@ a:has([aria-label="Help"]) {
 
 
 /* ===========================================================================
-   TOP-RIGHT SPACING - VOICE CALLS
+   Top-right spacing fix - voice calls
+   =========================================================================== */
+.visual-refresh div.base__5e434 div.chat_f75fb0:not(:has(.chatLayerWrapper__01ae2)) div.callContainer_cb9592:not(.fullScreen_cb9592) div.upperContainer__9293f div.toolbar__49508 {
+    padding-right: var(--vr-header-snippet-total-padding);
+}
+
+
+/* ===========================================================================
+   Compact search field button fix
    =========================================================================== */
 
-:root {
-    --toolbar-base: 10px;
-    --toolbox-offset: 0px;
-    --update-offset: 0px;
-    --devtools-offset: 0px;
-}
-
-:root:has(.vc-toolbox-icon) {
-    --toolbox-offset: 35px;
-}
-:root:has([aria-label="Update Ready!"]) {
-    --update-offset: 35px;
-}
-:root:has([aria-label="DevTools"]) {
-    --devtools-offset: 35px;
-}
-
-.wrapper_cb9592:not(.sidebarOpen_cb9592) .toolbar__9293f {
-    padding-right: calc(
-        var(--toolbar-base)
-        + var(--toolbox-offset)
-        + var(--update-offset)
-        + var(--devtools-offset)
-    );
+.search_c322aa > .searchBar_c322aa [data-slate-editor="true"] {
+    padding-right: 0px !important;
 }
