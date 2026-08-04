@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.08.02+2033
+ * @version 26.08.04+1814
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -22,6 +22,11 @@
 .autocomplete__13533.autocomplete__6b0e0 {
     max-height: 300px;
     width: 500px;
+}
+
+/* Force scrollable list (.scroller__6b0e0) to match the outer 300px so it doersn't cut off content */
+.autocomplete__13533.autocomplete__6b0e0 .scroller__6b0e0 {
+    max-height: 300px !important;
 }
 
 /* =========================================================================== */

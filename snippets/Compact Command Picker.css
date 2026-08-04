@@ -8,3 +8,8 @@
     max-height: 300px;
     width: 500px;
 }
+
+/* Force scrollable list (.scroller__6b0e0) to match the outer 300px so it doersn't cut off content */
+.autocomplete__13533.autocomplete__6b0e0 .scroller__6b0e0 {
+    max-height: 300px !important;
+}
