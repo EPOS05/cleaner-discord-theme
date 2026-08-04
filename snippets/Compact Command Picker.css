@@ -1,15 +1,25 @@
-/* Main Menu */
-.autocomplete__13533.outerWrapper_d1405b {
-    max-width: 500px;
-}
-
-/* Autocomplete Menu */
+/* ===== Autocomplete Menu ===== */
 .autocomplete__13533.autocomplete__6b0e0 {
     max-height: 300px;
     width: 500px;
 }
-
-/* Force scrollable list (.scroller__6b0e0) to match the outer 300px so it doersn't cut off content */
+/* Inner scroller has its own inline height, force it to match */
 .autocomplete__13533.autocomplete__6b0e0 .scroller__6b0e0 {
+    max-height: 300px !important;
+}
+
+/* ===== Command Picker ===== */
+.autocomplete__13533.outerWrapper_d1405b {
+    width: 500px;
+    max-height: 300px;
+}
+
+/* Command list scroller, same inline height issue as above */
+.autocomplete__13533.outerWrapper_d1405b .scroller_affa7e.list_d1405b {
+    max-height: 300px !important;
+}
+
+/* Icon rail is a separate scroller, needs its own cap too */
+.autocomplete__13533.outerWrapper_d1405b .rail_d1405b .scroller_affa7e {
     max-height: 300px !important;
 }
