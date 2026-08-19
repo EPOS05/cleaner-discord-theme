@@ -72,6 +72,14 @@
         "license": "CC0"
     },
     {
+        "name": "Context Icons",
+        "css": "https://raw.githubusercontent.com/davart154/Themes/refs/heads/main/Snippets/Context%20Icons/ContextIconsSource.css",
+        "creator": "davart154",
+        "source_github": "https://github.com/davart154/Themes",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1538655690007249027",
+        "license": "CC0"
+    },
+    {
         "name": "brings back the round server icons",
         "css": "",
         "creator": "ukriu",
@@ -129,9 +137,9 @@
     },
     {
         "name": "Prettified & Expanded (edited) Message Timestamp",
-        "css": "https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/prettifiedAndExpandedEditedMessageTimestamp.css",
-        "creator": "fckyough",
-        "source_github": "https://github.com/fckyough/css1",
+        "css": "https://codeberg.org/flak/css1/raw/branch/main/vcSnippets/prettifiedAndExpandedEditedMessageTimestamp.css",
+        "creator": "flak",
+        "source_github": "https://codeberg.org/flak/css1",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836",
         "license": "CC0"
     },
