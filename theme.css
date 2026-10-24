@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.10.06+1237
+ * @version 26.10.24+0448
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -441,6 +441,41 @@ div:has(> [aria-label="Send a gift"]) {
 }
 
 /* =========================================================================== */
+/* Snippet: Compact search field */
+/* By: Wroclaw */
+/* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
+/* License: CC0 */
+/* =========================================================================== */
+.search_c322aa > .searchBar_c322aa {
+    width: 32px !important;
+    background: none;
+    border-color: transparent;
+    transition: background .25s ease,
+        width .25s ease,
+        border-color .25s ease;
+}
+
+.search_c322aa > .searchBar_c322aa .DraftEditor-root {
+    padding-right: 3px !important;
+}
+
+.search_c322aa.open_c322aa > .searchBar_c322aa {
+    width: 244px !important;
+    background: var(--background-gradient-low, var(--input-background-default));
+    border-color: var(--input-border-default);
+}
+
+.search_c322aa > .searchBar_c322aa .icon_c322aa {
+    margin-right: 7px;
+}
+
+.search__49676 {
+    margin: 0 !important;
+    width: auto !important;
+}
+
+
+/* =========================================================================== */
 /* Snippet: Compact Title Bar - overlap fixes (also removes help) */
 /* By: EPOS05 */
 /* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
@@ -491,8 +526,25 @@ a:has([aria-label="Help"]) {
    Compact search field button fix
    =========================================================================== */
 
-.search_c322aa > .searchBar_c322aa [data-slate-editor="true"] {
-    padding-right: 0px !important;
+.search_c322aa:not(.open_c322aa) > .searchBar_c322aa {
+    position: relative;
+}
+
+.search_c322aa:not(.open_c322aa) > .searchBar_c322aa [data-slate-editor="true"] {
+    position: absolute !important;
+    inset: 0;
+    opacity: 0;
+    padding: 0 !important;
+}
+
+.search_c322aa > .searchBar_c322aa .icon_c322aa {
+    margin-left: auto;
+    margin-right: 3px;
+    transition: margin .25s ease;
+}
+
+.search_c322aa.open_c322aa > .searchBar_c322aa .icon_c322aa {
+    margin-right: 7px;
 }
 
 /* =========================================================================== */
@@ -1461,6 +1513,9 @@ nav.guilds__5e434 {
 #textarea-context-languages:before {
   mask-image: var(--maskIcon-language);
 }
+#textarea-context-copy:before {
+  mask-image: var(--maskIcon-copy);
+}
 #textarea-context-paste:before {
   mask-image: var(--maskIcon-clipboard);
 }
@@ -2225,41 +2280,6 @@ nav.guilds__5e434 {
     }
   }
 }
-
-/* =========================================================================== */
-/* Snippet: Compact search field */
-/* By: Wroclaw */
-/* Source: GitHub: https://github.com/amozeo/discord-css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
-/* License: CC0 */
-/* =========================================================================== */
-.search_c322aa > .searchBar_c322aa {
-    width: 32px !important;
-    background: none;
-    border-color: transparent;
-    transition: background .25s ease,
-        width .25s ease,
-        border-color .25s ease;
-}
-
-.search_c322aa > .searchBar_c322aa .DraftEditor-root {
-    padding-right: 3px !important;
-}
-
-.search_c322aa.open_c322aa > .searchBar_c322aa {
-    width: 244px !important;
-    background: var(--background-gradient-low, var(--input-background-default));
-    border-color: var(--input-border-default);
-}
-
-.search_c322aa > .searchBar_c322aa .icon_c322aa {
-    margin-right: 7px;
-}
-
-.search__49676 {
-    margin: 0 !important;
-    width: auto !important;
-}
-
 
 /* =========================================================================== */
 /* Snippet: Prettified & Expanded (edited) Message Timestamp */

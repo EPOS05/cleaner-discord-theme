@@ -43,6 +43,23 @@ a:has([aria-label="Help"]) {
    Compact search field button fix
    =========================================================================== */
 
-.search_c322aa > .searchBar_c322aa [data-slate-editor="true"] {
-    padding-right: 0px !important;
+.search_c322aa:not(.open_c322aa) > .searchBar_c322aa {
+    position: relative;
+}
+
+.search_c322aa:not(.open_c322aa) > .searchBar_c322aa [data-slate-editor="true"] {
+    position: absolute !important;
+    inset: 0;
+    opacity: 0;
+    padding: 0 !important;
+}
+
+.search_c322aa > .searchBar_c322aa .icon_c322aa {
+    margin-left: auto;
+    margin-right: 3px;
+    transition: margin .25s ease;
+}
+
+.search_c322aa.open_c322aa > .searchBar_c322aa .icon_c322aa {
+    margin-right: 7px;
 }
