@@ -1,25 +1,25 @@
 /* ===== Autocomplete Menu ===== */
-.autocomplete__13533.autocomplete__6b0e0 {
+.autocomplete_CAMiwx.autocomplete_rg6La1 {
     max-height: 300px;
     width: 500px;
 }
 /* Inner scroller has its own inline height, force it to match */
-.autocomplete__13533.autocomplete__6b0e0 .scroller__6b0e0 {
+.autocomplete_CAMiwx.autocomplete_rg6La1 .scroller_rg6La1 {
     max-height: 300px !important;
 }
 
 /* ===== Command Picker ===== */
-.autocomplete__13533.outerWrapper_d1405b {
+.autocomplete_CAMiwx.outerWrapper_3dKq9h {
     width: 500px;
     max-height: 300px;
 }
 
 /* Command list scroller, same inline height issue as above */
-.autocomplete__13533.outerWrapper_d1405b .scroller_affa7e.list_d1405b {
+.autocomplete_CAMiwx.outerWrapper_3dKq9h .scroller_EwKtHG.list_3dKq9h {
     max-height: 300px !important;
 }
 
 /* Icon rail is a separate scroller, needs its own cap too */
-.autocomplete__13533.outerWrapper_d1405b .rail_d1405b .scroller_affa7e {
+.autocomplete_CAMiwx.outerWrapper_3dKq9h .rail_3dKq9h .scroller_EwKtHG {
     max-height: 300px !important;
 }

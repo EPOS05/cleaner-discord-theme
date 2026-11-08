@@ -5,10 +5,12 @@ import re
 from urllib.parse import urljoin
 from datetime import datetime
 
-SNIPPET_FOLDER = "snippets"
-THEME_CSS_FILE = "theme.css"
-JSON_FILE = "snippets.json"
-README_FILE = "README.md"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+SNIPPET_FOLDER = os.path.join(BASE_DIR, "snippets")
+THEME_CSS_FILE = os.path.join(BASE_DIR, "theme.css")
+JSON_FILE = os.path.join(BASE_DIR, "snippets.json")
+README_FILE = os.path.join(BASE_DIR, "README.md")
 
 os.makedirs(SNIPPET_FOLDER, exist_ok=True)
 

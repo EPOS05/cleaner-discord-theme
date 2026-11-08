@@ -1,4 +1,4 @@
-.search_c322aa > .searchBar_c322aa {
+.search_i16Ad0 > .searchBar_i16Ad0 {
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -7,21 +7,21 @@
         border-color .25s ease;
 }
 
-.search_c322aa > .searchBar_c322aa .DraftEditor-root {
+.search_i16Ad0 > .searchBar_i16Ad0 .DraftEditor-root {
     padding-right: 3px !important;
 }
 
-.search_c322aa.open_c322aa > .searchBar_c322aa {
+.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
-.search_c322aa > .searchBar_c322aa .icon_c322aa {
+.search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
     margin-right: 7px;
 }
 
-.search__49676 {
+.search_bWCaDq {
     margin: 0 !important;
     width: auto !important;
 }

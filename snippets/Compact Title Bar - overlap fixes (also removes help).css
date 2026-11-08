@@ -4,7 +4,7 @@ a:has([aria-label="Help"]) {
 }
 
 /* Chat title (top-left) overlapping the back/forward buttons */
-:has(.backForwardButtons__63abb) .children__9293f {
+:has(.backForwardButtons_nS9Yqn) .children_ybUK7Z {
     margin-left: 50px;
 }
 
@@ -22,7 +22,7 @@ a:has([aria-label="Help"]) {
 }
 
 /* If Bug Report is present (Help's replacement), add back one icon's worth of space. */
-:root:has(.trailing_c38106 [aria-label="Submit a Bug Report"]) {
+:root:has(.trailing_3zSH5d [aria-label="Submit a Bug Report"]) {
     --help-slot-offset: 35px;
 }
 
@@ -34,7 +34,7 @@ a:has([aria-label="Help"]) {
 /* ===========================================================================
    Top-right spacing fix - voice calls
    =========================================================================== */
-.visual-refresh div.base__5e434 div.chat_f75fb0:not(:has(.chatLayerWrapper__01ae2)) div.callContainer_cb9592:not(.fullScreen_cb9592) div.upperContainer__9293f div.toolbar__49508 {
+.visual-refresh div.base_pog62O div.chat_z_gUBg:not(:has(.chatLayerWrapper_FrbQJp)) div.callContainer_hbKzX7:not(.fullScreen_hbKzX7) div.upperContainer_ybUK7Z div.toolbar_neq5ug {
     padding-right: var(--vr-header-snippet-total-padding);
 }
 
@@ -43,23 +43,23 @@ a:has([aria-label="Help"]) {
    Compact search field button fix
    =========================================================================== */
 
-.search_c322aa:not(.open_c322aa) > .searchBar_c322aa {
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 {
     position: relative;
 }
 
-.search_c322aa:not(.open_c322aa) > .searchBar_c322aa [data-slate-editor="true"] {
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 [data-slate-editor="true"] {
     position: absolute !important;
     inset: 0;
     opacity: 0;
     padding: 0 !important;
 }
 
-.search_c322aa > .searchBar_c322aa .icon_c322aa {
+.search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
     margin-left: auto;
     margin-right: 3px;
     transition: margin .25s ease;
 }
 
-.search_c322aa.open_c322aa > .searchBar_c322aa .icon_c322aa {
+.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
     margin-right: 7px;
 }

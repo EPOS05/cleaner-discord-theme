@@ -1,24 +1,24 @@
 /*FANCY MENTION/REPLY GRADIENT COLORS*/
 /*By: Burning Stone*/
 
-.mentioned__5126c {
+.mentioned_SY_P2T {
     position: relative;
     border: none !important;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(186, 109, 20, 0.2), var(--background-base-lower));
+    background-image: linear-gradient(to right, rgba(186, 109, 36, 0.3), var(--background-base-lower));
     border-radius: 4px;
 }
 
-.message__5126c.mentioned__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover {
+.message_SY_P2T.mentioned_SY_P2T.selected_SY_P2T,
+.mouse-mode.full-motion .message_SY_P2T.mentioned_SY_P2T:hover {
     background: linear-gradient(
         to right,
-        rgba(186, 109, 36, 0.2),
+        rgba(186, 109, 36, 0.3),
         var(--message-background-hover)
     );
 }
 
-.replying__5126c {
+.replying_SY_P2T {
     position: relative;
     border: none !important;
     border-radius: 4px;
@@ -26,8 +26,8 @@
     background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.message__5126c.replying__5126c.selected__5126c,
-.mouse-mode.full-motion .message__5126c.replying__5126c:hover {
+.message_SY_P2T.replying_SY_P2T.selected_SY_P2T,
+.mouse-mode.full-motion .message_SY_P2T.replying_SY_P2T:hover {
     background: linear-gradient(
         to right,
         rgba(58, 72, 179, 0.3),
@@ -35,14 +35,34 @@
     );
 }
 
-.flash__034365 {
+.flash_EajVQV {
     background-image: transparent;
 }
 
-.flash__034365[data-flash=true] {
+.flash_EajVQV[data-flash=true] {
+    background-color: transparent !important;
     background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), var(--background-base-lower));
 }
 
-.full-motion .flash__034365 {
+.full-motion .flash_EajVQV {
     transition: rgba(0,0,0,0) .2s ease;
+}
+
+.flash_EajVQV[data-flash=true]>.flashOverlay_EajVQV {
+  opacity:1;
+}
+
+.flashOverlay_EajVQV {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(58, 72, 163, 0.3), transparent);
+  border-inline-start:2px solid var(--text-brand);
+  border-radius:inherit;
+  inset:0;
+  opacity:0;
+  pointer-events:none;
+  position:absolute;
+}
+
+.full-motion .flash_EajVQV > .flashOverlay_EajVQV[data-pulse="true"] {
+    animation: none !important;
 }

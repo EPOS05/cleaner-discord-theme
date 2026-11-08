@@ -1,23 +1,23 @@
 .dev_e9c564.hasBadge_e9c564 {
 	overflow: visible;
 }
-.member__5d473 .dev_e9c564.hasBadge_e9c564 {
+.member_Iy0c7A .dev_e9c564.hasBadge_e9c564 {
 	position: relative;
 }
 .dev_e9c564::before {
 	display: none !important;
 }
-.dev_e9c564.hasBadge_e9c564 .mask__44b0c {
+.dev_e9c564.hasBadge_e9c564 .mask_XpIUHy {
 	-webkit-mask: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><path fill="white" d="m 0,0 v 0.588 c 0.04285503,0.002169 0.08764096,-2.7964e-4 0.127,0 0.1310673,9.3123e-4 0.16260999,0.0186869 0.163,0.15 2.5938e-4,0.0873322 0,0.262 0,0.262 H 1 V 0 Z"/></svg>') center/cover no-repeat;
 }
-.avatar_c19a55.dev_e9c564.hasBadge_e9c564 > img {
+.avatar_2i8Bfm.dev_e9c564.hasBadge_e9c564 > img {
 	-webkit-mask: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><path fill="white" d="M 0 0 L 0 0.67578125 C 0.049283231 0.67827525 0.10122152 0.67545966 0.14648438 0.67578125 C 0.29721162 0.67685225 0.33353587 0.69859943 0.33398438 0.84960938 C 0.33413352 0.89982534 0.33402166 0.93722907 0.33398438 1 L 1 1 L 1 0 L 0 0 z"/></svg>') center/cover no-repeat;
 }
-.dev_e9c564.hasBadge_e9c564 .avatarDecoration_c19a55,
-.dev_e9c564.hasBadge_e9c564 .avatarDecoration__44b0c {
+.dev_e9c564.hasBadge_e9c564 .avatarDecoration_2i8Bfm,
+.dev_e9c564.hasBadge_e9c564 .avatarDecoration_XpIUHy {
 	-webkit-mask: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"><path fill="white" d="M 0 0 L 0 0.63578125 C 0.049283231 0.63827525 0.10122152 0.63545966 0.14648438 0.63578125 C 0.29721162 0.63685225 0.33353587 0.68859943 0.33398438 0.84960938 C 0.33413352 0.89982534 0.33402166 0.93722907 0.33398438 1 L 1 1 L 1 0 L 0 0 z"/></svg>') center/cover no-repeat;
 }
-.dev_e9c564.hasBadge_e9c564 .avatarDecoration_c19a55 {
+.dev_e9c564.hasBadge_e9c564 .avatarDecoration_2i8Bfm {
 	top: 0;
 	left: 0;
 }
@@ -30,11 +30,11 @@
 	top: 74% !important;
 	left: 1.5% !important;
 }
-.dev_e9c564.hasBadge_e9c564 .mask__44b0c[width="32"][height="32"] ~ .badge_e9c564 {
+.dev_e9c564.hasBadge_e9c564 .mask_XpIUHy[width="32"][height="32"] ~ .badge_e9c564 {
 	margin-top: -8% !important;
 	margin-left: -6% !important;
 }
-.selected__91a9d .dev_e9c564.hasBadge_e9c564 .badge_e9c564 {
+.selected_J1Adu_ .dev_e9c564.hasBadge_e9c564 .badge_e9c564 {
 	filter: brightness(80%) !important;
 }
 
@@ -50,7 +50,7 @@
 	--settingsbackground_v: 	var(--settingsbackground_s, var(--settingsbackground));
 }
 
-#app-mount .baseLayer__960e4 {
+#app-mount .baseLayer_Fd0FEH {
 	opacity: 1 !important;
 	transform: unset !important;
 	will-change: unset !important;
@@ -60,7 +60,7 @@
 	transition-property: inherit !important;
 	animation: inherit !important;
 }
-#app-mount .layer__960e4.stop-animations:first-child::after,
+#app-mount .layer_Fd0FEH.stop-animations:first-child::after,
 #app-mount .BA__layerContainer .BA__layer--hidden:first-child::after {
 	content: "" !important;
 	position: fixed !important;
@@ -76,7 +76,7 @@
 	pointer-events: none !important;
 }
 
-#app-mount .layer__960e4 ~ .layer__960e4,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH,
 #app-mount .BA__layerContainer ~ .BA__layerContainer {
 	position: absolute !important;
 	top: 0 !important;
@@ -95,17 +95,17 @@
 	z-index: 1000 !important;
 	--settingsiconsadditionalsize: var(--use-settingsicons, 0) * (var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
 }
-#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer__960e4 {
+#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer_Fd0FEH {
 	position: unset !important;
 	padding: unset !important;
 	overflow: unset !important;
 	contain: unset !important;
 	height: 100% !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 > div,
-#app-mount .layer__960e4 ~ .layer__960e4 .standardSidebarView__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer__960e4 > div,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .standardSidebarView__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH > div,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .standardSidebarView_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer_Fd0FEH > div,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .standardSidebarView_jnk11m {
 	position: static !important;
 	border-radius: unset !important;
 	width: 100% !important;
@@ -114,39 +114,39 @@
 	padding: unset !important;
 	overflow: hidden !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .sidebarRegion__23e6b,
-#app-mount .layer__960e4 ~ .layer__960e4 .sidebarRegionScroller__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebarRegion__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebarRegionScroller__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebarRegion_jnk11m,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebarRegionScroller_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebarRegion_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebarRegionScroller_jnk11m {
 	flex: 0 0 auto !important;
 	margin-top: 0 !important;
 	z-index: 3 !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .sidebar__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebar_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar_jnk11m {
 	width: 218px !important;
 	padding: 20px 6px 20px 20px !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .contentColumnDefault__23e6b,
-#app-mount .layer__960e4 ~ .layer__960e4 .contentColumnWide__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .contentColumnDefault__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .contentColumnWide__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentColumnDefault_jnk11m,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentColumnWide_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .contentColumnDefault_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .contentColumnWide_jnk11m {
 	padding: 20px 40px !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .contentRegionScroller__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .contentRegionScroller__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentRegionScroller_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .contentRegionScroller_jnk11m {
 	margin-top: 0 !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .sidebar_e29cd7,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar_e29cd7 {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebar_7NrAL2,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar_7NrAL2 {
 	height: var(--settingsheight_v) !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .standardSidebarView__23e6b .editor,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .standardSidebarView__23e6b .editor {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .standardSidebarView_jnk11m .editor,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .standardSidebarView_jnk11m .editor {
 	height: calc(var(--settingsheight_v) - 120px) !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .toolsContainer__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m {
 	position: fixed !important;
 	inset: 0 !important;
 	width: 100% !important;
@@ -157,13 +157,13 @@
 	padding-top: 0 !important;
 	opacity: 0 !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .toolsContainer__23e6b .tools__23e6b,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer__23e6b .tools__23e6b {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m .tools_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m .tools_jnk11m {
 	width: 100% !important;
 	height: 100% !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .toolsContainer__23e6b .closeButton_c2b141,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer__23e6b .closeButton_c2b141 {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m .closeButton_e76OBR,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m .closeButton_e76OBR {
 	border: none !important;
 	border-radius: 0 !important;
 	width: 100% !important;
@@ -174,31 +174,31 @@
 	flex: unset !important;
 	transition: unset !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .toolsContainer__23e6b .closeButton_c2b141:hover,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer__23e6b .closeButton_c2b141:hover {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m .closeButton_e76OBR:hover,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m .closeButton_e76OBR:hover {
 	transition: unset !important;
 	background: unset !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .toolsContainer__23e6b .closeButton_c2b141 > svg,
-#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer__23e6b .closeButton_c2b141 > svg {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m .closeButton_e76OBR > svg,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m .closeButton_e76OBR > svg {
 	display: none !important;
 }
-#app-mount > .appAsidePanelWrapper_a3002d > .notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .container_c2b141 {
+#app-mount > .appAsidePanelWrapper_YRXZu0 > .notAppAsidePanel_YRXZu0 .contentRegion_jnk11m .toolsContainer_jnk11m .container_e76OBR {
 	height: 100% !important;
 }
-#app-mount > .appAsidePanelWrapper_a3002d > .notAppAsidePanel_a3002d .contentRegion__23e6b .toolsContainer__23e6b .keybind_c2b141 {
+#app-mount > .appAsidePanelWrapper_YRXZu0 > .notAppAsidePanel_YRXZu0 .contentRegion_jnk11m .toolsContainer_jnk11m .keybind_e76OBR {
 	display: none !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .settingsToolbar_8227b0,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .settingsToolbar_8227b0,
 #app-mount .BA__layerContainer ~ .BA__layerContainer .settingsToolbar_8227b0 {
 	display: none !important;
 }
-#app-mount .layer__960e4 ~ .layer__960e4 .container__9293f.headerBar__80679.
-#app-mount .BA__layerContainer ~ .BA__layerContainer .container__9293f.headerBar__80679 {
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .container_ybUK7Z.headerBar_ViLURN.
+#app-mount .BA__layerContainer ~ .BA__layerContainer .container_ybUK7Z.headerBar_ViLURN {
 	position: static !important;
 }
 
-#app-mount .root__5c9fc:not(:has(.introAnimation__33f0b)) {
+#app-mount .root_oez3v3:not(:has(.introAnimation__33f0b)) {
 	position: fixed !important;
 	top: 0 !important;
 	right: 0 !important;
@@ -215,14 +215,14 @@
 	contain: unset !important;
 	z-index: 1000 !important;
 }
-#app-mount .root__5c9fc.enterDone__5c9fc {
+#app-mount .root_oez3v3.enterDone_oez3v3 {
 	transform: unset !important;
 }
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e,
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e .container_c2b141,
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e .closeButton_c2b141,
-#app-mount .layer__960e4 > .shop__6db1d .container_c2b141,
-#app-mount .layer__960e4 > .shop__6db1d .closeButton_c2b141 {
+#app-mount .root_oez3v3 .closeIconWrapper__6fd0e,
+#app-mount .root_oez3v3 .closeIconWrapper__6fd0e .container_e76OBR,
+#app-mount .root_oez3v3 .closeIconWrapper__6fd0e .closeButton_e76OBR,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .container_e76OBR,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .closeButton_e76OBR {
 	position: fixed !important;
 	top: 0 !important;
 	right: 0 !important;
@@ -243,11 +243,11 @@
 	animation: unset !important;
 	transition: unset !important;
 }
-#app-mount .layer__960e4 > .shop__6db1d .shopHomeLink__80679,
-#app-mount .layer__960e4 > .shop__6db1d .tabs__80679,
-#app-mount .layer__960e4 > .shop__6db1d .shopScroll__08415 {
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .shopHomeLink_ViLURN,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .tabs__80679,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .shopScroll__08415 {
 	z-index: 2 !important;
 }
-#app-mount .root__5c9fc .closeIconWrapper__6fd0e {
+#app-mount .root_oez3v3 .closeIconWrapper__6fd0e {
 	top: 22px !important;
 }

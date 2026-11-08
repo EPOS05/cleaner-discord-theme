@@ -16,10 +16,10 @@
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836 */
 /* https://discord.com/channels/1173279886065029291/1505754267506577462 */
 
-.messageContent_c19a55>.timestamp_c19a55 {
+.messageContent_2i8Bfm>.timestamp_2i8Bfm {
   /* :not(>.message-translate-indicator) */
-  >span>time>.edited_c19a55 {width: 26ch; opacity: 0; position: absolute; align-self: center;}
-  >.hiddenVisually_b18fe2 {
+  >span>time>.edited_2i8Bfm {width: 26ch; opacity: 0; position: absolute; align-self: center;}
+  >.hiddenVisually_FX8kaC {
     clip-path: unset;
     width: max-content;
     height: unset;
