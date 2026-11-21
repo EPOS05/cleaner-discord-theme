@@ -23,7 +23,6 @@ Made possible by many developers credited below:
 - [Move profile buttons back to the top right](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Compact Title Bar](https://github.com/G0d0fninjas/visual-refresh-compact-title-bar) - By G0d0fninjas
 - [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
-- [Compact Title Bar - overlap fixes (also removes help)](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Don't Cover Server List With Panel](https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952) - By obsidianninja11
 - [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
 - [Icon Consistency](https://github.com/davart154/Themes) - By davart154
@@ -33,8 +32,9 @@ Made possible by many developers credited below:
 - [Collapse Icon Position Fix](https://discord.com/channels/1015060230222131221/1028106818368589824/1362945175957012612) - By sakgoyal
 - [User & Activity Panels Redesign](https://github.com/yiruzu/vencord-snippets) - By yiruzu
 - [Mention-Replying Gradient Highlight Colors](https://github.com/BurningStoneDiscord/DiscordHighlightGradient) - By BurningStone
-- [More compact buttons](https://github.com/Krammeth/css-snippets) - By Krammeth
+- [CompactTabs](https://github.com/Krammeth/css-snippets) - By Krammeth
 - [Prettified & Expanded (edited) Message Timestamp](https://codeberg.org/flak/css1) - By flak
+- [Cleaner Discord Theme - Various Fixes](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 
 ### Licensed under GPL-2.0
 - [SettingsModal](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal) - By DevilBro

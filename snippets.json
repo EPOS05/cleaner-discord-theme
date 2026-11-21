@@ -48,14 +48,6 @@
         "license": "CC0"
     },
     {
-        "name": "Compact Title Bar - overlap fixes (also removes help)",
-        "css": "",
-        "creator": "EPOS05",
-        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
-        "source_discord": "",
-        "license": "CC0"
-    },
-    {
         "name": "Don't Cover Server List With Panel",
         "css": "",
         "creator": "obsidianninja11",
@@ -128,11 +120,11 @@
         "license": "CC0"
     },
     {
-        "name": "More compact buttons",
-        "css": "---https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css",
+        "name": "CompactTabs",
+        "css": "https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactTabs.css",
         "creator": "Krammeth",
         "source_github": "https://github.com/Krammeth/css-snippets",
-        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688",
+        "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1466569443344777342",
         "license": "CC0"
     },
     {
@@ -141,6 +133,14 @@
         "creator": "flak",
         "source_github": "https://codeberg.org/flak/css1",
         "source_discord": "https://discord.com/channels/1015060230222131221/1028106818368589824/1512571526069620836",
+        "license": "CC0"
+    },
+    {
+        "name": "Cleaner Discord Theme - Various Fixes",
+        "css": "",
+        "creator": "EPOS05",
+        "source_github": "https://github.com/EPOS05/cleaner-discord-theme",
+        "source_discord": "",
         "license": "CC0"
     },
     {

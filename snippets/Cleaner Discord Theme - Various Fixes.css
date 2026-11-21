@@ -63,3 +63,12 @@ a:has([aria-label="Help"]) {
 .search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
     margin-right: 7px;
 }
+
+/* ===========================================================================
+   CompactTabs Settings
+   =========================================================================== */
+
+:root {
+  --server-tabs: true;
+  --dms-tabs: true;
+}

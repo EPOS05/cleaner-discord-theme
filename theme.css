@@ -1,7 +1,7 @@
 /**
  * @name Cleaner Discord Theme
  * @author EPOS05
- * @version 26.11.08+1653
+ * @version 26.11.22+0030
  * @description A Discord theme to make the desktop UI look way cleaner - Made possible by many developers credited inline
  * @source https://github.com/EPOS05/cleaner-discord-theme
  * @website https://github.com/EPOS05/cleaner-discord-theme
@@ -270,7 +270,7 @@ div:has(> [aria-label="Send a gift"]) {
             /* adds padding to search bar */
             div.search_B1ffsk {
                 /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
-                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 4px);
+                margin-right: calc(var(--vr-header-snippet-button-padding) + var(--vr-header-snippet-extra-padding) - 8px);
                 -webkit-app-region: no-drag;
             }
             
@@ -278,7 +278,7 @@ div:has(> [aria-label="Send a gift"]) {
             /* adds extra padding if you are looking at search results */
             &:has(> div.headerBar_Y0eJLL.relative_Y0eJLL) {
                 .search_B1ffsk {
-                    padding-right: calc(var(--vr-header-snippet-total-padding) - 60px);
+                    padding-right: calc(var(--vr-header-snippet-total-padding) - 16px);
                 }
             }
         }
@@ -435,6 +435,12 @@ div:has(> [aria-label="Send a gift"]) {
     div.header_Sh_Ht6 div.questProgress_Sh_Ht6 {
         margin-right: calc(var(--vr-header-snippet-total-padding) - 8px);
     }
+
+    /* settings icon on server hub page */
+    div.toolbar_ybUK7Z:has(> button[aria-label='Settings']) {
+        margin-right: calc(var(--vr-header-snippet-total-padding) - 16px);
+        -webkit-app-region: no-drag;
+    }
 }
 
 /* =========================================================================== */
@@ -471,78 +477,6 @@ div:has(> [aria-label="Send a gift"]) {
     width: auto !important;
 }
 
-
-/* =========================================================================== */
-/* Snippet: Compact Title Bar - overlap fixes (also removes help) */
-/* By: EPOS05 */
-/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
-/* License: CC0 */
-/* =========================================================================== */
-/* Hide the Help button. if the Experiments plugin swaps this slot for a "Submit a Bug Report" icon instead, that's left untouched and accounted for below. */
-a:has([aria-label="Help"]) {
-    display: none !important;
-}
-
-/* Chat title (top-left) overlapping the back/forward buttons */
-:has(.backForwardButtons_nS9Yqn) .children_ybUK7Z {
-    margin-left: 50px;
-}
-
-
-/* ===========================================================================
-   Top-right spacing fix
-   =========================================================================== */
-
-:root {
-    /* Base width assuming the Help slot is empty: just Inbox + window buttons. */
-    --vr-header-snippet-base: 160px;
-
-    /* Extra width to add back if something occupies the old Help slot. */
-    --help-slot-offset: 0px;
-}
-
-/* If Bug Report is present (Help's replacement), add back one icon's worth of space. */
-:root:has(.trailing_3zSH5d [aria-label="Submit a Bug Report"]) {
-    --help-slot-offset: 35px;
-}
-
-:root {
-    --vr-header-snippet-space: calc(var(--vr-header-snippet-base) + var(--help-slot-offset)) !important;
-}
-
-
-/* ===========================================================================
-   Top-right spacing fix - voice calls
-   =========================================================================== */
-.visual-refresh div.base_pog62O div.chat_z_gUBg:not(:has(.chatLayerWrapper_FrbQJp)) div.callContainer_hbKzX7:not(.fullScreen_hbKzX7) div.upperContainer_ybUK7Z div.toolbar_neq5ug {
-    padding-right: var(--vr-header-snippet-total-padding);
-}
-
-
-/* ===========================================================================
-   Compact search field button fix
-   =========================================================================== */
-
-.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 {
-    position: relative;
-}
-
-.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 [data-slate-editor="true"] {
-    position: absolute !important;
-    inset: 0;
-    opacity: 0;
-    padding: 0 !important;
-}
-
-.search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
-    margin-left: auto;
-    margin-right: 3px;
-    transition: margin .25s ease;
-}
-
-.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
-    margin-right: 7px;
-}
 
 /* =========================================================================== */
 /* Snippet: Don't Cover Server List With Panel */
@@ -2292,88 +2226,349 @@ nav.guilds_pog62O {
 
 
 /* =========================================================================== */
-/* Snippet: More compact buttons */
+/* Snippet: CompactTabs */
 /* By: Krammeth */
-/* Source: GitHub: https://github.com/Krammeth/css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
+/* Source: GitHub: https://github.com/Krammeth/css-snippets | Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1466569443344777342 */
 /* License: CC0 */
 /* =========================================================================== */
 /**
-* @name CompactButtons
+* @name CompactTabs
 * @version 1.0
-* @description Makes sidebar buttons more... compact (duh?)
-* @author krammeth (original by cea.api)
+* @description Inspired on the scrapped Visual Refresh sidebar layout
+* @author krammeth
 * @website https://github.com/Krammeth
 */
 
-.scroller_Bce46W[data-list-id^="private-channels-uid_"] {
-  scrollbar-width: 0;
-  scrollbar-color: transparent;
-  >.content_tqapBM {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    >div:not([class]):first-child,
-    >div[role="button"],
-    >.privateChannelsHeaderContainer_Bce46W,
-    >.channel_zln_tS.dm_zln_tS {
-      width: 100%;
-      min-width: 0;
-    }
-    >.friendsButtonContainer_u88IQl,
-    >div:nth-of-type(3),
-    >.channel_zln_tS:not(.dm_zln_tS),
-    >.wrapper_hjotnx {
-      margin: 0;
-    }
-    .channel_zln_tS:not(.dm_zln_tS) {
-      margin: 0 4px !important;
-      >.linkButton_zln_tS >.link_zln_tS {
-        padding: 6px;
-        justify-content: center;
-        >.avatarWithText_zln_tS {
-          padding: 0;
-          >.avatar_TBNqol {
-            margin: 0;
-          }
-          >.content_TBNqol {
-            display: none;
-          }
-        }
-        >.numberBadge_lMvXrQ {
-          position: absolute;
-          left: 17.5px;
-          bottom: 0;
-          transform: scale(0.7);
-        }
-        >.premiumBadge__6d7da {
-          position: absolute;
-          bottom: 0;
-          transform: scale(0.7);
-          background-color: var(--badge-notification-background);
+@container style(--dms-tabs:true) {
+    .scroller_Bce46W[data-list-id^="private-channels-uid_"] {
+        scrollbar-width: 0;
+        scrollbar-color: transparent;
 
-          >.BadgeClockIcon__6d7da {
-            display: none;
-          }
+        &>.content_tqapBM {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: space-evenly;
 
-          >.eyebrow_cf4812 {
-            color: var(--white) !important;
-          }
+            &>div:not([class]):first-child,
+            &>div[role="button"],
+            &>.privateChannelsHeaderContainer_Bce46W,
+            &>.channel_zln_tS.dm_zln_tS {
+                width: 100%;
+                min-width: 0; /* courtesy of @moonself for the fix */
+            }
+
+            &>.friendsButtonContainer_u88IQl,
+            &>div:nth-of-type(3),
+            &>.channel_zln_tS:not(.dm_zln_tS),
+            &>.wrapper_hjotnx {
+                margin: 0;
+            }
+
+            .channel_zln_tS:not(.dm_zln_tS) {
+                margin: 0 4px !important;
+
+                &>.linkButton_zln_tS>.link_zln_tS {
+                    padding: 6px;
+                    justify-content: center;
+
+                    &>.avatarWithText_zln_tS {
+                        padding: 0;
+
+                        &>.avatar_TBNqol { 
+                            margin: 0; 
+                        }
+
+                        &>.content_TBNqol { 
+                            display: none; 
+                        }
+                    }
+
+                    /* Message Requests */
+                    &>.numberBadge_lMvXrQ {
+                        position: absolute;
+                        left: 17.5px;
+                        bottom: 0;
+                        transform: scale(0.7);
+                    }
+
+                    /* Nitro */
+                    &>.premiumBadge__83f7d {
+                        position: absolute;
+                        bottom: 0;
+                        transform: scale(0.7);
+                        background-color: var(--badge-notification-background);
+
+                        &>.BadgeClockIcon__6d7da { 
+                            display: none; 
+                        }
+
+                        &>.eyebrow_cf4812 { 
+                            color: var(--white) !important; 
+                        }
+                    }
+
+                    &>.countDown_-jNBYH {
+                        position: absolute;
+                        bottom: -1px;
+                        transform: scale(0.7);
+
+                        &>.premiumPill_Ku7pX2 {
+                            background-color: var(--badge-notification-background);
+                        }
+  
+                        &>.eyebrow_cf4812 {
+                            background-color: var(--badge-notification-background);
+                            color: var(--white);
+                        }
+                    }
+
+                    /* NEW badge */
+                    &>.expressive_4guu7- {
+                        position: absolute;
+                        transform: scale(0.7);
+                        bottom: 0;
+                        background-color: var(--badge-notification-background);
+                        color: var(--white);
+                    }
+
+                    /* Discount badge */
+                    &>.container_KR9zF4 {
+                        position: absolute;
+                        transform: scale(0.7);
+                        bottom: 0;
+                        background-color: var(--badge-notification-background);
+                        color: var(--white);
+
+                        &>.glowAnimation_KR9zF4 {
+                          display: none;
+                        }
+
+                        &>.card_qCN-Ri>.expressive_4guu7- {
+                            background-color: unset;
+                            color: unset;
+                        }
+                    }
+                    &>.premiumTrialBadge_gLFXov,
+                    &>.premiumTrialBadgeSelected_gLFXov {
+                        position: absolute;
+                        transform: scale(0.7);
+                        bottom: 0;
+                        background-color: var(--badge-notification-background);
+                        color: var(--white);
+
+                        &>svg {
+                            display: none;
+                        }
+                    }
+
+                    /* Shop */
+                    &>.newBadge_SMljHk {
+                        position: absolute;
+                        bottom: 0;
+                        transform: scale(0.7);
+
+                        &>.badge_4guu7- {
+                            background-color: var(--badge-notification-background);
+                            color: var(--white);
+                        }
+                    }
+
+                    /* Quests */
+                    &>.badge_hjotnx {
+                        position: absolute;
+                        bottom: 0;
+                        transform: scale(0.7);
+
+                        &>.eyebrow_cf4812 {
+                            background-color: var(--badge-notification-background);
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
         }
-        >.newBadge_SMljHk {
-          position: absolute;
-          bottom: 0;
-          transform: scale(0.7);
-          
-          >.eyebrow_cf4812 {
-            background-color: var(--badge-notification-background);
-            color: var(--white);
-          }
-        }
-      }
     }
-  }
+}
+
+@container style(--server-tabs:true) {
+    .scroller_ysO7Gy {
+
+        &>.content_tqapBM {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: space-evenly;
+
+            &>div[style="height: 84px;"]:not([class]), /* banner */
+            &>div[style="height: 0px;"]:not([class]) { /* no banner */
+                width: 100%;
+
+                &+div[style="height: 8px;"]:not([class]), /* compact */
+                &+div[style="height: 12px;"]:not([class]) { /* default & spacious */
+                    width: 100%;
+
+                    /* 1 button */
+                    &+li:not([class]):has(+.sectionDivider_ysO7Gy) {
+                        width: 100%;
+
+                        &>.wrapper_TNyK-N {
+                            margin-inline-start: var(--space-xs) !important;
+
+                            &>.basicChannelRowLink_TNyK-N {
+                                padding: var(--space-xxs) var(--space-xs);
+                                padding-inline: var(--space-xs) !important;
+
+                                &>.name_TNyK-N { 
+                                    display: unset; 
+                                }
+
+                                &>.textBadge__463b7 {
+                                    position: unset;
+                                    transform: none;
+                                }
+                            }
+                        }
+                    }
+
+                    /* boost bar */
+                    &+.container_BFMMcK {
+                        width: 100%;
+
+                        /* 1 button */
+                        &+li:not([class]):has(+.sectionDivider_ysO7Gy) {
+                            width: 100%;
+
+                            &>.wrapper_TNyK-N {
+                                margin-inline-start: var(--space-xs) !important;
+
+                                &>.basicChannelRowLink_TNyK-N {
+                                    padding: var(--space-xxs) var(--space-xs);
+                                    padding-inline: var(--space-xs) !important;
+
+                                    &>.name_TNyK-N { 
+                                        display: unset; 
+                                    }
+
+                                    &>.textBadge__463b7 {
+                                        position: unset;
+                                        transform: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &~.sectionDivider_ysO7Gy {
+                        &+div[style="height: 8px;"]:not([class]), /* compact */
+                        &+div[style="height: 12px;"]:not([class]) { /* default & spacious */
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            /* get started bar */
+            &>li:not([class]):has(>.progressBarContainer_5nm40Y) {
+                width: 100%;
+
+                &>.progressBarContainer_5nm40Y {
+                    width: 100%;
+                    margin: 0 5px;
+                    max-width: calc(240px - 25px);
+                }
+
+                &>.divider_5nm40Y {
+                    width: 100%;
+                    margin: 15px 15px 3px;
+                    max-width: calc(240px - 25px);
+                }
+            }
+
+            &>li:not([class]) {
+                width: fit-content;
+
+                &>.wrapper_TNyK-N {
+                    margin: 0;
+
+                    &>.unread_TNyK-N { 
+                        display: none; 
+                    }
+
+                    &>.basicChannelRowLink_TNyK-N {
+                        padding: 5px;
+
+                        &>.name_TNyK-N {
+                            display: none; 
+                        }
+
+                        &>.numberBadge_TNyK-N {
+                            position: absolute;
+                            left: 17.5px;
+                            bottom: 0;
+                            transform: scale(0.7);
+                            background-color: var(--status-danger);
+                        }
+
+                        &>.badge_4guu7- {
+                            position: absolute;
+                            bottom: 0;
+                            transform: scale(0.7);
+                            min-width: 140%; /* fix NEW getting cropped */
+                        }
+                    }
+                }
+            }
+
+            &>div:not([class]) {
+
+                &>li:not([class])>.wrapper_TNyK-N {
+                    margin: 0;
+
+                    &>.basicChannelRowLink_TNyK-N {
+                        padding: 5px;
+
+                        &>.name_TNyK-N { 
+                            display: none; 
+                        }
+                    }
+                }
+            }
+
+            /* Game Shop */
+            &>.wrapper_xGgKlk {
+
+                &>li>.wrapper_TNyK-N {
+                    margin: 0;
+        
+                    &>.basicChannelRowLink_TNyK-N {
+                        padding: 5px;
+            
+                        &>.name_TNyK-N {
+                            display: none;
+                        }
+
+                        &>.textBadge__463b7 {
+                            position: absolute;
+                            bottom: 0;
+                            transform: scale(0.7);
+                        }
+                        
+                    }
+                }
+            }
+
+            /* fix elements width */
+
+            &>.containerDefault_yOdhm_, /* category */
+            &>.containerDefault_Wx6SnQ, /* channel */
+            &>.container_reDhww { /* thread */
+                width: stretch; 
+            }
+        }
+    }
 }
 
 /* =========================================================================== */
@@ -2421,6 +2616,87 @@ nav.guilds_pog62O {
 
 /* ============================================================================================================================================================ */
 
+
+/* =========================================================================== */
+/* Snippet: Cleaner Discord Theme - Various Fixes */
+/* By: EPOS05 */
+/* Source: GitHub: https://github.com/EPOS05/cleaner-discord-theme */
+/* License: CC0 */
+/* =========================================================================== */
+/* Hide the Help button. if the Experiments plugin swaps this slot for a "Submit a Bug Report" icon instead, that's left untouched and accounted for below. */
+a:has([aria-label="Help"]) {
+    display: none !important;
+}
+
+/* Chat title (top-left) overlapping the back/forward buttons */
+:has(.backForwardButtons_nS9Yqn) .children_ybUK7Z {
+    margin-left: 50px;
+}
+
+
+/* ===========================================================================
+   Top-right spacing fix
+   =========================================================================== */
+
+:root {
+    /* Base width assuming the Help slot is empty: just Inbox + window buttons. */
+    --vr-header-snippet-base: 160px;
+
+    /* Extra width to add back if something occupies the old Help slot. */
+    --help-slot-offset: 0px;
+}
+
+/* If Bug Report is present (Help's replacement), add back one icon's worth of space. */
+:root:has(.trailing_3zSH5d [aria-label="Submit a Bug Report"]) {
+    --help-slot-offset: 35px;
+}
+
+:root {
+    --vr-header-snippet-space: calc(var(--vr-header-snippet-base) + var(--help-slot-offset)) !important;
+}
+
+
+/* ===========================================================================
+   Top-right spacing fix - voice calls
+   =========================================================================== */
+.visual-refresh div.base_pog62O div.chat_z_gUBg:not(:has(.chatLayerWrapper_FrbQJp)) div.callContainer_hbKzX7:not(.fullScreen_hbKzX7) div.upperContainer_ybUK7Z div.toolbar_neq5ug {
+    padding-right: var(--vr-header-snippet-total-padding);
+}
+
+
+/* ===========================================================================
+   Compact search field button fix
+   =========================================================================== */
+
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 {
+    position: relative;
+}
+
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 [data-slate-editor="true"] {
+    position: absolute !important;
+    inset: 0;
+    opacity: 0;
+    padding: 0 !important;
+}
+
+.search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
+    margin-left: auto;
+    margin-right: 3px;
+    transition: margin .25s ease;
+}
+
+.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
+    margin-right: 7px;
+}
+
+/* ===========================================================================
+   CompactTabs Settings
+   =========================================================================== */
+
+:root {
+  --server-tabs: true;
+  --dms-tabs: true;
+}
 
 /* =========================================================================== */
 /* Snippet: SettingsModal */
