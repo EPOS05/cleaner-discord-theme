@@ -40,31 +40,6 @@ a:has([aria-label="Help"]) {
 
 
 /* ===========================================================================
-   Compact search field button fix
-   =========================================================================== */
-
-.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 {
-    position: relative;
-}
-
-.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 [data-slate-editor="true"] {
-    position: absolute !important;
-    inset: 0;
-    opacity: 0;
-    padding: 0 !important;
-}
-
-.search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
-    margin-left: auto;
-    margin-right: 3px;
-    transition: margin .25s ease;
-}
-
-.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
-    margin-right: 7px;
-}
-
-/* ===========================================================================
    CompactTabs Settings
    =========================================================================== */
 

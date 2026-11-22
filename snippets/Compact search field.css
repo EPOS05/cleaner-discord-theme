@@ -1,4 +1,10 @@
+/* Credits to the original made by: Wroclaw */
+/* Source Github: https://github.com/amozeo/discord-css-snippets */
+/* Source Discord: https://discord.com/channels/1015060230222131221/1028106818368589824/1448455055337328831 */
+
+/* Collapsed state */
 .search_i16Ad0 > .searchBar_i16Ad0 {
+    position: relative;
     width: 32px !important;
     background: none;
     border-color: transparent;
@@ -7,21 +13,124 @@
         border-color .25s ease;
 }
 
-.search_i16Ad0 > .searchBar_i16Ad0 .DraftEditor-root {
-    padding-right: 3px !important;
+/* Keep the collapsed bar borderless, even on hover/focus */
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0:hover,
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0:focus-within {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
+/* Open state */
 .search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 {
     width: 244px !important;
     background: var(--background-gradient-low, var(--input-background-default));
     border-color: var(--input-border-default);
 }
 
+/* Make the whole collapsed bar clickable via an invisible editor overlay */
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 [data-slate-editor="true"] {
+    position: absolute !important;
+    inset: 0;
+    opacity: 0;
+    padding: 0 !important;
+}
+
+/* Pointer cursor on the whole collapsed bar and everything inside it */
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0,
+.search_i16Ad0:not(.open_i16Ad0) > .searchBar_i16Ad0 * {
+    cursor: pointer !important;
+}
+
+/* Search icon */
 .search_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
+    margin-left: auto;
+    margin-right: 3px;
+    transition: margin .25s ease;
+}
+
+.search_i16Ad0.open_i16Ad0 > .searchBar_i16Ad0 .icon_i16Ad0 {
     margin-right: 7px;
 }
 
+/* Remove default margins/width on the search container */
 .search_bWCaDq {
     margin: 0 !important;
     width: auto !important;
+}
+
+/* ===========================================================================
+   Tooltip (collapsed only), styled after Discord's own tooltips
+   =========================================================================== */
+
+.search_bWCaDq {
+    position: relative;
+    --tooltip-gap: 13px; /* distance from the icon to the tooltip body: change this to move the whole tooltip */
+}
+
+.search_i16Ad0 {
+    position: relative;
+}
+
+.search_i16Ad0:not(.open_i16Ad0)::before,
+.search_i16Ad0:not(.open_i16Ad0)::after,
+.search_bWCaDq::after {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .1s ease;
+}
+
+/* Tooltip body */
+.search_i16Ad0:not(.open_i16Ad0)::after {
+    content: "Search";
+    top: calc(100% + var(--tooltip-gap));
+    transform: translateX(-50%);
+    z-index: 9999;
+    box-sizing: border-box;
+    max-width: 200px;
+    padding: var(--space-8) var(--space-12);
+    border-radius: var(--radius-sm);
+    background-color: var(--background-surface-high);
+    box-shadow: inset 0 0 0 1px var(--border-subtle), var(--shadow-high);
+    color: var(--text-default);
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2857142857142858;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Arrow fill (Discord's caretFill, rotated to point up) */
+.search_i16Ad0:not(.open_i16Ad0)::before {
+    content: "";
+    top: calc(100% + var(--tooltip-gap) - 9px); /* 9px = arrow height minus a 1px overlap with the body */
+    z-index: 10000;
+    width: 16px;
+    height: 10px;
+    margin-left: -8px;
+    background-color: var(--background-surface-high);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cg transform='rotate(180 8 5)'%3E%3Cpath d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cg transform='rotate(180 8 5)'%3E%3Cpath d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+
+/* Arrow outline (Discord's caretStroke): lives on the wrapper, which has a free pseudo-element */
+.search_bWCaDq::after {
+    content: "";
+    top: calc(100% + var(--tooltip-gap) - 9px); /* 9px = arrow height minus a 1px overlap with the body */
+    z-index: 10001;
+    width: 16px;
+    height: 10px;
+    margin-left: -8px;
+    background-color: var(--border-subtle);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cdefs%3E%3CclipPath id='c'%3E%3Cpath d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform='rotate(180 8 5)'%3E%3Cpath clip-path='url(%23c)' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cdefs%3E%3CclipPath id='c'%3E%3Cpath d='M10.3426 7.0715C9.14163 8.57272 6.85837 8.57272 5.65739 7.0715L0 -0.000244141L16 -0.000244141L10.3426 7.0715Z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform='rotate(180 8 5)'%3E%3Cpath clip-path='url(%23c)' d='M9.93457 6.84546C8.93433 8.06766 7.06567 8.06766 6.06543 6.84546L0.0546875 -0.500244L15.9453 -0.500244L9.93457 6.84546Z' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+
+.search_i16Ad0:not(.open_i16Ad0):hover::before,
+.search_i16Ad0:not(.open_i16Ad0):hover::after,
+.search_bWCaDq:has(> .search_i16Ad0:not(.open_i16Ad0):hover)::after {
+    opacity: 1;
 }

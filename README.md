@@ -21,8 +21,8 @@ Made possible by many developers credited below:
 - [Remove nitro gift button](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Remove gap on top of server list](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Move profile buttons back to the top right](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
+- [Compact search field](https://github.com/EPOS05/cleaner-discord-theme) - By EPOS05
 - [Compact Title Bar](https://github.com/G0d0fninjas/visual-refresh-compact-title-bar) - By G0d0fninjas
-- [Compact search field](https://github.com/amozeo/discord-css-snippets) - By Wroclaw
 - [Don't Cover Server List With Panel](https://discord.com/channels/1015060230222131221/1028106818368589824/1354331484831354952) - By obsidianninja11
 - [Page Swapper Refresh](https://github.com/davart154/Themes) - By davart154
 - [Icon Consistency](https://github.com/davart154/Themes) - By davart154
